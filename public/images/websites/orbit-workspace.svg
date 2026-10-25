@@ -1,0 +1,84 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 750" width="1200" height="750">
+  <defs>
+    <linearGradient id="orbitBg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#111417"/>
+      <stop offset="100%" stop-color="#0a0c0e"/>
+    </linearGradient>
+  </defs>
+  <!-- Background & Chrome -->
+  <rect width="1200" height="750" fill="url(#orbitBg)"/>
+  <rect width="1200" height="44" fill="#191d20"/>
+  <circle cx="28" cy="22" r="5" fill="#3e4446"/>
+  <circle cx="44" cy="22" r="5" fill="#3e4446"/>
+  <circle cx="60" cy="22" r="5" fill="#3e4446"/>
+  <rect x="360" y="10" width="480" height="24" rx="6" fill="#0d1012"/>
+  <text x="600" y="26" fill="#71787b" font-family="system-ui, sans-serif" font-size="12" text-anchor="middle">app.orbit.workspace/dashboard</text>
+
+  <!-- Left Sidebar UI -->
+  <rect x="0" y="44" width="220" height="706" fill="#15191b" stroke="#22272a" stroke-width="1"/>
+  <!-- Logo -->
+  <circle cx="36" cy="80" r="12" fill="#D4FF78"/>
+  <text x="60" y="85" fill="#F5F6F2" font-family="'Outfit', system-ui, sans-serif" font-weight="700" font-size="16">ORBIT</text>
+  <!-- Nav items -->
+  <rect x="16" y="120" width="188" height="36" rx="8" fill="#202629"/>
+  <text x="44" y="143" fill="#D4FF78" font-family="system-ui" font-size="13" font-weight="600">◆ Projects &amp; Sprints</text>
+  <text x="44" y="185" fill="#8c9397" font-family="system-ui" font-size="13">◇ Insights &amp; Metrics</text>
+  <text x="44" y="225" fill="#8c9397" font-family="system-ui" font-size="13">◇ Team Capacity</text>
+  <text x="44" y="265" fill="#8c9397" font-family="system-ui" font-size="13">◇ Automation Flows</text>
+  <text x="44" y="305" fill="#8c9397" font-family="system-ui" font-size="13">◇ Integrations</text>
+
+  <!-- Main App Canvas -->
+  <!-- Top bar -->
+  <rect x="220" y="44" width="980" height="60" fill="#121518" stroke="#22272a" stroke-width="1"/>
+  <text x="260" y="80" fill="#F5F6F2" font-family="'Outfit', system-ui, sans-serif" font-weight="600" font-size="18">Sprint 42: Production Launch</text>
+  <rect x="980" y="60" width="180" height="30" rx="6" fill="#D4FF78"/>
+  <text x="1070" y="80" fill="#111315" font-family="'Outfit', system-ui, sans-serif" font-weight="600" font-size="13" text-anchor="middle">+ New Task</text>
+
+  <!-- Metric Badges Row -->
+  <g transform="translate(260, 130)">
+    <rect x="0" y="0" width="210" height="90" rx="10" fill="#181c1f" stroke="#2a3034" stroke-width="1"/>
+    <text x="20" y="32" fill="#8c9397" font-family="system-ui" font-size="12">ACTIVE VELOCITY</text>
+    <text x="20" y="68" fill="#F5F6F2" font-family="'Outfit', system-ui" font-weight="700" font-size="28">94.2%</text>
+    <text x="130" y="68" fill="#D4FF78" font-family="system-ui" font-size="12">↑ +14%</text>
+
+    <rect x="230" y="0" width="210" height="90" rx="10" fill="#181c1f" stroke="#2a3034" stroke-width="1"/>
+    <text x="250" y="32" fill="#8c9397" font-family="system-ui" font-size="12">BURNDOWN RATE</text>
+    <text x="250" y="68" fill="#F5F6F2" font-family="'Outfit', system-ui" font-weight="700" font-size="28">18 / 20</text>
+    <text x="360" y="68" fill="#D4FF78" font-family="system-ui" font-size="12">On Track</text>
+
+    <rect x="460" y="0" width="430" height="90" rx="10" fill="#181c1f" stroke="#2a3034" stroke-width="1"/>
+    <text x="480" y="32" fill="#8c9397" font-family="system-ui" font-size="12">CYCLE TIME TREND</text>
+    <!-- Mini Sparkline Graph -->
+    <polyline points="480,70 540,65 600,75 660,50 720,40 780,55 840,35" fill="none" stroke="#D4FF78" stroke-width="2.5"/>
+    <circle cx="840" cy="35" r="4" fill="#D4FF78"/>
+  </g>
+
+  <!-- Kanban Columns -->
+  <g transform="translate(260, 250)">
+    <!-- Column 1 -->
+    <rect x="0" y="0" width="280" height="460" rx="10" fill="#15191b" stroke="#22272a" stroke-width="1"/>
+    <text x="20" y="32" fill="#8c9397" font-family="system-ui" font-size="13" font-weight="600">IN PROGRESS (3)</text>
+    <rect x="16" y="50" width="248" height="110" rx="8" fill="#1f2428" stroke="#2d3438" stroke-width="1"/>
+    <text x="32" y="80" fill="#F5F6F2" font-family="system-ui" font-weight="600" font-size="14">Auth Token Rotation</text>
+    <text x="32" y="104" fill="#8c9397" font-family="system-ui" font-size="12">Security · P0 Critical</text>
+    <circle cx="230" cy="130" r="10" fill="#D4FF78"/>
+
+    <rect x="16" y="174" width="248" height="110" rx="8" fill="#1f2428" stroke="#2d3438" stroke-width="1"/>
+    <text x="32" y="204" fill="#F5F6F2" font-family="system-ui" font-weight="600" font-size="14">Realtime WebSockets</text>
+    <text x="32" y="228" fill="#8c9397" font-family="system-ui" font-size="12">Backend Infra · 2d left</text>
+
+    <!-- Column 2 -->
+    <rect x="306" y="0" width="280" height="460" rx="10" fill="#15191b" stroke="#22272a" stroke-width="1"/>
+    <text x="326" y="32" fill="#8c9397" font-family="system-ui" font-size="13" font-weight="600">CODE REVIEW (2)</text>
+    <rect x="322" y="50" width="248" height="110" rx="8" fill="#1f2428" stroke="#2d3438" stroke-width="1"/>
+    <text x="338" y="80" fill="#F5F6F2" font-family="system-ui" font-weight="600" font-size="14">Design Tokens V4</text>
+    <text x="338" y="104" fill="#D4FF78" font-family="system-ui" font-size="12">Reviewed by Lead</text>
+
+    <!-- Column 3 -->
+    <rect x="612" y="0" width="280" height="460" rx="10" fill="#15191b" stroke="#22272a" stroke-width="1"/>
+    <text x="632" y="32" fill="#D4FF78" font-family="system-ui" font-size="13" font-weight="600">COMPLETED (8)</text>
+    <rect x="628" y="50" width="248" height="80" rx="8" fill="#192020" stroke="#2b3b32" stroke-width="1"/>
+    <text x="644" y="80" fill="#F5F6F2" font-family="system-ui" font-weight="600" font-size="14">SDK Release v2.8</text>
+    <text x="644" y="104" fill="#8c9397" font-family="system-ui" font-size="12">Merged 1h ago</text>
+  </g>
+</svg>
