@@ -104,12 +104,12 @@ export function ImageLightbox({
         </div>
 
         {/* Center Image Container */}
-        <div className="relative aspect-square w-full max-h-[75vh] rounded-[10px] overflow-hidden bg-[#151719] border border-[#343938] shadow-[0_20px_60px_rgba(0,0,0,0.8)]">
+        <div className="relative aspect-[3/4] w-full max-h-[78vh] max-w-[500px] mx-auto rounded-[10px] overflow-hidden bg-[#151719] border border-[#343938] shadow-[0_20px_60px_rgba(0,0,0,0.8)]">
           <Image
             src={currentPost.image}
             alt={currentPost.alt}
             fill
-            sizes="(max-width: 768px) 95vw, 768px"
+            sizes="(max-width: 768px) 95vw, 500px"
             className="object-contain"
             priority
           />

@@ -13,14 +13,14 @@ export function SocialCard({ post, index, onOpenLightbox }: SocialCardProps) {
     <button
       type="button"
       onClick={() => onOpenLightbox(index)}
-      className="group relative aspect-square w-full rounded-[10px] overflow-hidden bg-[#1B1E1F] border border-[#343938] hover:border-[#D4FF78]/50 transition-all duration-300 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[#D4FF78] text-left cursor-pointer shrink-0 snap-start active:scale-[0.99]"
+      className="group relative aspect-[3/4] w-full rounded-[10px] overflow-hidden bg-[#1B1E1F] border border-[#343938] hover:border-[#D4FF78]/50 transition-all duration-300 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[#D4FF78] text-left cursor-pointer shrink-0 snap-start active:scale-[0.99]"
       aria-label={`View enlarged ${post.title || "social media design"} (${post.campaign || "Creative Work"})`}
     >
       <Image
         src={post.image}
         alt={post.alt}
         fill
-        sizes="(max-width: 640px) 55vw, (max-width: 1024px) 25vw, 220px"
+        sizes="(max-width: 640px) 70vw, (max-width: 1024px) 30vw, 290px"
         className="object-cover transition-transform duration-300 ease-out group-hover:scale-[1.03]"
       />
 
