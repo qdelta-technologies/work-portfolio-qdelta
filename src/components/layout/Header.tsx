@@ -37,7 +37,10 @@ export function Header() {
           className="group flex items-center text-[18px] sm:text-[20px] tracking-tight focus-visible:outline-none cursor-pointer"
           aria-label="QDelta — Back to top of page"
         >
-          <span className="font-bold text-[#F5F6F2] transition-colors group-hover:text-white">
+          <span
+            className="text-[19px] sm:text-[21px] font-extrabold text-[#F5F6F2] tracking-[-0.03em] transition-colors group-hover:text-white"
+            style={{ fontFamily: "var(--font-logo)" }}
+          >
             {siteConfig.name}
           </span>
         </Link>

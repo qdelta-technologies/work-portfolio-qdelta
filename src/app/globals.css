@@ -10,6 +10,7 @@
   --color-border-subtle: #343938;
 
   --font-outfit: var(--font-outfit), system-ui, -apple-system, sans-serif;
+  --font-logo: var(--font-logo), system-ui, -apple-system, sans-serif;
 }
 
 :root {

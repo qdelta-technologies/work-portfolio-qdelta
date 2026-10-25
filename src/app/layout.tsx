@@ -1,11 +1,18 @@
 import type { Metadata, Viewport } from "next";
-import { Outfit } from "next/font/google";
+import { Outfit, Plus_Jakarta_Sans } from "next/font/google";
 import "./globals.css";
 
 const outfit = Outfit({
   subsets: ["latin"],
   weight: ["400", "500", "600", "700"],
   variable: "--font-outfit",
+  display: "swap",
+});
+
+const plusJakartaSans = Plus_Jakarta_Sans({
+  subsets: ["latin"],
+  weight: ["600", "700", "800"],
+  variable: "--font-logo",
   display: "swap",
 });
 
@@ -54,7 +61,10 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en" className={`${outfit.variable} dark scroll-smooth`}>
+    <html
+      lang="en"
+      className={`${outfit.variable} ${plusJakartaSans.variable} dark scroll-smooth`}
+    >
       <body className="min-h-screen bg-[#111315] text-[#F5F6F2] font-sans antialiased selection:bg-[#D4FF78] selection:text-[#111315]">
         {children}
       </body>
