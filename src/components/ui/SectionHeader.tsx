@@ -33,7 +33,7 @@ export function SectionHeader({
           <span>{title}</span>
         </h2>
         {description && (
-          <p className="text-[#A5AAA7] text-[13px] sm:text-[14px] font-normal leading-relaxed">
+          <p className="text-[#C2C8C5] text-[13px] sm:text-[14px] font-normal leading-relaxed">
             {description}
           </p>
         )}

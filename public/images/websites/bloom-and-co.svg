@@ -1,42 +1,48 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 750" width="1200" height="750">
   <defs>
     <linearGradient id="bloomBg" x1="0%" y1="0%" x2="100%" y2="100%">
-      <stop offset="0%" stop-color="#121614"/>
-      <stop offset="100%" stop-color="#0b0e0c"/>
+      <stop offset="0%" stop-color="#FBF9F4"/>
+      <stop offset="100%" stop-color="#EFECE2"/>
     </linearGradient>
   </defs>
   <rect width="1200" height="750" fill="url(#bloomBg)"/>
-  <rect width="1200" height="44" fill="#181d1a"/>
-  <circle cx="28" cy="22" r="5" fill="#3a443e"/>
-  <circle cx="44" cy="22" r="5" fill="#3a443e"/>
-  <circle cx="60" cy="22" r="5" fill="#3a443e"/>
-  <rect x="360" y="10" width="480" height="24" rx="6" fill="#0c100e"/>
-  <text x="600" y="26" fill="#6d7a71" font-family="system-ui, sans-serif" font-size="12" text-anchor="middle">bloomandco.botanics</text>
+  <rect width="1200" height="46" fill="#1C261E"/>
+  <circle cx="28" cy="23" r="5" fill="#EF4444"/>
+  <circle cx="44" cy="23" r="5" fill="#F59E0B"/>
+  <circle cx="60" cy="23" r="5" fill="#10B981"/>
+  <rect x="360" y="10" width="480" height="26" rx="6" fill="#0E1610"/>
+  <text x="600" y="27" fill="#E2E8F0" font-family="system-ui, sans-serif" font-size="12" text-anchor="middle">bloomandco.botanics — Pure Organic Apothecary</text>
 
   <!-- Editorial Brand Header -->
-  <text x="600" y="105" fill="#F5F6F2" font-family="'Outfit', serif, system-ui" font-weight="600" font-size="28" text-anchor="middle" letter-spacing="4">BLOOM &amp; CO.</text>
-  <line x1="80" y1="130" x2="1120" y2="130" stroke="#222b25" stroke-width="1"/>
+  <text x="600" y="105" fill="#0E2314" font-family="'Outfit', serif, system-ui" font-weight="800" font-size="30" text-anchor="middle" letter-spacing="4">BLOOM &amp; CO.</text>
+  <text x="80" y="105" fill="#3A4D3E" font-family="'Outfit', system-ui" font-size="14" font-weight="600">EST. 2021</text>
+  <text x="1120" y="105" fill="#0E2314" font-family="'Outfit', system-ui" font-size="14" font-weight="700" text-anchor="end">CART (2) · SEARCH</text>
+  <line x1="80" y1="130" x2="1120" y2="130" stroke="#D3CFC3" stroke-width="1.5"/>
 
   <!-- Hero Content -->
-  <g transform="translate(80, 200)">
-    <text x="0" y="30" fill="#D4FF78" font-family="'Outfit', system-ui" font-size="12" letter-spacing="3">100% ORGANIC BOTANICALS</text>
-    <text x="0" y="90" fill="#F5F6F2" font-family="'Outfit', system-ui" font-weight="500" font-size="48">Pure Botanicals for</text>
-    <text x="0" y="145" fill="#F5F6F2" font-family="'Outfit', system-ui" font-weight="500" font-size="48">Intentional Living.</text>
-    <text x="0" y="200" fill="#A5AAA7" font-family="'Outfit', system-ui" font-size="16">Cold-pressed plant essences sustainably harvested from wild alpine meadows.</text>
-    <rect x="0" y="240" width="160" height="44" rx="22" fill="#D4FF78"/>
-    <text x="80" y="267" fill="#111315" font-family="'Outfit', system-ui" font-weight="600" font-size="14" text-anchor="middle">Explore Extracts</text>
+  <g transform="translate(80, 180)">
+    <rect x="0" y="0" width="200" height="28" rx="14" fill="#0E2314"/>
+    <text x="100" y="18" fill="#D4FF78" font-family="'Outfit', system-ui" font-size="11" font-weight="700" letter-spacing="2" text-anchor="middle">100% ORGANIC BOTANICALS</text>
+    <text x="0" y="80" fill="#0E2314" font-family="'Outfit', system-ui" font-weight="800" font-size="52" letter-spacing="-1">Pure Botanicals for</text>
+    <text x="0" y="140" fill="#0E2314" font-family="'Outfit', system-ui" font-weight="800" font-size="52" letter-spacing="-1">Intentional Living.</text>
+    <text x="0" y="200" fill="#3D4E41" font-family="'Outfit', system-ui" font-size="17" font-weight="400">Cold-pressed plant essences sustainably harvested from wild alpine meadows.</text>
+    <rect x="0" y="240" width="180" height="48" rx="8" fill="#0E2314"/>
+    <text x="90" y="270" fill="#FFFFFF" font-family="'Outfit', system-ui" font-weight="700" font-size="15" text-anchor="middle">Explore Extracts →</text>
   </g>
 
-  <!-- Product Mockups -->
-  <g transform="translate(720, 180)">
-    <rect width="400" height="420" rx="16" fill="#161c18" stroke="#2a382f" stroke-width="1"/>
-    <!-- Bottle silhouette -->
-    <rect x="175" y="60" width="50" height="40" rx="4" fill="#2d3a31"/>
-    <rect x="150" y="100" width="100" height="230" rx="16" fill="#1f2822" stroke="#3b4d41" stroke-width="1.5"/>
-    <rect x="160" y="150" width="80" height="120" rx="4" fill="#121614"/>
-    <text x="200" y="195" fill="#D4FF78" font-family="system-ui" font-size="11" font-weight="600" text-anchor="middle">BLOOM</text>
-    <text x="200" y="215" fill="#A5AAA7" font-family="system-ui" font-size="9" text-anchor="middle">SERUM 01</text>
-    <text x="200" y="370" fill="#F5F6F2" font-family="'Outfit', system-ui" font-size="16" font-weight="600" text-anchor="middle">Wild Rosehip Facial Oil</text>
-    <text x="200" y="395" fill="#D4FF78" font-family="'Outfit', system-ui" font-size="14" text-anchor="middle">$64 USD</text>
+  <!-- Product Showcase Card (High Contrast) -->
+  <g transform="translate(680, 160)">
+    <rect width="440" height="460" rx="16" fill="#FFFFFF" stroke="#D3CFC3" stroke-width="2"/>
+    <!-- Deep Forest Bottle Mockup -->
+    <rect x="195" y="70" width="50" height="45" rx="5" fill="#2E3D31"/>
+    <rect x="170" y="115" width="100" height="230" rx="20" fill="#0A1F10" stroke="#37523C" stroke-width="2"/>
+    <!-- Bottle White Label with Dark Typography -->
+    <rect x="180" y="170" width="80" height="120" rx="4" fill="#FFFFFF"/>
+    <text x="220" y="210" fill="#0A1F10" font-family="'Outfit', system-ui" font-size="12" font-weight="800" text-anchor="middle">BLOOM</text>
+    <text x="220" y="230" fill="#4B6350" font-family="system-ui" font-size="10" font-weight="600" text-anchor="middle">SERUM 01</text>
+    
+    <text x="220" y="390" fill="#0E2314" font-family="'Outfit', system-ui" font-size="20" font-weight="800" text-anchor="middle">Wild Rosehip Facial Oil</text>
+    <rect x="160" y="405" width="120" height="30" rx="15" fill="#0A1F10"/>
+    <text x="220" y="425" fill="#D4FF78" font-family="'Outfit', system-ui" font-size="14" font-weight="700" text-anchor="middle">$64 USD</text>
   </g>
 </svg>

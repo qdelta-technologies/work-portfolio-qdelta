@@ -1,41 +1,35 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 750" width="1200" height="750">
-  <defs>
-    <linearGradient id="monoBg" x1="0%" y1="0%" x2="100%" y2="100%">
-      <stop offset="0%" stop-color="#0e1011"/>
-      <stop offset="100%" stop-color="#141719"/>
-    </linearGradient>
-  </defs>
-  <rect width="1200" height="750" fill="url(#monoBg)"/>
-  <rect width="1200" height="44" fill="#181c1e"/>
-  <circle cx="28" cy="22" r="5" fill="#383e42"/>
-  <circle cx="44" cy="22" r="5" fill="#383e42"/>
-  <circle cx="60" cy="22" r="5" fill="#383e42"/>
-  <rect x="360" y="10" width="480" height="24" rx="6" fill="#0d0f10"/>
-  <text x="600" y="26" fill="#6d767a" font-family="monospace" font-size="12" text-anchor="middle">mono.build/v2</text>
+  <rect width="1200" height="750" fill="#090C12"/>
+  <rect width="1200" height="46" fill="#141B26"/>
+  <circle cx="28" cy="23" r="5" fill="#EF4444"/>
+  <circle cx="44" cy="23" r="5" fill="#F59E0B"/>
+  <circle cx="60" cy="23" r="5" fill="#10B981"/>
+  <rect x="360" y="10" width="480" height="26" rx="6" fill="#06090E"/>
+  <text x="600" y="27" fill="#94A3B8" font-family="monospace" font-size="12" text-anchor="middle">mono.build/v2.8-edge</text>
 
   <!-- Hero Headline -->
-  <g transform="translate(80, 120)">
-    <rect x="0" y="0" width="140" height="28" rx="14" fill="#192518" stroke="#324f2e" stroke-width="1"/>
-    <text x="14" y="19" fill="#D4FF78" font-family="monospace" font-size="12">v2.4 STABLE RELEASE</text>
-    <text x="0" y="80" fill="#F5F6F2" font-family="'Outfit', system-ui" font-weight="700" font-size="56" letter-spacing="-1">The Zero-Overhead</text>
-    <text x="0" y="140" fill="#F5F6F2" font-family="'Outfit', system-ui" font-weight="700" font-size="56" letter-spacing="-1">State Engine<tspan fill="#D4FF78">.</tspan></text>
-    <text x="0" y="195" fill="#A5AAA7" font-family="system-ui" font-size="16">Lightning fast distributed caches with automatic edge replication.</text>
+  <g transform="translate(80, 115)">
+    <rect x="0" y="0" width="170" height="30" rx="15" fill="#1E293B" stroke="#38BDF8" stroke-width="1.5"/>
+    <text x="85" y="20" fill="#38BDF8" font-family="monospace" font-size="12" font-weight="700" text-anchor="middle">v2.8 STABLE RELEASE</text>
+    <text x="0" y="80" fill="#FFFFFF" font-family="'Outfit', system-ui" font-weight="900" font-size="60" letter-spacing="-2">The Zero-Overhead</text>
+    <text x="0" y="145" fill="#FFFFFF" font-family="'Outfit', system-ui" font-weight="900" font-size="60" letter-spacing="-2">State Engine<tspan fill="#D4FF78">.</tspan></text>
+    <text x="0" y="195" fill="#CBD5E1" font-family="system-ui" font-size="18" font-weight="500">Lightning-fast distributed caches with automated edge replication across 280+ POPs.</text>
   </g>
 
-  <!-- Terminal Window Mockup -->
-  <g transform="translate(80, 370)">
-    <rect width="1040" height="300" rx="12" fill="#111416" stroke="#272d30" stroke-width="1.5"/>
-    <rect width="1040" height="38" rx="12" fill="#181d20"/>
-    <circle cx="24" cy="19" r="4.5" fill="#3e474b"/>
-    <circle cx="38" cy="19" r="4.5" fill="#3e474b"/>
-    <circle cx="52" cy="19" r="4.5" fill="#3e474b"/>
-    <text x="80" y="23" fill="#8d979b" font-family="monospace" font-size="12">bash - terminal</text>
+  <!-- High-contrast Terminal Window -->
+  <g transform="translate(80, 360)">
+    <rect width="1040" height="320" rx="14" fill="#05070B" stroke="#38BDF8" stroke-width="2"/>
+    <rect width="1040" height="42" rx="14" fill="#111827"/>
+    <circle cx="24" cy="21" r="5" fill="#EF4444"/>
+    <circle cx="40" cy="21" r="5" fill="#F59E0B"/>
+    <circle cx="56" cy="21" r="5" fill="#10B981"/>
+    <text x="90" y="26" fill="#E2E8F0" font-family="monospace" font-size="13">zsh — npm install @mono/engine</text>
 
-    <!-- Code Lines -->
-    <text x="36" y="80" fill="#8d979b" font-family="monospace" font-size="14">$ npm install @mono/engine</text>
-    <text x="36" y="115" fill="#D4FF78" font-family="monospace" font-size="14">✓ Successfully compiled in 14ms</text>
-    <text x="36" y="150" fill="#F5F6F2" font-family="monospace" font-size="14">import { createStore } from "@mono/engine";</text>
-    <text x="36" y="185" fill="#F5F6F2" font-family="monospace" font-size="14">export const cache = createStore({ strategy: "edge-replicated", ttl: 3600 });</text>
-    <text x="36" y="225" fill="#8d979b" font-family="monospace" font-size="14">// Ready for edge deployment across 280+ POPs</text>
+    <!-- High-contrast syntax code lines -->
+    <text x="36" y="85" fill="#94A3B8" font-family="monospace" font-size="15">$ npx mono-init --template=distributed-cache</text>
+    <text x="36" y="125" fill="#D4FF78" font-family="monospace" font-size="15" font-weight="700">✓ Successfully compiled and verified edge clusters in 12ms</text>
+    <text x="36" y="165" fill="#38BDF8" font-family="monospace" font-size="15">import <tspan fill="#FFFFFF">{ createStore, edgeSync }</tspan> from <tspan fill="#A7F3D0">"@mono/engine"</tspan>;</text>
+    <text x="36" y="205" fill="#FFFFFF" font-family="monospace" font-size="15">export const cache = createStore({ strategy: <tspan fill="#D4FF78">"instant-replicate"</tspan>, ttl: 86400 });</text>
+    <text x="36" y="245" fill="#10B981" font-family="monospace" font-size="15">// Ready: 14.8M ops/sec with zero latency overhead</text>
   </g>
 </svg>

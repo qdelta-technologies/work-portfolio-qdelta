@@ -7,450 +7,457 @@ const socialDir = path.resolve("public/images/social");
 fs.mkdirSync(websitesDir, { recursive: true });
 fs.mkdirSync(socialDir, { recursive: true });
 
-// 1. Forma Studio
+// 1. Forma Studio (High-contrast architectural gallery with clean ivory canvas)
 fs.writeFileSync(
   path.join(websitesDir, "forma-studio.svg"),
   `<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 750" width="1200" height="750">
   <defs>
-    <linearGradient id="bg1" x1="0%" y1="0%" x2="100%" y2="100%">
-      <stop offset="0%" stop-color="#141719"/>
-      <stop offset="100%" stop-color="#0d0f10"/>
+    <linearGradient id="formaBg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#F7F5F0"/>
+      <stop offset="100%" stop-color="#ECE8DF"/>
     </linearGradient>
-    <linearGradient id="imgGrad1" x1="0%" y1="0%" x2="100%" y2="100%">
-      <stop offset="0%" stop-color="#282d30"/>
-      <stop offset="100%" stop-color="#1b1e20"/>
+    <linearGradient id="darkStone" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#1A1E22"/>
+      <stop offset="100%" stop-color="#0E1113"/>
     </linearGradient>
   </defs>
   <!-- Background & Window Frame -->
-  <rect width="1200" height="750" fill="url(#bg1)"/>
+  <rect width="1200" height="750" fill="url(#formaBg)"/>
   <!-- Browser Chrome Header -->
-  <rect width="1200" height="44" fill="#1b1e20"/>
-  <circle cx="28" cy="22" r="5" fill="#3e4446"/>
-  <circle cx="44" cy="22" r="5" fill="#3e4446"/>
-  <circle cx="60" cy="22" r="5" fill="#3e4446"/>
-  <rect x="360" y="10" width="480" height="24" rx="6" fill="#111314"/>
-  <text x="600" y="26" fill="#71787b" font-family="system-ui, sans-serif" font-size="12" text-anchor="middle">forma.studio</text>
+  <rect width="1200" height="46" fill="#181B1F"/>
+  <circle cx="28" cy="23" r="5" fill="#EF4444"/>
+  <circle cx="44" cy="23" r="5" fill="#F59E0B"/>
+  <circle cx="60" cy="23" r="5" fill="#10B981"/>
+  <rect x="360" y="10" width="480" height="26" rx="6" fill="#262B30"/>
+  <text x="600" y="27" fill="#E2E8F0" font-family="'Outfit', system-ui, sans-serif" font-size="12" font-weight="500" text-anchor="middle">forma.studio — Architecture &amp; Spatial</text>
   
   <!-- Website Header -->
-  <text x="80" y="100" fill="#F5F6F2" font-family="'Outfit', system-ui, sans-serif" font-weight="700" font-size="22" letter-spacing="2">FORMA STUDIO</text>
-  <text x="960" y="100" fill="#A5AAA7" font-family="'Outfit', system-ui, sans-serif" font-size="14">PROJECTS · PRACTICE · CONTACT</text>
-  <line x1="80" y1="126" x2="1120" y2="126" stroke="#25292b" stroke-width="1"/>
+  <text x="80" y="105" fill="#0E1114" font-family="'Outfit', system-ui, sans-serif" font-weight="800" font-size="24" letter-spacing="3">FORMA STUDIO</text>
+  <text x="1120" y="105" fill="#3D444A" font-family="'Outfit', system-ui, sans-serif" font-weight="600" font-size="14" text-anchor="end">PROJECTS · PRACTICE · JOURNAL · CONTACT</text>
+  <line x1="80" y1="130" x2="1120" y2="130" stroke="#D1CCC1" stroke-width="1.5"/>
 
   <!-- Hero Content -->
-  <text x="80" y="210" fill="#A5AAA7" font-family="'Outfit', system-ui, sans-serif" font-size="13" letter-spacing="3" text-transform="uppercase">ARCHITECTURE &amp; SPATIAL PRACTICE</text>
-  <text x="80" y="270" fill="#F5F6F2" font-family="'Outfit', system-ui, sans-serif" font-weight="600" font-size="52" letter-spacing="-1">Designing Quiet</text>
-  <text x="80" y="330" fill="#F5F6F2" font-family="'Outfit', system-ui, sans-serif" font-weight="600" font-size="52" letter-spacing="-1">Monuments to Light<tspan fill="#D4FF78">.</tspan></text>
-
-  <!-- Architectural Showcase Card -->
-  <g transform="translate(620, 160)">
-    <rect width="500" height="340" rx="12" fill="url(#imgGrad1)" stroke="#343938" stroke-width="1"/>
-    <!-- Mock 3D Architectural Structure -->
-    <polygon points="120,270 260,80 400,270" fill="#202426" stroke="#485052" stroke-width="1.5"/>
-    <polygon points="260,80 400,270 340,300 180,300" fill="#1a1d1e" opacity="0.8"/>
-    <line x1="260" y1="80" x2="260" y2="280" stroke="#D4FF78" stroke-width="1.5" stroke-dasharray="4 4"/>
-    <rect x="30" y="30" width="130" height="28" rx="6" fill="#111314" opacity="0.9"/>
-    <text x="42" y="49" fill="#D4FF78" font-family="'Outfit', system-ui, sans-serif" font-size="11" font-weight="600">KYOTO RESIDENCE</text>
-    <text x="42" y="315" fill="#A5AAA7" font-family="'Outfit', system-ui, sans-serif" font-size="12">Completed 2025 · 480 sqm</text>
+  <g transform="translate(80, 160)">
+    <rect x="0" y="20" width="160" height="26" rx="4" fill="#0E1114"/>
+    <text x="80" y="37" fill="#D4FF78" font-family="'Outfit', system-ui, sans-serif" font-size="11" font-weight="700" letter-spacing="2" text-anchor="middle">SELECTED WORK 2026</text>
+    <text x="0" y="100" fill="#0E1114" font-family="'Outfit', system-ui, sans-serif" font-weight="800" font-size="58" letter-spacing="-2">Designing Quiet</text>
+    <text x="0" y="165" fill="#0E1114" font-family="'Outfit', system-ui, sans-serif" font-weight="800" font-size="58" letter-spacing="-2">Monuments to Light<tspan fill="#10B981">.</tspan></text>
+    <text x="0" y="220" fill="#4B535A" font-family="'Outfit', system-ui, sans-serif" font-size="17" font-weight="400" max-width="480">Transforming natural limestone and monolithic shadows into sacred spaces.</text>
+    
+    <rect x="0" y="260" width="170" height="46" rx="8" fill="#0E1114"/>
+    <text x="85" y="289" fill="#FFFFFF" font-family="'Outfit', system-ui, sans-serif" font-size="14" font-weight="600" text-anchor="middle">View Archive →</text>
   </g>
 
-  <!-- Bottom Projects Row -->
-  <g transform="translate(80, 540)">
-    <rect x="0" y="0" width="320" height="150" rx="10" fill="#181b1d" stroke="#25292b" stroke-width="1"/>
-    <rect x="16" y="16" width="288" height="80" rx="6" fill="#222628"/>
-    <text x="16" y="125" fill="#F5F6F2" font-family="'Outfit', system-ui, sans-serif" font-weight="500" font-size="15">Nordic Pavilion</text>
-    <text x="304" y="125" fill="#A5AAA7" font-family="'Outfit', system-ui, sans-serif" font-size="13" text-anchor="end">Oslo</text>
+  <!-- Architectural Showcase Visual -->
+  <g transform="translate(640, 170)">
+    <rect width="480" height="340" rx="14" fill="url(#darkStone)" stroke="#2D3339" stroke-width="2"/>
+    <!-- 3D Geometric Architectural Wireframe -->
+    <polygon points="120,280 240,60 380,280" fill="#1C2126" stroke="#4B5563" stroke-width="2"/>
+    <polygon points="240,60 380,280 430,240 290,50" fill="#252C33" stroke="#9CA3AF" stroke-width="1.5"/>
+    <line x1="240" y1="60" x2="240" y2="280" stroke="#D4FF78" stroke-width="3"/>
+    
+    <!-- Floating high-contrast card label -->
+    <rect x="30" y="30" width="160" height="32" rx="6" fill="#000000"/>
+    <circle cx="48" cy="46" r="4" fill="#D4FF78"/>
+    <text x="60" y="51" fill="#FFFFFF" font-family="'Outfit', system-ui, sans-serif" font-size="12" font-weight="700">KYOTO RESIDENCE</text>
+    <text x="30" y="315" fill="#D4FF78" font-family="'Outfit', system-ui, sans-serif" font-size="13" font-weight="600">Completed 2026 · 620 sqm</text>
   </g>
-  <g transform="translate(440, 540)">
-    <rect x="0" y="0" width="320" height="150" rx="10" fill="#181b1d" stroke="#25292b" stroke-width="1"/>
-    <rect x="16" y="16" width="288" height="80" rx="6" fill="#222628"/>
-    <text x="16" y="125" fill="#F5F6F2" font-family="'Outfit', system-ui, sans-serif" font-weight="500" font-size="15">Aethelgard Museum</text>
-    <text x="304" y="125" fill="#A5AAA7" font-family="'Outfit', system-ui, sans-serif" font-size="13" text-anchor="end">Reykjavik</text>
+
+  <!-- Bottom Featured Projects -->
+  <g transform="translate(80, 545)">
+    <rect x="0" y="0" width="325" height="155" rx="10" fill="#FFFFFF" stroke="#D1CCC1" stroke-width="1.5"/>
+    <rect x="16" y="16" width="293" height="85" rx="6" fill="#181B1F"/>
+    <polygon points="140,80 162,35 184,80" fill="#374151" stroke="#D4FF78" stroke-width="1.5"/>
+    <text x="16" y="130" fill="#0E1114" font-family="'Outfit', system-ui, sans-serif" font-weight="700" font-size="15">Nordic Pavilion</text>
+    <text x="309" y="130" fill="#10B981" font-family="'Outfit', system-ui, sans-serif" font-weight="600" font-size="13" text-anchor="end">Oslo · 2025</text>
   </g>
-  <g transform="translate(800, 540)">
-    <rect x="0" y="0" width="320" height="150" rx="10" fill="#181b1d" stroke="#25292b" stroke-width="1"/>
-    <rect x="16" y="16" width="288" height="80" rx="6" fill="#222628"/>
-    <text x="16" y="125" fill="#F5F6F2" font-family="'Outfit', system-ui, sans-serif" font-weight="500" font-size="15">Solarium House</text>
-    <text x="304" y="125" fill="#A5AAA7" font-family="'Outfit', system-ui, sans-serif" font-size="13" text-anchor="end">Zurich</text>
+  <g transform="translate(438, 545)">
+    <rect x="0" y="0" width="325" height="155" rx="10" fill="#FFFFFF" stroke="#D1CCC1" stroke-width="1.5"/>
+    <rect x="16" y="16" width="293" height="85" rx="6" fill="#181B1F"/>
+    <circle cx="162" cy="58" r="26" fill="#1F2937" stroke="#D4FF78" stroke-width="2"/>
+    <text x="16" y="130" fill="#0E1114" font-family="'Outfit', system-ui, sans-serif" font-weight="700" font-size="15">Aethelgard Museum</text>
+    <text x="309" y="130" fill="#10B981" font-family="'Outfit', system-ui, sans-serif" font-weight="600" font-size="13" text-anchor="end">Reykjavik</text>
+  </g>
+  <g transform="translate(795, 545)">
+    <rect x="0" y="0" width="325" height="155" rx="10" fill="#FFFFFF" stroke="#D1CCC1" stroke-width="1.5"/>
+    <rect x="16" y="16" width="293" height="85" rx="6" fill="#181B1F"/>
+    <rect x="80" y="32" width="165" height="52" rx="4" fill="#1F2937" stroke="#D4FF78" stroke-width="1.5"/>
+    <text x="16" y="130" fill="#0E1114" font-family="'Outfit', system-ui, sans-serif" font-weight="700" font-size="15">Solarium House</text>
+    <text x="309" y="130" fill="#10B981" font-family="'Outfit', system-ui, sans-serif" font-weight="600" font-size="13" text-anchor="end">Zurich</text>
   </g>
 </svg>`
 );
 
-// 2. Orbit Workspace
+// 2. Orbit Workspace (High-contrast SaaS with vibrant metric cards and graphs)
 fs.writeFileSync(
   path.join(websitesDir, "orbit-workspace.svg"),
   `<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 750" width="1200" height="750">
   <defs>
-    <linearGradient id="orbitBg" x1="0%" y1="0%" x2="100%" y2="100%">
-      <stop offset="0%" stop-color="#111417"/>
-      <stop offset="100%" stop-color="#0a0c0e"/>
+    <linearGradient id="orbitGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#0E131A"/>
+      <stop offset="100%" stop-color="#080B0F"/>
     </linearGradient>
   </defs>
   <!-- Background & Chrome -->
-  <rect width="1200" height="750" fill="url(#orbitBg)"/>
-  <rect width="1200" height="44" fill="#191d20"/>
-  <circle cx="28" cy="22" r="5" fill="#3e4446"/>
-  <circle cx="44" cy="22" r="5" fill="#3e4446"/>
-  <circle cx="60" cy="22" r="5" fill="#3e4446"/>
-  <rect x="360" y="10" width="480" height="24" rx="6" fill="#0d1012"/>
-  <text x="600" y="26" fill="#71787b" font-family="system-ui, sans-serif" font-size="12" text-anchor="middle">app.orbit.workspace/dashboard</text>
+  <rect width="1200" height="750" fill="url(#orbitGrad)"/>
+  <rect width="1200" height="46" fill="#161E29"/>
+  <circle cx="28" cy="23" r="5" fill="#EF4444"/>
+  <circle cx="44" cy="23" r="5" fill="#F59E0B"/>
+  <circle cx="60" cy="23" r="5" fill="#10B981"/>
+  <rect x="360" y="10" width="480" height="26" rx="6" fill="#0A0E14"/>
+  <text x="600" y="27" fill="#94A3B8" font-family="system-ui, sans-serif" font-size="12" text-anchor="middle">app.orbit.workspace/production-v3</text>
 
-  <!-- Left Sidebar UI -->
-  <rect x="0" y="44" width="220" height="706" fill="#15191b" stroke="#22272a" stroke-width="1"/>
-  <!-- Logo -->
-  <circle cx="36" cy="80" r="12" fill="#D4FF78"/>
-  <text x="60" y="85" fill="#F5F6F2" font-family="'Outfit', system-ui, sans-serif" font-weight="700" font-size="16">ORBIT</text>
-  <!-- Nav items -->
-  <rect x="16" y="120" width="188" height="36" rx="8" fill="#202629"/>
-  <text x="44" y="143" fill="#D4FF78" font-family="system-ui" font-size="13" font-weight="600">◆ Projects &amp; Sprints</text>
-  <text x="44" y="185" fill="#8c9397" font-family="system-ui" font-size="13">◇ Insights &amp; Metrics</text>
-  <text x="44" y="225" fill="#8c9397" font-family="system-ui" font-size="13">◇ Team Capacity</text>
-  <text x="44" y="265" fill="#8c9397" font-family="system-ui" font-size="13">◇ Automation Flows</text>
-  <text x="44" y="305" fill="#8c9397" font-family="system-ui" font-size="13">◇ Integrations</text>
+  <!-- Left Sidebar UI (High contrast) -->
+  <rect x="0" y="46" width="230" height="704" fill="#111823" stroke="#253142" stroke-width="1.5"/>
+  <circle cx="40" cy="85" r="14" fill="#D4FF78"/>
+  <text x="66" y="91" fill="#FFFFFF" font-family="'Outfit', system-ui, sans-serif" font-weight="800" font-size="18" letter-spacing="1">ORBIT</text>
+  
+  <!-- Active Sidebar items -->
+  <rect x="16" y="125" width="198" height="38" rx="8" fill="#1E293B" stroke="#38BDF8" stroke-width="1.5"/>
+  <text x="44" y="150" fill="#38BDF8" font-family="system-ui" font-size="13" font-weight="700">◆ Sprints &amp; Releases</text>
+  <text x="44" y="195" fill="#E2E8F0" font-family="system-ui" font-size="13" font-weight="500">◇ Metrics &amp; Telemetry</text>
+  <text x="44" y="238" fill="#E2E8F0" font-family="system-ui" font-size="13" font-weight="500">◇ Team Throughput</text>
+  <text x="44" y="281" fill="#E2E8F0" font-family="system-ui" font-size="13" font-weight="500">◇ Edge Workflows</text>
+  <text x="44" y="324" fill="#E2E8F0" font-family="system-ui" font-size="13" font-weight="500">◇ System Settings</text>
 
-  <!-- Main App Canvas -->
   <!-- Top bar -->
-  <rect x="220" y="44" width="980" height="60" fill="#121518" stroke="#22272a" stroke-width="1"/>
-  <text x="260" y="80" fill="#F5F6F2" font-family="'Outfit', system-ui, sans-serif" font-weight="600" font-size="18">Sprint 42: Production Launch</text>
-  <rect x="980" y="60" width="180" height="30" rx="6" fill="#D4FF78"/>
-  <text x="1070" y="80" fill="#111315" font-family="'Outfit', system-ui, sans-serif" font-weight="600" font-size="13" text-anchor="middle">+ New Task</text>
+  <rect x="230" y="46" width="970" height="64" fill="#131B26" stroke="#253142" stroke-width="1.5"/>
+  <text x="270" y="86" fill="#FFFFFF" font-family="'Outfit', system-ui, sans-serif" font-weight="700" font-size="20">Sprint 48: Global Rollout</text>
+  <rect x="1000" y="63" width="165" height="34" rx="6" fill="#D4FF78"/>
+  <text x="1082" y="85" fill="#0F172A" font-family="'Outfit', system-ui, sans-serif" font-weight="700" font-size="13" text-anchor="middle">+ Deploy Service</text>
 
-  <!-- Metric Badges Row -->
-  <g transform="translate(260, 130)">
-    <rect x="0" y="0" width="210" height="90" rx="10" fill="#181c1f" stroke="#2a3034" stroke-width="1"/>
-    <text x="20" y="32" fill="#8c9397" font-family="system-ui" font-size="12">ACTIVE VELOCITY</text>
-    <text x="20" y="68" fill="#F5F6F2" font-family="'Outfit', system-ui" font-weight="700" font-size="28">94.2%</text>
-    <text x="130" y="68" fill="#D4FF78" font-family="system-ui" font-size="12">↑ +14%</text>
+  <!-- High-contrast Metric Cards Row -->
+  <g transform="translate(270, 135)">
+    <rect x="0" y="0" width="215" height="95" rx="10" fill="#1A2230" stroke="#334155" stroke-width="1.5"/>
+    <text x="20" y="32" fill="#94A3B8" font-family="system-ui" font-size="11" font-weight="700" letter-spacing="1">VELOCITY SCORE</text>
+    <text x="20" y="70" fill="#FFFFFF" font-family="'Outfit', system-ui" font-weight="800" font-size="30">98.4%</text>
+    <rect x="140" y="50" width="60" height="24" rx="12" fill="#065F46"/>
+    <text x="170" y="66" fill="#D4FF78" font-family="system-ui" font-size="11" font-weight="700" text-anchor="middle">+18%</text>
 
-    <rect x="230" y="0" width="210" height="90" rx="10" fill="#181c1f" stroke="#2a3034" stroke-width="1"/>
-    <text x="250" y="32" fill="#8c9397" font-family="system-ui" font-size="12">BURNDOWN RATE</text>
-    <text x="250" y="68" fill="#F5F6F2" font-family="'Outfit', system-ui" font-weight="700" font-size="28">18 / 20</text>
-    <text x="360" y="68" fill="#D4FF78" font-family="system-ui" font-size="12">On Track</text>
+    <rect x="235" y="0" width="215" height="95" rx="10" fill="#1A2230" stroke="#334155" stroke-width="1.5"/>
+    <text x="255" y="32" fill="#94A3B8" font-family="system-ui" font-size="11" font-weight="700" letter-spacing="1">TASKS COMPLETED</text>
+    <text x="255" y="70" fill="#FFFFFF" font-family="'Outfit', system-ui" font-weight="800" font-size="30">34 / 36</text>
+    <rect x="375" y="50" width="60" height="24" rx="12" fill="#1E3A8A"/>
+    <text x="405" y="66" fill="#38BDF8" font-family="system-ui" font-size="11" font-weight="700" text-anchor="middle">Ahead</text>
 
-    <rect x="460" y="0" width="430" height="90" rx="10" fill="#181c1f" stroke="#2a3034" stroke-width="1"/>
-    <text x="480" y="32" fill="#8c9397" font-family="system-ui" font-size="12">CYCLE TIME TREND</text>
-    <!-- Mini Sparkline Graph -->
-    <polyline points="480,70 540,65 600,75 660,50 720,40 780,55 840,35" fill="none" stroke="#D4FF78" stroke-width="2.5"/>
-    <circle cx="840" cy="35" r="4" fill="#D4FF78"/>
+    <rect x="470" y="0" width="415" height="95" rx="10" fill="#1A2230" stroke="#334155" stroke-width="1.5"/>
+    <text x="490" y="32" fill="#94A3B8" font-family="system-ui" font-size="11" font-weight="700" letter-spacing="1">RESPONSE LATENCY (P99)</text>
+    <!-- Vibrant Glowing Sparkline -->
+    <polyline points="490,75 550,68 610,76 670,52 730,42 790,56 850,38" fill="none" stroke="#D4FF78" stroke-width="3"/>
+    <circle cx="850" cy="38" r="5" fill="#D4FF78"/>
   </g>
 
-  <!-- Kanban Columns -->
-  <g transform="translate(260, 250)">
+  <!-- High-contrast Kanban Columns -->
+  <g transform="translate(270, 255)">
     <!-- Column 1 -->
-    <rect x="0" y="0" width="280" height="460" rx="10" fill="#15191b" stroke="#22272a" stroke-width="1"/>
-    <text x="20" y="32" fill="#8c9397" font-family="system-ui" font-size="13" font-weight="600">IN PROGRESS (3)</text>
-    <rect x="16" y="50" width="248" height="110" rx="8" fill="#1f2428" stroke="#2d3438" stroke-width="1"/>
-    <text x="32" y="80" fill="#F5F6F2" font-family="system-ui" font-weight="600" font-size="14">Auth Token Rotation</text>
-    <text x="32" y="104" fill="#8c9397" font-family="system-ui" font-size="12">Security · P0 Critical</text>
-    <circle cx="230" cy="130" r="10" fill="#D4FF78"/>
+    <rect x="0" y="0" width="280" height="455" rx="10" fill="#141C26" stroke="#253142" stroke-width="1.5"/>
+    <text x="20" y="32" fill="#38BDF8" font-family="system-ui" font-size="13" font-weight="700">IN PROGRESS (3)</text>
+    
+    <rect x="16" y="50" width="248" height="115" rx="8" fill="#1E2837" stroke="#3B495C" stroke-width="1.5"/>
+    <text x="32" y="80" fill="#FFFFFF" font-family="system-ui" font-weight="700" font-size="15">Zero-Trust Authentication</text>
+    <rect x="32" y="92" width="110" height="20" rx="4" fill="#450A0A"/>
+    <text x="87" y="106" fill="#FCA5A5" font-family="system-ui" font-size="10" font-weight="700" text-anchor="middle">CRITICAL · P0</text>
+    <circle cx="235" cy="135" r="10" fill="#D4FF78"/>
 
-    <rect x="16" y="174" width="248" height="110" rx="8" fill="#1f2428" stroke="#2d3438" stroke-width="1"/>
-    <text x="32" y="204" fill="#F5F6F2" font-family="system-ui" font-weight="600" font-size="14">Realtime WebSockets</text>
-    <text x="32" y="228" fill="#8c9397" font-family="system-ui" font-size="12">Backend Infra · 2d left</text>
+    <rect x="16" y="180" width="248" height="115" rx="8" fill="#1E2837" stroke="#3B495C" stroke-width="1.5"/>
+    <text x="32" y="210" fill="#FFFFFF" font-family="system-ui" font-weight="700" font-size="15">Edge Mesh Rebalancing</text>
+    <rect x="32" y="222" width="100" height="20" rx="4" fill="#0C4A6E"/>
+    <text x="82" y="236" fill="#7DD3FC" font-family="system-ui" font-size="10" font-weight="700" text-anchor="middle">INFRASTRUCTURE</text>
 
     <!-- Column 2 -->
-    <rect x="306" y="0" width="280" height="460" rx="10" fill="#15191b" stroke="#22272a" stroke-width="1"/>
-    <text x="326" y="32" fill="#8c9397" font-family="system-ui" font-size="13" font-weight="600">CODE REVIEW (2)</text>
-    <rect x="322" y="50" width="248" height="110" rx="8" fill="#1f2428" stroke="#2d3438" stroke-width="1"/>
-    <text x="338" y="80" fill="#F5F6F2" font-family="system-ui" font-weight="600" font-size="14">Design Tokens V4</text>
-    <text x="338" y="104" fill="#D4FF78" font-family="system-ui" font-size="12">Reviewed by Lead</text>
+    <rect x="306" y="0" width="280" height="455" rx="10" fill="#141C26" stroke="#253142" stroke-width="1.5"/>
+    <text x="326" y="32" fill="#F59E0B" font-family="system-ui" font-size="13" font-weight="700">REVIEW &amp; QA (2)</text>
+    <rect x="322" y="50" width="248" height="115" rx="8" fill="#1E2837" stroke="#3B495C" stroke-width="1.5"/>
+    <text x="338" y="80" fill="#FFFFFF" font-family="system-ui" font-weight="700" font-size="15">Design System Tokens V4</text>
+    <rect x="338" y="92" width="95" height="20" rx="4" fill="#065F46"/>
+    <text x="385" y="106" fill="#86EFAC" font-family="system-ui" font-size="10" font-weight="700" text-anchor="middle">VERIFIED</text>
 
     <!-- Column 3 -->
-    <rect x="612" y="0" width="280" height="460" rx="10" fill="#15191b" stroke="#22272a" stroke-width="1"/>
-    <text x="632" y="32" fill="#D4FF78" font-family="system-ui" font-size="13" font-weight="600">COMPLETED (8)</text>
-    <rect x="628" y="50" width="248" height="80" rx="8" fill="#192020" stroke="#2b3b32" stroke-width="1"/>
-    <text x="644" y="80" fill="#F5F6F2" font-family="system-ui" font-weight="600" font-size="14">SDK Release v2.8</text>
-    <text x="644" y="104" fill="#8c9397" font-family="system-ui" font-size="12">Merged 1h ago</text>
+    <rect x="612" y="0" width="275" height="455" rx="10" fill="#141C26" stroke="#253142" stroke-width="1.5"/>
+    <text x="632" y="32" fill="#10B981" font-family="system-ui" font-size="13" font-weight="700">RELEASED (8)</text>
+    <rect x="628" y="50" width="243" height="95" rx="8" fill="#1E2837" stroke="#10B981" stroke-width="1.5"/>
+    <text x="644" y="80" fill="#FFFFFF" font-family="system-ui" font-weight="700" font-size="15">Node SDK v3.2.0</text>
+    <text x="644" y="104" fill="#D4FF78" font-family="system-ui" font-size="12" font-weight="600">✓ Production Verified</text>
   </g>
 </svg>`
 );
 
-// 3. North Creative
+// 3. North Creative (Stark black, pure white typography & lime contrast)
 fs.writeFileSync(
   path.join(websitesDir, "north-creative.svg"),
   `<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 750" width="1200" height="750">
-  <defs>
-    <linearGradient id="northBg" x1="0%" y1="0%" x2="100%" y2="100%">
-      <stop offset="0%" stop-color="#0f1113"/>
-      <stop offset="100%" stop-color="#181b1d"/>
-    </linearGradient>
-  </defs>
-  <rect width="1200" height="750" fill="url(#northBg)"/>
-  <rect width="1200" height="44" fill="#1c1f21"/>
-  <circle cx="28" cy="22" r="5" fill="#3e4446"/>
-  <circle cx="44" cy="22" r="5" fill="#3e4446"/>
-  <circle cx="60" cy="22" r="5" fill="#3e4446"/>
-  <rect x="360" y="10" width="480" height="24" rx="6" fill="#101214"/>
-  <text x="600" y="26" fill="#71787b" font-family="system-ui, sans-serif" font-size="12" text-anchor="middle">northcreative.agency</text>
+  <rect width="1200" height="750" fill="#0A0B0D"/>
+  <rect width="1200" height="46" fill="#16181C"/>
+  <circle cx="28" cy="23" r="5" fill="#EF4444"/>
+  <circle cx="44" cy="23" r="5" fill="#F59E0B"/>
+  <circle cx="60" cy="23" r="5" fill="#10B981"/>
+  <rect x="360" y="10" width="480" height="26" rx="6" fill="#050607"/>
+  <text x="600" y="27" fill="#CBD5E1" font-family="system-ui, sans-serif" font-size="12" text-anchor="middle">northcreative.agency — Copenhagen &amp; New York</text>
 
   <!-- Agency Nav -->
-  <text x="80" y="100" fill="#F5F6F2" font-family="'Outfit', system-ui" font-weight="800" font-size="24" letter-spacing="4">NORTH /</text>
-  <text x="1000" y="100" fill="#A5AAA7" font-family="'Outfit', system-ui" font-size="14">CPH — NYC</text>
+  <text x="80" y="110" fill="#FFFFFF" font-family="'Outfit', system-ui" font-weight="900" font-size="28" letter-spacing="4">NORTH /</text>
+  <text x="1120" y="110" fill="#D4FF78" font-family="'Outfit', system-ui" font-weight="700" font-size="15" text-anchor="end">EXPERIENCES · BRANDS · TECH</text>
+  <line x1="80" y1="135" x2="1120" y2="135" stroke="#2A2E35" stroke-width="2"/>
 
-  <!-- Big Bold Typography Hero -->
+  <!-- Big Bold High-contrast Typography Hero -->
   <g transform="translate(80, 180)">
-    <text x="0" y="60" fill="#F5F6F2" font-family="'Outfit', system-ui" font-weight="700" font-size="76" letter-spacing="-2">WE CRAFT</text>
-    <text x="0" y="145" fill="#F5F6F2" font-family="'Outfit', system-ui" font-weight="700" font-size="76" letter-spacing="-2">ICONIC DIGITAL</text>
-    <text x="0" y="230" fill="#D4FF78" font-family="'Outfit', system-ui" font-weight="700" font-size="76" letter-spacing="-2">PRESENCES.</text>
+    <text x="0" y="65" fill="#FFFFFF" font-family="'Outfit', system-ui" font-weight="900" font-size="78" letter-spacing="-3">WE CRAFT</text>
+    <text x="0" y="150" fill="#FFFFFF" font-family="'Outfit', system-ui" font-weight="900" font-size="78" letter-spacing="-3">ICONIC DIGITAL</text>
+    <text x="0" y="235" fill="#D4FF78" font-family="'Outfit', system-ui" font-weight="900" font-size="78" letter-spacing="-3">PRESENCES.</text>
+    <text x="0" y="300" fill="#CBD5E1" font-family="'Outfit', system-ui" font-size="18" font-weight="400">Award-winning creative engineering for world-changing visionary brands.</text>
   </g>
 
-  <!-- Right Visual / Video Reel Frame -->
-  <g transform="translate(680, 150)">
-    <rect width="440" height="440" rx="16" fill="#151719" stroke="#343938" stroke-width="1.5"/>
-    <circle cx="220" cy="220" r="140" fill="#1b1e21" stroke="#2f3436" stroke-width="1"/>
-    <circle cx="220" cy="220" r="50" fill="#D4FF78"/>
+  <!-- Right Visual / Video Reel High-contrast Frame -->
+  <g transform="translate(680, 160)">
+    <rect width="440" height="420" rx="16" fill="#14181F" stroke="#333E4F" stroke-width="2"/>
+    <circle cx="220" cy="210" r="140" fill="#1E2530" stroke="#475569" stroke-width="1.5"/>
+    <circle cx="220" cy="210" r="54" fill="#D4FF78"/>
     <!-- Play Triangle -->
-    <polygon points="214,208 234,220 214,232" fill="#111315"/>
-    <text x="220" y="320" fill="#A5AAA7" font-family="'Outfit', system-ui" font-size="13" text-anchor="middle" letter-spacing="2">2026 SHOWREEL (01:40)</text>
+    <polygon points="214,196 236,210 214,224" fill="#0A0B0D"/>
+    <rect x="80" y="310" width="280" height="34" rx="6" fill="#0A0B0D" stroke="#333E4F" stroke-width="1"/>
+    <text x="220" y="332" fill="#FFFFFF" font-family="'Outfit', system-ui" font-size="13" font-weight="700" text-anchor="middle" letter-spacing="2">2026 SHOWREEL (01:40)</text>
   </g>
 
   <!-- Bottom Award Accolades -->
-  <line x1="80" y1="620" x2="1120" y2="620" stroke="#25292b" stroke-width="1"/>
-  <text x="80" y="665" fill="#A5AAA7" font-family="system-ui" font-size="13">AWWWARDS SITE OF THE DAY (×12)</text>
-  <text x="440" y="665" fill="#A5AAA7" font-family="system-ui" font-size="13">FWA OF THE MONTH (×4)</text>
-  <text x="760" y="665" fill="#A5AAA7" font-family="system-ui" font-size="13">CANNES LIONS BRONZE</text>
-  <text x="1040" y="665" fill="#D4FF78" font-family="system-ui" font-size="13">START PROJECT ↗</text>
+  <line x1="80" y1="625" x2="1120" y2="625" stroke="#2A2E35" stroke-width="1.5"/>
+  <text x="80" y="670" fill="#FFFFFF" font-family="system-ui" font-size="14" font-weight="700">★ AWWWARDS (×12)</text>
+  <text x="440" y="670" fill="#FFFFFF" font-family="system-ui" font-size="14" font-weight="700">★ FWA OF THE DAY (×8)</text>
+  <text x="760" y="670" fill="#FFFFFF" font-family="system-ui" font-size="14" font-weight="700">★ CANNES LIONS BRONZE</text>
+  <rect x="990" y="645" width="130" height="36" rx="6" fill="#D4FF78"/>
+  <text x="1055" y="668" fill="#0A0B0D" font-family="system-ui" font-size="13" font-weight="800" text-anchor="middle">EXPLORE ↗</text>
 </svg>`
 );
 
-// 4. Bloom & Co.
+// 4. Bloom & Co. (High-contrast organic luxury aesthetic with warm cream canvas)
 fs.writeFileSync(
   path.join(websitesDir, "bloom-and-co.svg"),
   `<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 750" width="1200" height="750">
   <defs>
     <linearGradient id="bloomBg" x1="0%" y1="0%" x2="100%" y2="100%">
-      <stop offset="0%" stop-color="#121614"/>
-      <stop offset="100%" stop-color="#0b0e0c"/>
+      <stop offset="0%" stop-color="#FBF9F4"/>
+      <stop offset="100%" stop-color="#EFECE2"/>
     </linearGradient>
   </defs>
   <rect width="1200" height="750" fill="url(#bloomBg)"/>
-  <rect width="1200" height="44" fill="#181d1a"/>
-  <circle cx="28" cy="22" r="5" fill="#3a443e"/>
-  <circle cx="44" cy="22" r="5" fill="#3a443e"/>
-  <circle cx="60" cy="22" r="5" fill="#3a443e"/>
-  <rect x="360" y="10" width="480" height="24" rx="6" fill="#0c100e"/>
-  <text x="600" y="26" fill="#6d7a71" font-family="system-ui, sans-serif" font-size="12" text-anchor="middle">bloomandco.botanics</text>
+  <rect width="1200" height="46" fill="#1C261E"/>
+  <circle cx="28" cy="23" r="5" fill="#EF4444"/>
+  <circle cx="44" cy="23" r="5" fill="#F59E0B"/>
+  <circle cx="60" cy="23" r="5" fill="#10B981"/>
+  <rect x="360" y="10" width="480" height="26" rx="6" fill="#0E1610"/>
+  <text x="600" y="27" fill="#E2E8F0" font-family="system-ui, sans-serif" font-size="12" text-anchor="middle">bloomandco.botanics — Pure Organic Apothecary</text>
 
   <!-- Editorial Brand Header -->
-  <text x="600" y="105" fill="#F5F6F2" font-family="'Outfit', serif, system-ui" font-weight="600" font-size="28" text-anchor="middle" letter-spacing="4">BLOOM &amp; CO.</text>
-  <line x1="80" y1="130" x2="1120" y2="130" stroke="#222b25" stroke-width="1"/>
+  <text x="600" y="105" fill="#0E2314" font-family="'Outfit', serif, system-ui" font-weight="800" font-size="30" text-anchor="middle" letter-spacing="4">BLOOM &amp; CO.</text>
+  <text x="80" y="105" fill="#3A4D3E" font-family="'Outfit', system-ui" font-size="14" font-weight="600">EST. 2021</text>
+  <text x="1120" y="105" fill="#0E2314" font-family="'Outfit', system-ui" font-size="14" font-weight="700" text-anchor="end">CART (2) · SEARCH</text>
+  <line x1="80" y1="130" x2="1120" y2="130" stroke="#D3CFC3" stroke-width="1.5"/>
 
   <!-- Hero Content -->
-  <g transform="translate(80, 200)">
-    <text x="0" y="30" fill="#D4FF78" font-family="'Outfit', system-ui" font-size="12" letter-spacing="3">100% ORGANIC BOTANICALS</text>
-    <text x="0" y="90" fill="#F5F6F2" font-family="'Outfit', system-ui" font-weight="500" font-size="48">Pure Botanicals for</text>
-    <text x="0" y="145" fill="#F5F6F2" font-family="'Outfit', system-ui" font-weight="500" font-size="48">Intentional Living.</text>
-    <text x="0" y="200" fill="#A5AAA7" font-family="'Outfit', system-ui" font-size="16">Cold-pressed plant essences sustainably harvested from wild alpine meadows.</text>
-    <rect x="0" y="240" width="160" height="44" rx="22" fill="#D4FF78"/>
-    <text x="80" y="267" fill="#111315" font-family="'Outfit', system-ui" font-weight="600" font-size="14" text-anchor="middle">Explore Extracts</text>
+  <g transform="translate(80, 180)">
+    <rect x="0" y="0" width="200" height="28" rx="14" fill="#0E2314"/>
+    <text x="100" y="18" fill="#D4FF78" font-family="'Outfit', system-ui" font-size="11" font-weight="700" letter-spacing="2" text-anchor="middle">100% ORGANIC BOTANICALS</text>
+    <text x="0" y="80" fill="#0E2314" font-family="'Outfit', system-ui" font-weight="800" font-size="52" letter-spacing="-1">Pure Botanicals for</text>
+    <text x="0" y="140" fill="#0E2314" font-family="'Outfit', system-ui" font-weight="800" font-size="52" letter-spacing="-1">Intentional Living.</text>
+    <text x="0" y="200" fill="#3D4E41" font-family="'Outfit', system-ui" font-size="17" font-weight="400">Cold-pressed plant essences sustainably harvested from wild alpine meadows.</text>
+    <rect x="0" y="240" width="180" height="48" rx="8" fill="#0E2314"/>
+    <text x="90" y="270" fill="#FFFFFF" font-family="'Outfit', system-ui" font-weight="700" font-size="15" text-anchor="middle">Explore Extracts →</text>
   </g>
 
-  <!-- Product Mockups -->
-  <g transform="translate(720, 180)">
-    <rect width="400" height="420" rx="16" fill="#161c18" stroke="#2a382f" stroke-width="1"/>
-    <!-- Bottle silhouette -->
-    <rect x="175" y="60" width="50" height="40" rx="4" fill="#2d3a31"/>
-    <rect x="150" y="100" width="100" height="230" rx="16" fill="#1f2822" stroke="#3b4d41" stroke-width="1.5"/>
-    <rect x="160" y="150" width="80" height="120" rx="4" fill="#121614"/>
-    <text x="200" y="195" fill="#D4FF78" font-family="system-ui" font-size="11" font-weight="600" text-anchor="middle">BLOOM</text>
-    <text x="200" y="215" fill="#A5AAA7" font-family="system-ui" font-size="9" text-anchor="middle">SERUM 01</text>
-    <text x="200" y="370" fill="#F5F6F2" font-family="'Outfit', system-ui" font-size="16" font-weight="600" text-anchor="middle">Wild Rosehip Facial Oil</text>
-    <text x="200" y="395" fill="#D4FF78" font-family="'Outfit', system-ui" font-size="14" text-anchor="middle">$64 USD</text>
+  <!-- Product Showcase Card (High Contrast) -->
+  <g transform="translate(680, 160)">
+    <rect width="440" height="460" rx="16" fill="#FFFFFF" stroke="#D3CFC3" stroke-width="2"/>
+    <!-- Deep Forest Bottle Mockup -->
+    <rect x="195" y="70" width="50" height="45" rx="5" fill="#2E3D31"/>
+    <rect x="170" y="115" width="100" height="230" rx="20" fill="#0A1F10" stroke="#37523C" stroke-width="2"/>
+    <!-- Bottle White Label with Dark Typography -->
+    <rect x="180" y="170" width="80" height="120" rx="4" fill="#FFFFFF"/>
+    <text x="220" y="210" fill="#0A1F10" font-family="'Outfit', system-ui" font-size="12" font-weight="800" text-anchor="middle">BLOOM</text>
+    <text x="220" y="230" fill="#4B6350" font-family="system-ui" font-size="10" font-weight="600" text-anchor="middle">SERUM 01</text>
+    
+    <text x="220" y="390" fill="#0E2314" font-family="'Outfit', system-ui" font-size="20" font-weight="800" text-anchor="middle">Wild Rosehip Facial Oil</text>
+    <rect x="160" y="405" width="120" height="30" rx="15" fill="#0A1F10"/>
+    <text x="220" y="425" fill="#D4FF78" font-family="'Outfit', system-ui" font-size="14" font-weight="700" text-anchor="middle">$64 USD</text>
   </g>
 </svg>`
 );
 
-// 5. Atelier Store
+// 5. Atelier Store (High-contrast luxury design store)
 fs.writeFileSync(
   path.join(websitesDir, "atelier-store.svg"),
   `<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 750" width="1200" height="750">
-  <defs>
-    <linearGradient id="atelierBg" x1="0%" y1="0%" x2="100%" y2="100%">
-      <stop offset="0%" stop-color="#141416"/>
-      <stop offset="100%" stop-color="#0e0e10"/>
-    </linearGradient>
-  </defs>
-  <rect width="1200" height="750" fill="url(#atelierBg)"/>
-  <rect width="1200" height="44" fill="#1f1f22"/>
-  <circle cx="28" cy="22" r="5" fill="#444"/>
-  <circle cx="44" cy="22" r="5" fill="#444"/>
-  <circle cx="60" cy="22" r="5" fill="#444"/>
-  <rect x="360" y="10" width="480" height="24" rx="6" fill="#111113"/>
-  <text x="600" y="26" fill="#777" font-family="system-ui, sans-serif" font-size="12" text-anchor="middle">atelier.objects/shop</text>
+  <rect width="1200" height="750" fill="#0C0D10"/>
+  <rect width="1200" height="46" fill="#181B20"/>
+  <circle cx="28" cy="23" r="5" fill="#EF4444"/>
+  <circle cx="44" cy="23" r="5" fill="#F59E0B"/>
+  <circle cx="60" cy="23" r="5" fill="#10B981"/>
+  <rect x="360" y="10" width="480" height="26" rx="6" fill="#07080A"/>
+  <text x="600" y="27" fill="#CBD5E1" font-family="system-ui, sans-serif" font-size="12" text-anchor="middle">atelier.objects/flagship-collection</text>
 
   <!-- Store Header -->
-  <text x="80" y="95" fill="#F5F6F2" font-family="'Outfit', system-ui" font-weight="700" font-size="20" letter-spacing="3">ATELIER STORE</text>
-  <text x="960" y="95" fill="#A5AAA7" font-family="'Outfit', system-ui" font-size="14">CART (0) · SEARCH</text>
-  <line x1="80" y1="120" x2="1120" y2="120" stroke="#28282c" stroke-width="1"/>
+  <text x="80" y="105" fill="#FFFFFF" font-family="'Outfit', system-ui" font-weight="900" font-size="26" letter-spacing="4">ATELIER STORE</text>
+  <text x="1120" y="105" fill="#D4FF78" font-family="'Outfit', system-ui" font-weight="700" font-size="14" text-anchor="end">CART (0) · SEARCH</text>
+  <line x1="80" y1="130" x2="1120" y2="130" stroke="#2D333B" stroke-width="1.5"/>
 
-  <!-- Products 3-Col Grid -->
+  <!-- Products 3-Col High-Contrast Grid -->
   <g transform="translate(80, 160)">
     <!-- Item 1 -->
-    <rect x="0" y="0" width="320" height="480" rx="12" fill="#1a1a1e" stroke="#2c2c32" stroke-width="1"/>
-    <!-- Mock 3D Chair object -->
-    <rect x="30" y="30" width="260" height="280" rx="8" fill="#121215"/>
-    <ellipse cx="160" cy="240" rx="70" ry="20" fill="#0d0d0f"/>
-    <polygon points="120,130 200,130 180,220 140,220" fill="#2d2d35" stroke="#4a4a58" stroke-width="1"/>
-    <line x1="140" y1="220" x2="130" y2="250" stroke="#D4FF78" stroke-width="2"/>
-    <line x1="180" y1="220" x2="190" y2="250" stroke="#D4FF78" stroke-width="2"/>
-    <text x="30" y="350" fill="#F5F6F2" font-family="'Outfit', system-ui" font-weight="600" font-size="18">The Arc Armchair</text>
-    <text x="30" y="378" fill="#A5AAA7" font-family="'Outfit', system-ui" font-size="14">Black Anodized Aluminum</text>
-    <text x="30" y="420" fill="#D4FF78" font-family="'Outfit', system-ui" font-weight="600" font-size="16">$1,280 USD</text>
+    <rect x="0" y="0" width="320" height="500" rx="14" fill="#161920" stroke="#333A44" stroke-width="2"/>
+    <rect x="25" y="25" width="270" height="300" rx="10" fill="#202530"/>
+    <!-- High-contrast chair graphic -->
+    <polygon points="100,120 220,120 190,230 130,230" fill="#FFFFFF" stroke="#94A3B8" stroke-width="2"/>
+    <line x1="130" y1="230" x2="110" y2="280" stroke="#D4FF78" stroke-width="3"/>
+    <line x1="190" y1="230" x2="210" y2="280" stroke="#D4FF78" stroke-width="3"/>
+    <text x="25" y="365" fill="#FFFFFF" font-family="'Outfit', system-ui" font-weight="800" font-size="20">The Arc Armchair</text>
+    <text x="25" y="395" fill="#94A3B8" font-family="'Outfit', system-ui" font-size="14">Black Anodized Aluminum</text>
+    <rect x="25" y="425" width="130" height="36" rx="6" fill="#D4FF78"/>
+    <text x="90" y="448" fill="#0C0D10" font-family="'Outfit', system-ui" font-weight="800" font-size="15" text-anchor="middle">$1,280 USD</text>
 
     <!-- Item 2 -->
-    <rect x="360" y="0" width="320" height="480" rx="12" fill="#1a1a1e" stroke="#2c2c32" stroke-width="1"/>
-    <rect x="390" y="30" width="260" height="280" rx="8" fill="#121215"/>
-    <!-- Ceramic vase -->
-    <ellipse cx="520" cy="180" rx="45" ry="70" fill="#292930" stroke="#444450" stroke-width="1"/>
-    <ellipse cx="520" cy="120" rx="20" ry="8" fill="#18181c"/>
-    <text x="390" y="350" fill="#F5F6F2" font-family="'Outfit', system-ui" font-weight="600" font-size="18">Kiso Ceramic Vessel</text>
-    <text x="390" y="378" fill="#A5AAA7" font-family="'Outfit', system-ui" font-size="14">Hand-thrown Stoneware</text>
-    <text x="390" y="420" fill="#D4FF78" font-family="'Outfit', system-ui" font-weight="600" font-size="16">$340 USD</text>
+    <rect x="360" y="0" width="320" height="500" rx="14" fill="#161920" stroke="#333A44" stroke-width="2"/>
+    <rect x="385" y="25" width="270" height="300" rx="10" fill="#202530"/>
+    <ellipse cx="520" cy="180" rx="55" ry="85" fill="#E2E8F0" stroke="#94A3B8" stroke-width="2"/>
+    <ellipse cx="520" cy="110" rx="26" ry="10" fill="#0C0D10"/>
+    <text x="385" y="365" fill="#FFFFFF" font-family="'Outfit', system-ui" font-weight="800" font-size="20">Kiso Ceramic Vessel</text>
+    <text x="385" y="395" fill="#94A3B8" font-family="'Outfit', system-ui" font-size="14">Hand-thrown Stoneware</text>
+    <rect x="385" y="425" width="115" height="36" rx="6" fill="#D4FF78"/>
+    <text x="442" y="448" fill="#0C0D10" font-family="'Outfit', system-ui" font-weight="800" font-size="15" text-anchor="middle">$340 USD</text>
 
     <!-- Item 3 -->
-    <rect x="720" y="0" width="320" height="480" rx="12" fill="#1a1a1e" stroke="#2c2c32" stroke-width="1"/>
-    <rect x="750" y="30" width="260" height="280" rx="8" fill="#121215"/>
-    <!-- Pendant lamp -->
-    <circle cx="880" cy="170" r="50" fill="#2d2d36" stroke="#4e4e5e" stroke-width="1"/>
-    <line x1="880" y1="40" x2="880" y2="120" stroke="#D4FF78" stroke-width="1.5"/>
-    <text x="750" y="350" fill="#F5F6F2" font-family="'Outfit', system-ui" font-weight="600" font-size="18">Halo Pendant Lamp</text>
-    <text x="750" y="378" fill="#A5AAA7" font-family="'Outfit', system-ui" font-size="14">Smoked Borosilicate Glass</text>
-    <text x="750" y="420" fill="#D4FF78" font-family="'Outfit', system-ui" font-weight="600" font-size="16">$490 USD</text>
+    <rect x="720" y="0" width="320" height="500" rx="14" fill="#161920" stroke="#333A44" stroke-width="2"/>
+    <rect x="745" y="25" width="270" height="300" rx="10" fill="#202530"/>
+    <circle cx="880" cy="180" r="60" fill="#FFFFFF" stroke="#94A3B8" stroke-width="2"/>
+    <line x1="880" y1="40" x2="880" y2="120" stroke="#D4FF78" stroke-width="3"/>
+    <text x="745" y="365" fill="#FFFFFF" font-family="'Outfit', system-ui" font-weight="800" font-size="20">Halo Pendant Lamp</text>
+    <text x="745" y="395" fill="#94A3B8" font-family="'Outfit', system-ui" font-size="14">Smoked Borosilicate Glass</text>
+    <rect x="745" y="425" width="115" height="36" rx="6" fill="#D4FF78"/>
+    <text x="802" y="448" fill="#0C0D10" font-family="'Outfit', system-ui" font-weight="800" font-size="15" text-anchor="middle">$490 USD</text>
   </g>
 </svg>`
 );
 
-// 6. Mono Launch
+// 6. Mono Launch (Developer platform with sharp luminous terminal)
 fs.writeFileSync(
   path.join(websitesDir, "mono-launch.svg"),
   `<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 750" width="1200" height="750">
-  <defs>
-    <linearGradient id="monoBg" x1="0%" y1="0%" x2="100%" y2="100%">
-      <stop offset="0%" stop-color="#0e1011"/>
-      <stop offset="100%" stop-color="#141719"/>
-    </linearGradient>
-  </defs>
-  <rect width="1200" height="750" fill="url(#monoBg)"/>
-  <rect width="1200" height="44" fill="#181c1e"/>
-  <circle cx="28" cy="22" r="5" fill="#383e42"/>
-  <circle cx="44" cy="22" r="5" fill="#383e42"/>
-  <circle cx="60" cy="22" r="5" fill="#383e42"/>
-  <rect x="360" y="10" width="480" height="24" rx="6" fill="#0d0f10"/>
-  <text x="600" y="26" fill="#6d767a" font-family="monospace" font-size="12" text-anchor="middle">mono.build/v2</text>
+  <rect width="1200" height="750" fill="#090C12"/>
+  <rect width="1200" height="46" fill="#141B26"/>
+  <circle cx="28" cy="23" r="5" fill="#EF4444"/>
+  <circle cx="44" cy="23" r="5" fill="#F59E0B"/>
+  <circle cx="60" cy="23" r="5" fill="#10B981"/>
+  <rect x="360" y="10" width="480" height="26" rx="6" fill="#06090E"/>
+  <text x="600" y="27" fill="#94A3B8" font-family="monospace" font-size="12" text-anchor="middle">mono.build/v2.8-edge</text>
 
   <!-- Hero Headline -->
-  <g transform="translate(80, 120)">
-    <rect x="0" y="0" width="140" height="28" rx="14" fill="#192518" stroke="#324f2e" stroke-width="1"/>
-    <text x="14" y="19" fill="#D4FF78" font-family="monospace" font-size="12">v2.4 STABLE RELEASE</text>
-    <text x="0" y="80" fill="#F5F6F2" font-family="'Outfit', system-ui" font-weight="700" font-size="56" letter-spacing="-1">The Zero-Overhead</text>
-    <text x="0" y="140" fill="#F5F6F2" font-family="'Outfit', system-ui" font-weight="700" font-size="56" letter-spacing="-1">State Engine<tspan fill="#D4FF78">.</tspan></text>
-    <text x="0" y="195" fill="#A5AAA7" font-family="system-ui" font-size="16">Lightning fast distributed caches with automatic edge replication.</text>
+  <g transform="translate(80, 115)">
+    <rect x="0" y="0" width="170" height="30" rx="15" fill="#1E293B" stroke="#38BDF8" stroke-width="1.5"/>
+    <text x="85" y="20" fill="#38BDF8" font-family="monospace" font-size="12" font-weight="700" text-anchor="middle">v2.8 STABLE RELEASE</text>
+    <text x="0" y="80" fill="#FFFFFF" font-family="'Outfit', system-ui" font-weight="900" font-size="60" letter-spacing="-2">The Zero-Overhead</text>
+    <text x="0" y="145" fill="#FFFFFF" font-family="'Outfit', system-ui" font-weight="900" font-size="60" letter-spacing="-2">State Engine<tspan fill="#D4FF78">.</tspan></text>
+    <text x="0" y="195" fill="#CBD5E1" font-family="system-ui" font-size="18" font-weight="500">Lightning-fast distributed caches with automated edge replication across 280+ POPs.</text>
   </g>
 
-  <!-- Terminal Window Mockup -->
-  <g transform="translate(80, 370)">
-    <rect width="1040" height="300" rx="12" fill="#111416" stroke="#272d30" stroke-width="1.5"/>
-    <rect width="1040" height="38" rx="12" fill="#181d20"/>
-    <circle cx="24" cy="19" r="4.5" fill="#3e474b"/>
-    <circle cx="38" cy="19" r="4.5" fill="#3e474b"/>
-    <circle cx="52" cy="19" r="4.5" fill="#3e474b"/>
-    <text x="80" y="23" fill="#8d979b" font-family="monospace" font-size="12">bash - terminal</text>
+  <!-- High-contrast Terminal Window -->
+  <g transform="translate(80, 360)">
+    <rect width="1040" height="320" rx="14" fill="#05070B" stroke="#38BDF8" stroke-width="2"/>
+    <rect width="1040" height="42" rx="14" fill="#111827"/>
+    <circle cx="24" cy="21" r="5" fill="#EF4444"/>
+    <circle cx="40" cy="21" r="5" fill="#F59E0B"/>
+    <circle cx="56" cy="21" r="5" fill="#10B981"/>
+    <text x="90" y="26" fill="#E2E8F0" font-family="monospace" font-size="13">zsh — npm install @mono/engine</text>
 
-    <!-- Code Lines -->
-    <text x="36" y="80" fill="#8d979b" font-family="monospace" font-size="14">$ npm install @mono/engine</text>
-    <text x="36" y="115" fill="#D4FF78" font-family="monospace" font-size="14">✓ Successfully compiled in 14ms</text>
-    <text x="36" y="150" fill="#F5F6F2" font-family="monospace" font-size="14">import { createStore } from "@mono/engine";</text>
-    <text x="36" y="185" fill="#F5F6F2" font-family="monospace" font-size="14">export const cache = createStore({ strategy: "edge-replicated", ttl: 3600 });</text>
-    <text x="36" y="225" fill="#8d979b" font-family="monospace" font-size="14">// Ready for edge deployment across 280+ POPs</text>
+    <!-- High-contrast syntax code lines -->
+    <text x="36" y="85" fill="#94A3B8" font-family="monospace" font-size="15">$ npx mono-init --template=distributed-cache</text>
+    <text x="36" y="125" fill="#D4FF78" font-family="monospace" font-size="15" font-weight="700">✓ Successfully compiled and verified edge clusters in 12ms</text>
+    <text x="36" y="165" fill="#38BDF8" font-family="monospace" font-size="15">import <tspan fill="#FFFFFF">{ createStore, edgeSync }</tspan> from <tspan fill="#A7F3D0">"@mono/engine"</tspan>;</text>
+    <text x="36" y="205" fill="#FFFFFF" font-family="monospace" font-size="15">export const cache = createStore({ strategy: <tspan fill="#D4FF78">"instant-replicate"</tspan>, ttl: 86400 });</text>
+    <text x="36" y="245" fill="#10B981" font-family="monospace" font-size="15">// Ready: 14.8M ops/sec with zero latency overhead</text>
   </g>
 </svg>`
 );
 
-// 7. Pixel Portfolio
+// 7. Pixel Portfolio (3D Interactive art portfolio with high-contrast gradient sphere)
 fs.writeFileSync(
   path.join(websitesDir, "pixel-portfolio.svg"),
   `<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 750" width="1200" height="750">
   <defs>
-    <linearGradient id="pixelBg" x1="0%" y1="0%" x2="100%" y2="100%">
-      <stop offset="0%" stop-color="#121316"/>
-      <stop offset="100%" stop-color="#171820"/>
-    </linearGradient>
+    <radialGradient id="sphereGrad" cx="35%" cy="35%" r="65%">
+      <stop offset="0%" stop-color="#D4FF78"/>
+      <stop offset="45%" stop-color="#06B6D4"/>
+      <stop offset="85%" stop-color="#8B5CF6"/>
+      <stop offset="100%" stop-color="#1E1B4B"/>
+    </radialGradient>
   </defs>
-  <rect width="1200" height="750" fill="url(#pixelBg)"/>
-  <rect width="1200" height="44" fill="#1b1c23"/>
-  <circle cx="28" cy="22" r="5" fill="#444652"/>
-  <circle cx="44" cy="22" r="5" fill="#444652"/>
-  <circle cx="60" cy="22" r="5" fill="#444652"/>
-  <rect x="360" y="10" width="480" height="24" rx="6" fill="#0f1014"/>
-  <text x="600" y="26" fill="#75798c" font-family="system-ui, sans-serif" font-size="12" text-anchor="middle">pixelportfolio.design</text>
+  <rect width="1200" height="750" fill="#0A0B12"/>
+  <rect width="1200" height="46" fill="#151724"/>
+  <circle cx="28" cy="23" r="5" fill="#EF4444"/>
+  <circle cx="44" cy="23" r="5" fill="#F59E0B"/>
+  <circle cx="60" cy="23" r="5" fill="#10B981"/>
+  <rect x="360" y="10" width="480" height="26" rx="6" fill="#05060A"/>
+  <text x="600" y="27" fill="#C7D2FE" font-family="system-ui, sans-serif" font-size="12" text-anchor="middle">elenavance.design/spatial-archive</text>
 
   <!-- Header -->
-  <text x="80" y="100" fill="#F5F6F2" font-family="'Outfit', system-ui" font-weight="700" font-size="20">ELENA VANCE</text>
-  <text x="1000" y="100" fill="#D4FF78" font-family="'Outfit', system-ui" font-size="14">3D ART DIRECTION</text>
+  <text x="80" y="110" fill="#FFFFFF" font-family="'Outfit', system-ui" font-weight="900" font-size="26">ELENA VANCE</text>
+  <text x="1120" y="110" fill="#D4FF78" font-family="'Outfit', system-ui" font-weight="700" font-size="15" text-anchor="end">3D ART DIRECTION · WEBGL</text>
+  <line x1="80" y1="135" x2="1120" y2="135" stroke="#25293A" stroke-width="1.5"/>
 
-  <!-- Center Holographic Sphere Graphic -->
-  <g transform="translate(600, 360)">
-    <!-- Concentric rings -->
-    <ellipse cx="0" cy="0" rx="200" ry="80" fill="none" stroke="#2e3142" stroke-width="1.5"/>
-    <ellipse cx="0" cy="0" rx="80" ry="200" fill="none" stroke="#2e3142" stroke-width="1.5"/>
-    <circle cx="0" cy="0" r="130" fill="#181a24" stroke="#D4FF78" stroke-width="1.5" stroke-dasharray="6 4"/>
-    <circle cx="0" cy="0" r="50" fill="#242838"/>
+  <!-- High-contrast Holographic Visual -->
+  <g transform="translate(680, 360)">
+    <circle cx="0" cy="0" r="160" fill="url(#sphereGrad)" stroke="#FFFFFF" stroke-width="2"/>
+    <ellipse cx="0" cy="0" rx="220" ry="70" fill="none" stroke="#D4FF78" stroke-width="2.5" stroke-dasharray="8 6"/>
   </g>
 
   <!-- Editorial Text Overlay -->
-  <text x="80" y="240" fill="#A5AAA7" font-family="'Outfit', system-ui" font-size="14" letter-spacing="3">SELECTED ARCHIVE 2024–2026</text>
-  <text x="80" y="300" fill="#F5F6F2" font-family="'Outfit', system-ui" font-weight="700" font-size="52">Interactive Spatial</text>
-  <text x="80" y="360" fill="#F5F6F2" font-family="'Outfit', system-ui" font-weight="700" font-size="52">Experiences<tspan fill="#D4FF78">.</tspan></text>
+  <text x="80" y="230" fill="#D4FF78" font-family="'Outfit', system-ui" font-size="13" font-weight="700" letter-spacing="3">SELECTED ARCHIVE 2024–2026</text>
+  <text x="80" y="300" fill="#FFFFFF" font-family="'Outfit', system-ui" font-weight="900" font-size="64" letter-spacing="-2">Interactive Spatial</text>
+  <text x="80" y="375" fill="#FFFFFF" font-family="'Outfit', system-ui" font-weight="900" font-size="64" letter-spacing="-2">Experiences<tspan fill="#D4FF78">.</tspan></text>
+  <text x="80" y="440" fill="#CBD5E1" font-family="'Outfit', system-ui" font-size="18">Real-time WebGL installations, audiovisual sculptures, and virtual worlds.</text>
 
-  <!-- Projects Ribbon -->
+  <!-- High-contrast Projects Ribbon -->
   <g transform="translate(80, 560)">
-    <rect x="0" y="0" width="500" height="110" rx="10" fill="#1a1c25" stroke="#2f3244" stroke-width="1"/>
-    <text x="24" y="45" fill="#F5F6F2" font-family="'Outfit', system-ui" font-weight="600" font-size="18">01 / AURA IMMERSIVE</text>
-    <text x="24" y="75" fill="#A5AAA7" font-family="'Outfit', system-ui" font-size="14">Spatial WebGL Installation · Milan</text>
-    <text x="460" y="55" fill="#D4FF78" font-size="18">↗</text>
+    <rect x="0" y="0" width="500" height="120" rx="12" fill="#141724" stroke="#374151" stroke-width="2"/>
+    <text x="28" y="48" fill="#FFFFFF" font-family="'Outfit', system-ui" font-weight="800" font-size="20">01 / AURA IMMERSIVE</text>
+    <text x="28" y="80" fill="#CBD5E1" font-family="'Outfit', system-ui" font-size="14">Spatial WebGL Installation · Milan Design Week</text>
+    <rect x="440" y="40" width="40" height="40" rx="8" fill="#D4FF78"/>
+    <text x="460" y="65" fill="#0A0B12" font-size="18" font-weight="800" text-anchor="middle">↗</text>
 
-    <rect x="540" y="0" width="500" height="110" rx="10" fill="#1a1c25" stroke="#2f3244" stroke-width="1"/>
-    <text x="564" y="45" fill="#F5F6F2" font-family="'Outfit', system-ui" font-weight="600" font-size="18">02 / HYPER SPHERE</text>
-    <text x="564" y="75" fill="#A5AAA7" font-family="'Outfit', system-ui" font-size="14">Generative Audio-Reactive World</text>
-    <text x="1000" y="55" fill="#D4FF78" font-size="18">↗</text>
+    <rect x="540" y="0" width="500" height="120" rx="12" fill="#141724" stroke="#374151" stroke-width="2"/>
+    <text x="568" y="48" fill="#FFFFFF" font-family="'Outfit', system-ui" font-weight="800" font-size="20">02 / HYPER SPHERE</text>
+    <text x="568" y="80" fill="#CBD5E1" font-family="'Outfit', system-ui" font-size="14">Generative Audio-Reactive World · Tokyo</text>
+    <rect x="980" y="40" width="40" height="40" rx="8" fill="#D4FF78"/>
+    <text x="1000" y="65" fill="#0A0B12" font-size="18" font-weight="800" text-anchor="middle">↗</text>
   </g>
 </svg>`
 );
 
-// 8. Studio Experiments
+// 8. Studio Experiments (High-contrast generative lab with vivid neon waveforms)
 fs.writeFileSync(
   path.join(websitesDir, "studio-experiments.svg"),
   `<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 750" width="1200" height="750">
-  <defs>
-    <linearGradient id="expBg" x1="0%" y1="0%" x2="100%" y2="100%">
-      <stop offset="0%" stop-color="#101314"/>
-      <stop offset="100%" stop-color="#14181a"/>
-    </linearGradient>
-  </defs>
-  <rect width="1200" height="750" fill="url(#expBg)"/>
-  <rect width="1200" height="44" fill="#1a1f21"/>
-  <circle cx="28" cy="22" r="5" fill="#3c4346"/>
-  <circle cx="44" cy="22" r="5" fill="#3c4346"/>
-  <circle cx="60" cy="22" r="5" fill="#3c4346"/>
-  <rect x="360" y="10" width="480" height="24" rx="6" fill="#0d1012"/>
-  <text x="600" y="26" fill="#717c80" font-family="monospace" font-size="12" text-anchor="middle">lab.experiments.io/canvas</text>
+  <rect width="1200" height="750" fill="#06090D"/>
+  <rect width="1200" height="46" fill="#111822"/>
+  <circle cx="28" cy="23" r="5" fill="#EF4444"/>
+  <circle cx="44" cy="23" r="5" fill="#F59E0B"/>
+  <circle cx="60" cy="23" r="5" fill="#10B981"/>
+  <rect x="360" y="10" width="480" height="26" rx="6" fill="#040608"/>
+  <text x="600" y="27" fill="#94A3B8" font-family="monospace" font-size="12" text-anchor="middle">lab.experiments.io/particle-physics</text>
 
-  <!-- Generative Grid Canvas -->
+  <!-- Generative Grid Canvas with High Contrast Neon Waves -->
   <g transform="translate(80, 100)">
-    <rect width="1040" height="580" rx="12" fill="#111517" stroke="#293135" stroke-width="1.5"/>
-    <!-- Mesh curves -->
-    <path d="M 50 300 Q 300 100, 550 300 T 1000 300" fill="none" stroke="#2c363a" stroke-width="2"/>
-    <path d="M 50 320 Q 300 140, 550 320 T 1000 320" fill="none" stroke="#364349" stroke-width="2"/>
-    <path d="M 50 340 Q 300 180, 550 340 T 1000 340" fill="none" stroke="#D4FF78" stroke-width="2.5"/>
-    <path d="M 50 360 Q 300 220, 550 360 T 1000 360" fill="none" stroke="#364349" stroke-width="2"/>
+    <rect width="1040" height="580" rx="14" fill="#0B1017" stroke="#253245" stroke-width="2"/>
+    <!-- Glowing neon curves -->
+    <path d="M 50 300 Q 300 80, 550 300 T 1000 300" fill="none" stroke="#06B6D4" stroke-width="3"/>
+    <path d="M 50 320 Q 300 130, 550 320 T 1000 320" fill="none" stroke="#F43F5E" stroke-width="3"/>
+    <path d="M 50 340 Q 300 180, 550 340 T 1000 340" fill="none" stroke="#D4FF78" stroke-width="4"/>
+    <path d="M 50 360 Q 300 230, 550 360 T 1000 360" fill="none" stroke="#A855F7" stroke-width="3"/>
 
-    <!-- Control panel overlay -->
-    <rect x="40" y="40" width="280" height="190" rx="8" fill="#161b1e" stroke="#2e383c" stroke-width="1"/>
-    <text x="60" y="70" fill="#D4FF78" font-family="monospace" font-size="12">EXP // 084_WAVE_PARTICLE</text>
-    <text x="60" y="100" fill="#A5AAA7" font-family="monospace" font-size="12">FREQ: 14.8 Hz</text>
-    <text x="60" y="125" fill="#A5AAA7" font-family="monospace" font-size="12">DAMPING: 0.88</text>
-    <text x="60" y="150" fill="#A5AAA7" font-family="monospace" font-size="12">PARTICLES: 12,000</text>
-    <rect x="60" y="175" width="200" height="6" rx="3" fill="#252d31"/>
-    <rect x="60" y="175" width="130" height="6" rx="3" fill="#D4FF78"/>
+    <!-- High-contrast Telemetry HUD -->
+    <rect x="40" y="40" width="310" height="210" rx="10" fill="#05080C" stroke="#D4FF78" stroke-width="2"/>
+    <text x="65" y="75" fill="#D4FF78" font-family="monospace" font-size="13" font-weight="700">EXP // 084_WAVE_PARTICLE</text>
+    <text x="65" y="110" fill="#FFFFFF" font-family="monospace" font-size="14" font-weight="600">OSCILLATION: 44.8 Hz</text>
+    <text x="65" y="140" fill="#FFFFFF" font-family="monospace" font-size="14" font-weight="600">DAMPING RATIO: 0.94</text>
+    <text x="65" y="170" fill="#FFFFFF" font-family="monospace" font-size="14" font-weight="600">ACTIVE PARTICLES: 64,000</text>
+    <rect x="65" y="195" width="260" height="8" rx="4" fill="#1E293B"/>
+    <rect x="65" y="195" width="190" height="8" rx="4" fill="#D4FF78"/>
   </g>
 </svg>`
 );
