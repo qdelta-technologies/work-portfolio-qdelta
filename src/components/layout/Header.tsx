@@ -23,7 +23,7 @@ export function Header() {
           : "bg-transparent border-b border-transparent"
       }`}
     >
-      <div className="max-w-[1320px] mx-auto px-4 sm:px-6 md:px-12 h-18 sm:h-20 flex items-center justify-between">
+      <div className="max-w-[1320px] mx-auto px-4 sm:px-6 md:px-12 h-14 sm:h-16 flex items-center justify-between">
         {/* Brand / Logo */}
         <Link
           href="/#top"
@@ -34,11 +34,11 @@ export function Header() {
               window.history.pushState(null, "", "/");
             }
           }}
-          className="group flex items-center text-[18px] sm:text-[20px] tracking-tight focus-visible:outline-none cursor-pointer"
+          className="group flex items-center tracking-tight focus-visible:outline-none cursor-pointer"
           aria-label="QDelta — Back to top of page"
         >
           <span
-            className="text-[21px] sm:text-[23px] font-bold text-[#D4FF78] tracking-[0.02em] transition-all group-hover:brightness-110"
+            className="text-[19px] sm:text-[21px] font-bold text-[#D4FF78] tracking-[0.02em] transition-all group-hover:brightness-110"
             style={{ fontFamily: "var(--font-logo), 'Sifonn', sans-serif" }}
           >
             {siteConfig.name}
@@ -47,7 +47,7 @@ export function Header() {
 
         {/* Navigation items */}
         <nav
-          className="flex items-center gap-4 sm:gap-7 text-[14px] sm:text-[15px] font-medium"
+          className="flex items-center gap-3.5 sm:gap-6 text-[13px] sm:text-[14px] font-medium"
           aria-label="Main Navigation"
         >
           <a

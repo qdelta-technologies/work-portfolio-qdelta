@@ -53,39 +53,39 @@ export function SocialCarousel({ posts, onOpenLightbox }: SocialCarouselProps) {
   return (
     <div className="relative group/carousel">
       {/* Carousel Header Controls */}
-      <div className="flex items-center justify-between pb-6">
-        <div className="text-[13px] sm:text-[14px] text-[#A5AAA7] font-mono">
+      <div className="flex items-center justify-between pb-3 sm:pb-3.5">
+        <div className="text-[12px] sm:text-[13px] text-[#A5AAA7] font-mono">
           {posts.length} Curated Posts · Swipe or Click to Enlarge
         </div>
 
         {/* Carousel Arrow Controls */}
-        <div className="flex items-center gap-2">
+        <div className="flex items-center gap-1.5">
           <button
             type="button"
             onClick={() => scrollByDirection("left")}
             disabled={!canScrollLeft}
-            className={`w-10 h-10 rounded-full border flex items-center justify-center transition-all duration-200 ${
+            className={`w-8 h-8 rounded-full border flex items-center justify-center transition-all duration-200 ${
               canScrollLeft
                 ? "bg-[#1B1E1F] border-[#343938] text-[#F5F6F2] hover:text-[#D4FF78] hover:border-[#D4FF78]/60 cursor-pointer active:scale-95"
                 : "bg-[#1B1E1F]/50 border-[#343938]/30 text-[#A5AAA7]/40 cursor-not-allowed"
             }`}
             aria-label="Scroll carousel left"
           >
-            <ChevronLeft className="w-5 h-5" />
+            <ChevronLeft className="w-4 h-4" />
           </button>
 
           <button
             type="button"
             onClick={() => scrollByDirection("right")}
             disabled={!canScrollRight}
-            className={`w-10 h-10 rounded-full border flex items-center justify-center transition-all duration-200 ${
+            className={`w-8 h-8 rounded-full border flex items-center justify-center transition-all duration-200 ${
               canScrollRight
                 ? "bg-[#1B1E1F] border-[#343938] text-[#F5F6F2] hover:text-[#D4FF78] hover:border-[#D4FF78]/60 cursor-pointer active:scale-95"
                 : "bg-[#1B1E1F]/50 border-[#343938]/30 text-[#A5AAA7]/40 cursor-not-allowed"
             }`}
             aria-label="Scroll carousel right"
           >
-            <ChevronRight className="w-5 h-5" />
+            <ChevronRight className="w-4 h-4" />
           </button>
         </div>
       </div>
@@ -96,12 +96,12 @@ export function SocialCarousel({ posts, onOpenLightbox }: SocialCarouselProps) {
         tabIndex={0}
         role="region"
         aria-label="Social media gallery carousel"
-        className="flex gap-4 sm:gap-6 overflow-x-auto snap-x snap-mandatory no-scrollbar pb-4 focus-visible:outline-none focus-visible:ring-1 focus-visible:ring-[#343938] rounded-[10px]"
+        className="flex gap-3 sm:gap-3.5 overflow-x-auto snap-x snap-mandatory no-scrollbar pb-2.5 focus-visible:outline-none focus-visible:ring-1 focus-visible:ring-[#343938] rounded-[10px]"
       >
         {posts.map((post, idx) => (
           <div
             key={post.id}
-            className="w-[72vw] sm:w-[42vw] md:w-[30vw] lg:w-[22.5vw] shrink-0 snap-start"
+            className="w-[52vw] sm:w-[28vw] md:w-[20vw] lg:w-[15.5vw] max-w-[210px] shrink-0 snap-start"
           >
             <SocialCard
               post={post}

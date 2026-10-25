@@ -3,10 +3,10 @@ import { siteConfig } from "@/config/site";
 
 export function Footer() {
   return (
-    <footer className="w-full border-t border-[#343938]/40 py-8 md:py-12">
-      <div className="max-w-[1320px] mx-auto px-4 sm:px-6 md:px-12 flex flex-col sm:flex-row items-center justify-between gap-4 text-[13px] sm:text-[14px] text-[#A5AAA7]">
+    <footer className="w-full border-t border-[#343938]/40 py-5 sm:py-6">
+      <div className="max-w-[1320px] mx-auto px-4 sm:px-6 md:px-12 flex flex-col sm:flex-row items-center justify-between gap-3 text-[12px] sm:text-[13px] text-[#A5AAA7]">
         <div>{siteConfig.footer.copyright}</div>
-        <div className="flex items-center gap-6">
+        <div className="flex items-center gap-5">
           <a
             href="#social-media"
             className="hover:text-[#F5F6F2] transition-colors focus-visible:outline-none"

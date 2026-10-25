@@ -37,7 +37,7 @@ export function WebsiteCard({ project }: WebsiteCardProps) {
           src={project.thumbnail}
           alt={`Screenshot preview of ${project.title} website`}
           fill
-          sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 640px"
+          sizes="(max-width: 640px) 100vw, (max-width: 1024px) 50vw, 33vw"
           className="object-cover object-top transition-transform duration-300 ease-out group-hover:scale-[1.03]"
           priority={project.featured}
         />
@@ -46,14 +46,12 @@ export function WebsiteCard({ project }: WebsiteCardProps) {
       </div>
 
       {/* Card Content & Metadata */}
-      <div className="p-5 sm:p-6 flex items-start justify-between gap-4">
-        <div className="space-y-1">
-          <div className="flex items-center gap-2">
-            <h3 className="text-[19px] sm:text-[21px] font-semibold text-[#F5F6F2] tracking-[-0.01em] transition-colors group-hover:text-white">
-              {project.title}
-            </h3>
-          </div>
-          <p className="text-[14px] text-[#A5AAA7] font-normal">
+      <div className="p-3.5 sm:p-4 flex items-start justify-between gap-3">
+        <div className="space-y-0.5 min-w-0">
+          <h3 className="text-[15px] sm:text-[16px] font-semibold text-[#F5F6F2] tracking-[-0.01em] transition-colors group-hover:text-white truncate">
+            {project.title}
+          </h3>
+          <p className="text-[12.5px] text-[#A5AAA7] font-normal truncate">
             {project.categoryLabel}
           </p>
         </div>
@@ -61,14 +59,14 @@ export function WebsiteCard({ project }: WebsiteCardProps) {
         {/* External Link Arrow Indicator */}
         {hasLiveUrl ? (
           <div
-            className="w-9 h-9 rounded-full bg-[#202425] border border-[#343938] flex items-center justify-center text-[#A5AAA7] group-hover:text-[#D4FF78] group-hover:border-[#D4FF78]/60 group-hover:bg-[#111315] transition-all duration-200 shrink-0 mt-0.5"
+            className="w-7 h-7 sm:w-7.5 sm:h-7.5 rounded-full bg-[#202425] border border-[#343938] flex items-center justify-center text-[#A5AAA7] group-hover:text-[#D4FF78] group-hover:border-[#D4FF78]/60 group-hover:bg-[#111315] transition-all duration-200 shrink-0 mt-0.5"
             aria-hidden="true"
           >
-            <ArrowUpRight className="w-4 h-4 transition-transform duration-200 group-hover:translate-x-0.5 group-hover:-translate-y-0.5" />
+            <ArrowUpRight className="w-3.5 h-3.5 transition-transform duration-200 group-hover:translate-x-0.5 group-hover:-translate-y-0.5" />
           </div>
         ) : (
           <span
-            className="text-[11px] font-mono uppercase tracking-wider text-[#A5AAA7]/60 px-2.5 py-1 rounded-full bg-[#151719] border border-[#343938]/40 shrink-0 mt-1"
+            className="text-[10px] font-mono uppercase tracking-wider text-[#A5AAA7]/60 px-2 py-0.5 rounded-full bg-[#151719] border border-[#343938]/40 shrink-0 mt-1"
             title="Internal experiment"
           >
             Archive

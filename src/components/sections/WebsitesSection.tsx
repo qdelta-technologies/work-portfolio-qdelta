@@ -23,10 +23,10 @@ export function WebsitesSection() {
   return (
     <section
       id="websites"
-      className="py-10 sm:py-14 md:py-16 max-w-[1320px] mx-auto px-4 sm:px-6 md:px-12 border-t border-[#343938]/30"
+      className="py-6 sm:py-8 md:py-10 max-w-[1320px] mx-auto px-4 sm:px-6 md:px-12 border-t border-[#343938]/30"
       aria-label="Websites Showcase"
     >
-      <div className="space-y-6 sm:space-y-8">
+      <div className="space-y-3.5 sm:space-y-4">
         <SectionHeader
           title="Websites"
           description="Designed with purpose. Built with care."
