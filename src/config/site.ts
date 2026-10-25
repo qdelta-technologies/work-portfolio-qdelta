@@ -6,6 +6,7 @@ export interface SiteConfig {
     email: string;
     whatsappNumber: string; // international format without + or spaces, e.g. "1234567890"
     whatsappMessage?: string;
+    instagram?: string;
   };
   navigation: {
     label: string;
@@ -25,6 +26,7 @@ export const siteConfig: SiteConfig = {
     email: "hello@qdelta.com",
     whatsappNumber: "15550192834",
     whatsappMessage: "Hi QDelta team, I would like to discuss a project.",
+    instagram: "https://instagram.com/qdelta.technologies",
   },
   navigation: [
     { label: "Websites", href: "#websites" },

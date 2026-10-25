@@ -9,6 +9,7 @@ export function ContactSection() {
     siteConfig.contact.whatsappMessage
   );
   const emailUrl = getMailtoUrl(siteConfig.contact.email);
+  const instagramUrl = siteConfig.contact.instagram || "https://instagram.com/qdelta.technologies";
 
   return (
     <section
@@ -38,7 +39,7 @@ export function ContactSection() {
             </div>
 
             {/* CTA Buttons */}
-            <div className="flex flex-col sm:flex-row items-stretch sm:items-center gap-3 pt-1">
+            <div className="flex flex-col sm:flex-row items-stretch sm:items-center gap-2.5 sm:gap-3 pt-1">
               <Button
                 variant="lime"
                 size="md"
@@ -47,6 +48,17 @@ export function ContactSection() {
                 aria-label="Contact QDelta via WhatsApp, opens in a new tab"
               >
                 <span>WhatsApp</span>
+                <ArrowUpRight className="w-3.5 h-3.5 ml-0.5" />
+              </Button>
+
+              <Button
+                variant="outline"
+                size="md"
+                href={instagramUrl}
+                isExternal
+                aria-label="Visit QDelta on Instagram, opens in a new tab"
+              >
+                <span>Instagram</span>
                 <ArrowUpRight className="w-3.5 h-3.5 ml-0.5" />
               </Button>
 
