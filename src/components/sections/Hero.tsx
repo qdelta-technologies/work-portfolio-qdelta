@@ -6,11 +6,6 @@ export function Hero() {
       id="top"
       className="relative pt-24 sm:pt-28 md:pt-32 pb-10 sm:pb-12 md:pb-14 border-b border-[#343938]/30 overflow-hidden"
     >
-      {/* Hero Ambient Spotlight */}
-      <div
-        className="absolute top-0 left-1/2 -translate-x-1/2 w-[480px] h-[220px] bg-[radial-gradient(ellipse_at_top,rgba(212,255,120,0.09),transparent_70%)] pointer-events-none -z-10"
-        aria-hidden="true"
-      />
       <div className="max-w-[1320px] mx-auto px-4 sm:px-6 md:px-12 relative z-10">
         <div className="max-w-3xl mx-auto flex flex-col items-center text-center space-y-5 sm:space-y-6">
           {/* Micro-label eyebrow */}
