@@ -8,16 +8,13 @@ import { ContactSection } from "@/components/sections/ContactSection";
 export default function Home() {
   return (
     <div className="relative flex flex-col min-h-screen bg-[#111315] text-[#F5F6F2] overflow-x-hidden">
-      {/* Background Layer: Subtle Gradients & Medium Grid */}
+      {/* Background Layer: Ambient Gradients */}
       <div
         className="fixed inset-0 pointer-events-none z-0 overflow-hidden"
         aria-hidden="true"
       >
         {/* Subtle Ambient Gradients */}
         <div className="absolute inset-0 bg-radial-glow" />
-
-        {/* Medium-Sized Grid Pattern (48px x 48px) */}
-        <div className="absolute inset-0 bg-grid-pattern" />
 
         {/* Subtle edge vignette */}
         <div className="absolute inset-0 bg-gradient-to-b from-[#111315]/20 via-transparent to-[#111315]/40" />
