@@ -25,7 +25,7 @@ export function WebsiteCard({ project }: WebsiteCardProps) {
   return (
     <CardWrapper
       {...wrapperProps}
-      className={`group block rounded-[18px] bg-[#1B1E1F] border border-[#343938] overflow-hidden transition-all duration-300 ${
+      className={`group block rounded-[10px] bg-[#1B1E1F] border border-[#343938] overflow-hidden transition-all duration-300 ${
         hasLiveUrl
           ? "hover:border-[#48504e] hover:shadow-[0_8px_30px_rgba(0,0,0,0.5)] cursor-pointer"
           : "cursor-default opacity-95"

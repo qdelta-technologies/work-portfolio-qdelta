@@ -17,7 +17,7 @@ export function ContactSection() {
       aria-label="Contact QDelta"
     >
       <div className="max-w-[1320px] mx-auto px-4 sm:px-6 md:px-12">
-        <div className="rounded-[24px] bg-[#1B1E1F] border border-[#343938] p-7 sm:p-10 md:p-12 relative overflow-hidden">
+        <div className="rounded-[14px] bg-[#1B1E1F] border border-[#343938] p-7 sm:p-10 md:p-12 relative overflow-hidden">
           {/* Subtle lime glow background in corner */}
           <div
             className="absolute -top-32 -right-32 w-80 h-80 rounded-full bg-[#D4FF78]/5 blur-3xl pointer-events-none"

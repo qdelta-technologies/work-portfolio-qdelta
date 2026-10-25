@@ -96,7 +96,7 @@ export function SocialCarousel({ posts, onOpenLightbox }: SocialCarouselProps) {
         tabIndex={0}
         role="region"
         aria-label="Social media gallery carousel"
-        className="flex gap-4 sm:gap-6 overflow-x-auto snap-x snap-mandatory no-scrollbar pb-4 focus-visible:outline-none focus-visible:ring-1 focus-visible:ring-[#343938] rounded-[18px]"
+        className="flex gap-4 sm:gap-6 overflow-x-auto snap-x snap-mandatory no-scrollbar pb-4 focus-visible:outline-none focus-visible:ring-1 focus-visible:ring-[#343938] rounded-[10px]"
       >
         {posts.map((post, idx) => (
           <div

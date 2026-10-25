@@ -10,7 +10,7 @@ interface WebsiteGridProps {
 export function WebsiteGrid({ projects, onResetFilter }: WebsiteGridProps) {
   if (projects.length === 0) {
     return (
-      <div className="rounded-[18px] bg-[#1B1E1F] border border-[#343938] py-16 px-6 text-center space-y-4">
+      <div className="rounded-[10px] bg-[#1B1E1F] border border-[#343938] py-16 px-6 text-center space-y-4">
         <p className="text-[17px] text-[#F5F6F2] font-medium">
           No projects found in this category
         </p>
