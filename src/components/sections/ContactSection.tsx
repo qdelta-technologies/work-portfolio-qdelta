@@ -52,7 +52,7 @@ export function ContactSection() {
               </Button>
 
               <Button
-                variant="outline"
+                variant="lime"
                 size="md"
                 href={instagramUrl}
                 isExternal
@@ -63,7 +63,7 @@ export function ContactSection() {
               </Button>
 
               <Button
-                variant="outline"
+                variant="lime"
                 size="md"
                 href={emailUrl}
                 aria-label="Contact QDelta via Email"
