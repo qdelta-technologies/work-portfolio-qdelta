@@ -8,17 +8,17 @@ export function Footer() {
         <div>{siteConfig.footer.copyright}</div>
         <div className="flex items-center gap-6">
           <a
-            href="#websites"
-            className="hover:text-[#F5F6F2] transition-colors focus-visible:outline-none"
-          >
-            Websites
-          </a>
-          <span className="text-[#343938]">·</span>
-          <a
             href="#social-media"
             className="hover:text-[#F5F6F2] transition-colors focus-visible:outline-none"
           >
             Social Media
+          </a>
+          <span className="text-[#343938]">·</span>
+          <a
+            href="#websites"
+            className="hover:text-[#F5F6F2] transition-colors focus-visible:outline-none"
+          >
+            Websites
           </a>
           <span className="text-[#343938]">·</span>
           <a

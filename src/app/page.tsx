@@ -26,8 +26,8 @@ export default function Home() {
       <Header />
       <main className="relative z-10 flex-1">
         <Hero />
-        <WebsitesSection />
         <SocialMediaSection />
+        <WebsitesSection />
         <ContactSection />
       </main>
       <Footer />

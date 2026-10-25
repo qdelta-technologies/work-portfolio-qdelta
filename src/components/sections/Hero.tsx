@@ -32,7 +32,7 @@ export function Hero() {
           {/* Scrolling cue */}
           <div className="pt-2 sm:pt-3">
             <a
-              href="#websites"
+              href="#social-media"
               className="inline-flex items-center gap-2 text-[13px] sm:text-[14px] text-[#A5AAA7] hover:text-[#D4FF78] transition-colors group focus-visible:outline-none"
             >
               <span>Explore our work</span>
