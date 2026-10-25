@@ -1,5 +1,13 @@
 @import "tailwindcss";
 
+@font-face {
+  font-family: 'Sifonn';
+  font-style: normal;
+  font-weight: 700;
+  src: url('/fonts/sifonn-pro.woff') format('woff');
+  font-display: swap;
+}
+
 @theme {
   --color-bg-main: #111315;
   --color-surface-elevated: #1B1E1F;

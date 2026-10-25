@@ -1,5 +1,6 @@
 import type { Metadata, Viewport } from "next";
-import { Outfit, Syne } from "next/font/google";
+import { Outfit } from "next/font/google";
+import localFont from "next/font/local";
 import "./globals.css";
 
 const outfit = Outfit({
@@ -9,11 +10,11 @@ const outfit = Outfit({
   display: "swap",
 });
 
-const syne = Syne({
-  subsets: ["latin"],
-  weight: ["700", "800"],
+const sifonn = localFont({
+  src: "../../public/fonts/sifonn-pro.woff",
   variable: "--font-logo",
   display: "swap",
+  weight: "700",
 });
 
 export const metadata: Metadata = {
@@ -63,7 +64,7 @@ export default function RootLayout({
   return (
     <html
       lang="en"
-      className={`${outfit.variable} ${syne.variable} dark scroll-smooth`}
+      className={`${outfit.variable} ${sifonn.variable} dark scroll-smooth`}
     >
       <body className="min-h-screen bg-[#111315] text-[#F5F6F2] font-sans antialiased selection:bg-[#D4FF78] selection:text-[#111315]">
         {children}
