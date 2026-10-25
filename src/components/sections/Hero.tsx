@@ -4,7 +4,7 @@ export function Hero() {
   return (
     <section
       id="top"
-      className="relative pt-20 sm:pt-22 md:pt-24 pb-7 sm:pb-8 md:pb-9 border-b border-[#343938]/30 overflow-hidden"
+      className="relative pt-20 sm:pt-22 md:pt-24 pb-7 sm:pb-8 md:pb-9 border-b border-[#404A48] overflow-hidden"
     >
       <div className="max-w-[1320px] mx-auto px-4 sm:px-6 md:px-12 relative z-10">
         <div className="max-w-2xl mx-auto flex flex-col items-center text-center space-y-3.5 sm:space-y-4">

@@ -14,11 +14,11 @@ export function ContactSection() {
   return (
     <section
       id="contact"
-      className="py-8 sm:py-10 md:py-12 border-t border-[#343938]/40"
+      className="w-full py-8 sm:py-10 md:py-12 border-t border-[#404A48]"
       aria-label="Contact QDelta"
     >
       <div className="max-w-[1320px] mx-auto px-4 sm:px-6 md:px-12">
-        <div className="rounded-[10px] bg-[#1B1E1F] border border-[#343938] p-5 sm:p-7 md:p-8 relative overflow-hidden">
+        <div className="rounded-[10px] bg-[#181B1C] border border-[#38403F] p-5 sm:p-7 md:p-8 relative overflow-hidden">
           {/* Subtle lime glow background in corner */}
           <div
             className="absolute -top-32 -right-32 w-80 h-80 rounded-full bg-[#D4FF78]/5 blur-3xl pointer-events-none"

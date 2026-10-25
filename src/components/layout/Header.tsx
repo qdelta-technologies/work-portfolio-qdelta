@@ -19,7 +19,7 @@ export function Header() {
     <header
       className={`fixed top-0 left-0 right-0 z-40 transition-all duration-300 ${
         scrolled
-          ? "bg-[#111315]/90 backdrop-blur-md border-b border-[#343938]/60 shadow-[0_4px_24px_rgba(0,0,0,0.4)]"
+          ? "bg-[#111315]/90 backdrop-blur-md border-b border-[#404A48] shadow-[0_4px_24px_rgba(0,0,0,0.4)]"
           : "bg-transparent border-b border-transparent"
       }`}
     >
