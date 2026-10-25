@@ -38,7 +38,7 @@ export function Header() {
           aria-label="QDelta — Back to top of page"
         >
           <span
-            className="text-[19px] sm:text-[21px] font-extrabold text-[#F5F6F2] tracking-[-0.03em] transition-colors group-hover:text-white"
+            className="text-[20px] sm:text-[22px] font-bold text-[#F5F6F2] tracking-[-0.01em] transition-colors group-hover:text-white"
             style={{ fontFamily: "var(--font-logo)" }}
           >
             {siteConfig.name}

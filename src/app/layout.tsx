@@ -1,5 +1,5 @@
 import type { Metadata, Viewport } from "next";
-import { Outfit, Plus_Jakarta_Sans } from "next/font/google";
+import { Outfit, Syne } from "next/font/google";
 import "./globals.css";
 
 const outfit = Outfit({
@@ -9,9 +9,9 @@ const outfit = Outfit({
   display: "swap",
 });
 
-const plusJakartaSans = Plus_Jakarta_Sans({
+const syne = Syne({
   subsets: ["latin"],
-  weight: ["600", "700", "800"],
+  weight: ["700", "800"],
   variable: "--font-logo",
   display: "swap",
 });
@@ -63,7 +63,7 @@ export default function RootLayout({
   return (
     <html
       lang="en"
-      className={`${outfit.variable} ${plusJakartaSans.variable} dark scroll-smooth`}
+      className={`${outfit.variable} ${syne.variable} dark scroll-smooth`}
     >
       <body className="min-h-screen bg-[#111315] text-[#F5F6F2] font-sans antialiased selection:bg-[#D4FF78] selection:text-[#111315]">
         {children}
