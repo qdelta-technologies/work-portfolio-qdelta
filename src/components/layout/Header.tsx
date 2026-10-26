@@ -51,16 +51,16 @@ export function Header() {
           aria-label="Main Navigation"
         >
           <a
-            href="#social-media"
-            className="text-[#A5AAA7] hover:text-[#F5F6F2] transition-colors py-1.5 focus-visible:outline-none rounded"
-          >
-            Social Media
-          </a>
-          <a
             href="#websites"
             className="text-[#A5AAA7] hover:text-[#F5F6F2] transition-colors py-1.5 focus-visible:outline-none rounded"
           >
             Websites
+          </a>
+          <a
+            href="#social-media"
+            className="text-[#A5AAA7] hover:text-[#F5F6F2] transition-colors py-1.5 focus-visible:outline-none rounded"
+          >
+            Social Media
           </a>
           <a
             href="#contact"

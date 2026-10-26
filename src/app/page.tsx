@@ -23,8 +23,8 @@ export default function Home() {
       <Header />
       <main className="relative z-10 flex-1">
         <Hero />
-        <SocialMediaSection />
         <WebsitesSection />
+        <SocialMediaSection />
         <ContactSection />
       </main>
       <Footer />

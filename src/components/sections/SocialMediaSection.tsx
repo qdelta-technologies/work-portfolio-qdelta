@@ -14,7 +14,7 @@ export function SocialMediaSection() {
   return (
     <section
       id="social-media"
-      className="w-full py-6 sm:py-8 md:py-10"
+      className="w-full border-t border-[#404A48] py-6 sm:py-8 md:py-10"
       aria-label="Social Media Showcase"
     >
       <div className="max-w-[1320px] mx-auto px-4 sm:px-6 md:px-12 space-y-3.5 sm:space-y-4">
