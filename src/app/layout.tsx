@@ -20,20 +20,20 @@ const sifonn = localFont({
 export const metadata: Metadata = {
   title: "QDelta — Our Work | Premium Portfolio Showcase",
   description:
-    "Curated collection of our best website projects, digital experiences, and creative social media content for prospective clients.",
+    "Curated collection of our best website projects, digital solutions, and creative social media content for prospective clients.",
   keywords: [
     "QDelta",
     "Creative Agency",
     "Digital Studio",
     "Web Design Portfolio",
     "Social Media Design",
-    "Digital Experiences",
+    "Digital Solutions",
   ],
   authors: [{ name: "QDelta Studio" }],
   openGraph: {
     title: "QDelta — Our Work | Premium Portfolio Showcase",
     description:
-      "Websites, digital experiences, and creative content. Curated showcase for QDelta clients.",
+      "Websites, digital solutions, and creative content. Curated showcase for QDelta clients.",
     url: "https://work.qdelta.com",
     siteName: "QDelta — Our Work",
     type: "website",
@@ -42,7 +42,7 @@ export const metadata: Metadata = {
   twitter: {
     card: "summary_large_image",
     title: "QDelta — Our Work",
-    description: "Websites, digital experiences, and creative content.",
+    description: "Websites, digital solutions, and creative content.",
   },
   robots: {
     index: true,

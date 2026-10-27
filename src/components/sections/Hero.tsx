@@ -21,7 +21,7 @@ export function Hero() {
 
           {/* Supporting Copy */}
           <p className="text-[#A5AAA7] text-[14px] sm:text-[16px] md:text-[17px] font-normal leading-relaxed max-w-lg px-2 sm:px-0">
-            Websites, digital experiences, and creative content.
+            Websites, digital solutions, and creative content.
           </p>
 
           {/* Scrolling cue */}

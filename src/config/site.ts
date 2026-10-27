@@ -20,7 +20,7 @@ export interface SiteConfig {
 
 export const siteConfig: SiteConfig = {
   name: "QDelta",
-  tagline: "Websites, digital experiences, and creative content.",
+  tagline: "Websites, digital solutions, and creative content.",
   subdomain: "work.qdelta.com",
   contact: {
     email: "hello@qdelta.com",
