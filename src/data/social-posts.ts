@@ -2,22 +2,6 @@ import { SocialPost } from "@/types/project";
 
 export const SOCIAL_POSTS: SocialPost[] = [
   {
-    id: "qdelta-10-sec-test",
-    image: "/images/social/qdelta-10-second-test.jpg",
-    alt: "QDelta - The 10-Second Website Test. If people can't answer these fast, your website needs more clarity.",
-    title: "The 10-Second Website Test",
-    campaign: "QDelta · Website Clarity",
-    aspectRatio: "portrait",
-  },
-  {
-    id: "better-website-growth",
-    image: "/images/social/better-website-growth.jpg",
-    alt: "The Same Business. A Better Website Brings More Customers. Architectural & conversion comparison",
-    title: "A Better Website Brings Customers",
-    campaign: "Visual Comparison & Strategy",
-    aspectRatio: "portrait",
-  },
-  {
     id: "nine-github-repos",
     image: "/images/social/nine-github-repos.jpg",
     alt: "9 GitHub repos that shouldn't be free - Build Better With AI",
@@ -31,6 +15,22 @@ export const SOCIAL_POSTS: SocialPost[] = [
     alt: "WTS Nova - When your business loses balance, we give the support it needs",
     title: "When Business Loses Balance",
     campaign: "WTS Nova · Social Strategy",
+    aspectRatio: "portrait",
+  },
+  {
+    id: "qdelta-10-sec-test",
+    image: "/images/social/qdelta-10-second-test.jpg",
+    alt: "QDelta - The 10-Second Website Test. If people can't answer these fast, your website needs more clarity.",
+    title: "The 10-Second Website Test",
+    campaign: "QDelta · Website Clarity",
+    aspectRatio: "portrait",
+  },
+  {
+    id: "better-website-growth",
+    image: "/images/social/better-website-growth.jpg",
+    alt: "The Same Business. A Better Website Brings More Customers. Architectural & conversion comparison",
+    title: "A Better Website Brings Customers",
+    campaign: "Visual Comparison & Strategy",
     aspectRatio: "portrait",
   },
   {
