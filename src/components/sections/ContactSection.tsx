@@ -9,7 +9,7 @@ export function ContactSection() {
     siteConfig.contact.whatsappMessage
   );
   const emailUrl = getMailtoUrl(siteConfig.contact.email);
-  const instagramUrl = siteConfig.contact.instagram || "https://instagram.com/qdelta.technologies";
+  const instagramUrl = siteConfig.contact.instagram;
 
   return (
     <section

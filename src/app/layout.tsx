@@ -34,7 +34,7 @@ export const metadata: Metadata = {
     title: "QDelta — Our Work | Premium Portfolio Showcase",
     description:
       "Websites, digital solutions, and creative content. Curated showcase for QDelta clients.",
-    url: "https://work.qdelta.com",
+    url: "https://work.qdelta.in",
     siteName: "QDelta — Our Work",
     type: "website",
     locale: "en_US",

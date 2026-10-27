@@ -21,12 +21,12 @@ export interface SiteConfig {
 export const siteConfig: SiteConfig = {
   name: "QDelta",
   tagline: "Websites, digital solutions, and creative content.",
-  subdomain: "work.qdelta.com",
+  subdomain: "work.qdelta.in",
   contact: {
-    email: "hello@qdelta.com",
-    whatsappNumber: "15550192834",
+    email: "hello@qdelta.in",
+    whatsappNumber: "917815895689",
     whatsappMessage: "Hi QDelta team, I would like to discuss a project.",
-    instagram: "https://instagram.com/qdelta.technologies",
+    instagram: "https://www.instagram.com/qdelta.in?exln=MWR2engwdGM2MDdpdw==",
   },
   navigation: [
     { label: "Websites", href: "#websites" },
