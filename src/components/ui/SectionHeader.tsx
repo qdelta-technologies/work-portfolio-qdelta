@@ -21,7 +21,7 @@ export function SectionHeader({
       className="flex flex-col md:flex-row md:items-end justify-between gap-3 sm:gap-4 pb-3 sm:pb-4 border-b border-[#404A48]"
     >
       <div className="space-y-1">
-        <h2 className="text-[22px] sm:text-[25px] md:text-[28px] font-semibold tracking-[-0.02em] text-[#D4FF78]">
+        <h2 className="text-[22px] sm:text-[25px] md:text-[28px] font-semibold tracking-[-0.02em] text-[#FACC15]">
           {number && (
             <span className="inline-flex items-baseline gap-2 mr-2.5 text-[#A5AAA7]">
               <span className="font-normal text-[17px] sm:text-[20px] md:text-[22px] font-mono">

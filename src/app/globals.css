@@ -14,7 +14,9 @@
   --color-surface-card: #202425;
   --color-text-primary: #F5F6F2;
   --color-text-secondary: #A5AAA7;
-  --color-accent-lime: #D4FF78;
+  --color-accent-yellow: #FACC15;
+  --color-accent-yellow-hover: #FDE047;
+  --color-accent-lime: #FACC15;
   --color-border-subtle: #343938;
 
   --font-outfit: var(--font-outfit), system-ui, -apple-system, sans-serif;
@@ -27,7 +29,10 @@
   --surface-card: #202425;
   --text-primary: #F5F6F2;
   --text-secondary: #A5AAA7;
-  --accent-lime: #D4FF78;
+  --accent-yellow: #FACC15;
+  --accent-yellow-hover: #FDE047;
+  --accent-yellow-muted: rgba(250, 204, 21, 0.12);
+  --accent-lime: #FACC15;
   --border-subtle: #343938;
 }
 
@@ -53,11 +58,11 @@ body {
     linear-gradient(to bottom, rgba(255, 255, 255, 0.055) 1px, transparent 1px);
 }
 
-/* Subtle ambient gradients with lime spotlights and dark tonal flow */
+/* Subtle ambient gradients with yellow spotlights and dark tonal flow */
 .bg-radial-glow {
   background: 
-    radial-gradient(circle 650px at 90% 30%, rgba(212, 255, 120, 0.09), transparent 65%),
-    radial-gradient(circle 700px at 10% 75%, rgba(212, 255, 120, 0.08), transparent 65%),
+    radial-gradient(circle 650px at 90% 30%, rgba(250, 204, 21, 0.075), transparent 65%),
+    radial-gradient(circle 700px at 10% 75%, rgba(250, 204, 21, 0.065), transparent 65%),
     linear-gradient(180deg, #14181a 0%, #111315 25%, #15181a 55%, #111315 80%, #0d0f10 100%);
 }
 
@@ -79,7 +84,7 @@ body {
 
 /* Accessible focus ring */
 :focus-visible {
-  outline: 2px solid #D4FF78;
+  outline: 2px solid #FACC15;
   outline-offset: 2px;
 }
 

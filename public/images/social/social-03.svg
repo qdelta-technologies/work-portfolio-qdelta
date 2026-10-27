@@ -10,19 +10,19 @@
   <rect x="24" y="24" width="752" height="752" rx="16" fill="none" stroke="#25292b" stroke-width="1.5"/>
 
   <!-- Top bar -->
-  <text x="64" y="80" fill="#D4FF78" font-family="'Outfit', system-ui" font-size="11" font-weight="600" letter-spacing="3">FASHION & LIFESTYLE</text>
+  <text x="64" y="80" fill="#FACC15" font-family="'Outfit', system-ui" font-size="11" font-weight="600" letter-spacing="3">FASHION & LIFESTYLE</text>
   <text x="736" y="80" fill="#A5AAA7" font-family="'Outfit', system-ui" font-size="12" text-anchor="end">QDELTA</text>
 
   <!-- Graphic artwork -->
   
       <rect x="220" y="160" width="360" height="480" rx="10" fill="#1b1d1f" stroke="#343938" stroke-width="1.5"/>
       <polygon points="320,520 400,240 480,520" fill="#111315" stroke="#4a5254" stroke-width="1"/>
-      <circle cx="400" cy="220" r="28" fill="#D4FF78"/>
+      <circle cx="400" cy="220" r="28" fill="#FACC15"/>
       <text x="400" y="580" fill="#F5F6F2" font-family="'Outfit', system-ui" font-size="14" letter-spacing="4" text-anchor="middle">DROP 04 / STRICT BLACK</text>
     
 
   <!-- Bottom Title and Sub -->
   <text x="64" y="700" fill="#F5F6F2" font-family="'Outfit', system-ui" font-weight="700" font-size="28">LUMINA MONOLITH</text>
   <text x="64" y="730" fill="#A5AAA7" font-family="'Outfit', system-ui" font-size="14">FALL / WINTER APPAREL</text>
-  <text x="736" y="715" fill="#D4FF78" font-family="system-ui" font-size="22" text-anchor="end">↗</text>
+  <text x="736" y="715" fill="#FACC15" font-family="system-ui" font-size="22" text-anchor="end">↗</text>
 </svg>

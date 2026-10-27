@@ -10,19 +10,19 @@
   <rect x="24" y="24" width="752" height="752" rx="16" fill="none" stroke="#25292b" stroke-width="1.5"/>
 
   <!-- Top bar -->
-  <text x="64" y="80" fill="#D4FF78" font-family="'Outfit', system-ui" font-size="11" font-weight="600" letter-spacing="3">EDITORIAL SOCIAL</text>
+  <text x="64" y="80" fill="#FACC15" font-family="'Outfit', system-ui" font-size="11" font-weight="600" letter-spacing="3">EDITORIAL SOCIAL</text>
   <text x="736" y="80" fill="#A5AAA7" font-family="'Outfit', system-ui" font-size="12" text-anchor="end">QDELTA</text>
 
   <!-- Graphic artwork -->
   
       <path d="M 220 540 A 180 180 0 0 1 580 540 Z" fill="#161c18" stroke="#2d3b31" stroke-width="1.5"/>
-      <line x1="220" y1="540" x2="580" y2="540" stroke="#D4FF78" stroke-width="2"/>
-      <circle cx="400" cy="440" r="10" fill="#D4FF78"/>
+      <line x1="220" y1="540" x2="580" y2="540" stroke="#FACC15" stroke-width="2"/>
+      <circle cx="400" cy="440" r="10" fill="#FACC15"/>
       <text x="400" y="600" fill="#F5F6F2" font-family="'Outfit', system-ui" font-size="14" letter-spacing="3" text-anchor="middle">BIO-CLIMATIC CITIES</text>
     
 
   <!-- Bottom Title and Sub -->
   <text x="64" y="700" fill="#F5F6F2" font-family="'Outfit', system-ui" font-weight="700" font-size="28">ECOSPHERE HORIZON</text>
   <text x="64" y="730" fill="#A5AAA7" font-family="'Outfit', system-ui" font-size="14">RESTORATIVE HABITATS</text>
-  <text x="736" y="715" fill="#D4FF78" font-family="system-ui" font-size="22" text-anchor="end">↗</text>
+  <text x="736" y="715" fill="#FACC15" font-family="system-ui" font-size="22" text-anchor="end">↗</text>
 </svg>

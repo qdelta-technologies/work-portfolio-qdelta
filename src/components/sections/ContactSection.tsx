@@ -19,15 +19,15 @@ export function ContactSection() {
     >
       <div className="max-w-[1320px] mx-auto px-4 sm:px-6 md:px-12">
         <div className="rounded-[10px] bg-[#181B1C] border border-[#38403F] p-5 sm:p-7 md:p-8 relative overflow-hidden">
-          {/* Subtle lime glow background in corner */}
+          {/* Subtle yellow glow background in corner */}
           <div
-            className="absolute -top-32 -right-32 w-80 h-80 rounded-full bg-[#D4FF78]/5 blur-3xl pointer-events-none"
+            className="absolute -top-32 -right-32 w-80 h-80 rounded-full bg-[#FACC15]/8 blur-3xl pointer-events-none"
             aria-hidden="true"
           />
 
           <div className="max-w-xl space-y-4 sm:space-y-5 relative z-10">
             <div className="space-y-1.5 sm:space-y-2">
-              <span className="text-[11px] font-mono uppercase tracking-[0.16em] text-[#D4FF78]">
+              <span className="text-[11px] font-mono uppercase tracking-[0.16em] text-[#FACC15]">
                 START A CONVERSATION
               </span>
               <h2 className="text-[24px] sm:text-[30px] md:text-[34px] font-bold text-[#F5F6F2] tracking-[-0.02em] leading-tight">
@@ -41,7 +41,7 @@ export function ContactSection() {
             {/* CTA Buttons */}
             <div className="flex flex-col sm:flex-row items-stretch sm:items-center gap-2.5 sm:gap-3 pt-1">
               <Button
-                variant="lime"
+                variant="yellow"
                 size="md"
                 href={whatsappUrl}
                 isExternal
@@ -52,7 +52,7 @@ export function ContactSection() {
               </Button>
 
               <Button
-                variant="lime"
+                variant="yellow"
                 size="md"
                 href={instagramUrl}
                 isExternal
@@ -63,7 +63,7 @@ export function ContactSection() {
               </Button>
 
               <Button
-                variant="lime"
+                variant="yellow"
                 size="md"
                 href={emailUrl}
                 aria-label="Contact QDelta via Email"

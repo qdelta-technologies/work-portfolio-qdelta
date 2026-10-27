@@ -4,6 +4,7 @@ export type WebsiteCategoryId =
   | "web-apps"
   | "agency"
   | "business"
+  | "education"
   | "ecommerce"
   | "landing-pages"
   | "other";

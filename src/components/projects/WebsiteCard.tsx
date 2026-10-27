@@ -27,7 +27,7 @@ export function WebsiteCard({ project }: WebsiteCardProps) {
       {...wrapperProps}
       className={`group block rounded-[10px] bg-[#181B1C] border border-[#38403F] overflow-hidden transition-all duration-300 ${
         hasLiveUrl
-          ? "hover:border-[#D4FF78]/60 hover:shadow-[0_12px_36px_rgba(0,0,0,0.65)] cursor-pointer"
+          ? "hover:border-[#FACC15]/60 hover:shadow-[0_12px_36px_rgba(0,0,0,0.65)] cursor-pointer"
           : "cursor-default opacity-95"
       }`}
     >
@@ -38,7 +38,7 @@ export function WebsiteCard({ project }: WebsiteCardProps) {
           alt={`Screenshot preview of ${project.title} website`}
           fill
           sizes="(max-width: 640px) 100vw, (max-width: 1024px) 50vw, 33vw"
-          className="object-cover object-top transition-transform duration-300 ease-out group-hover:scale-[1.03]"
+          className="object-cover object-center transition-transform duration-300 ease-out group-hover:scale-[1.03]"
           priority={project.featured}
         />
         {/* Subtle hover gradient sheen */}
@@ -48,7 +48,7 @@ export function WebsiteCard({ project }: WebsiteCardProps) {
       {/* Card Content & Metadata */}
       <div className="p-3.5 sm:p-4 flex items-start justify-between gap-3">
         <div className="space-y-0.5 min-w-0">
-          <h3 className="text-[15px] sm:text-[16px] font-bold text-[#FFFFFF] tracking-[-0.01em] transition-colors group-hover:text-[#D4FF78] truncate">
+          <h3 className="text-[15px] sm:text-[16px] font-bold text-[#FFFFFF] tracking-[-0.01em] transition-colors group-hover:text-[#FACC15] truncate">
             {project.title}
           </h3>
           <p className="text-[12.5px] text-[#CBD2CF] font-medium truncate">
@@ -59,7 +59,7 @@ export function WebsiteCard({ project }: WebsiteCardProps) {
         {/* External Link Arrow Indicator */}
         {hasLiveUrl ? (
           <div
-            className="w-7 h-7 sm:w-7.5 sm:h-7.5 rounded-full bg-[#24292B] border border-[#38403F] flex items-center justify-center text-[#D4FF78] group-hover:bg-[#D4FF78] group-hover:text-[#111315] group-hover:border-[#D4FF78] transition-all duration-200 shrink-0 mt-0.5"
+            className="w-7 h-7 sm:w-7.5 sm:h-7.5 rounded-full bg-[#24292B] border border-[#38403F] flex items-center justify-center text-[#FACC15] group-hover:bg-[#FACC15] group-hover:text-[#111315] group-hover:border-[#FACC15] transition-all duration-200 shrink-0 mt-0.5"
             aria-hidden="true"
           >
             <ArrowUpRight className="w-3.5 h-3.5 transition-transform duration-200 group-hover:translate-x-0.5 group-hover:-translate-y-0.5" />

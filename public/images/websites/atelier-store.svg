@@ -9,7 +9,7 @@
 
   <!-- Store Header -->
   <text x="80" y="105" fill="#FFFFFF" font-family="'Outfit', system-ui" font-weight="900" font-size="26" letter-spacing="4">ATELIER STORE</text>
-  <text x="1120" y="105" fill="#D4FF78" font-family="'Outfit', system-ui" font-weight="700" font-size="14" text-anchor="end">CART (0) · SEARCH</text>
+  <text x="1120" y="105" fill="#FACC15" font-family="'Outfit', system-ui" font-weight="700" font-size="14" text-anchor="end">CART (0) · SEARCH</text>
   <line x1="80" y1="130" x2="1120" y2="130" stroke="#2D333B" stroke-width="1.5"/>
 
   <!-- Products 3-Col High-Contrast Grid -->
@@ -19,11 +19,11 @@
     <rect x="25" y="25" width="270" height="300" rx="10" fill="#202530"/>
     <!-- High-contrast chair graphic -->
     <polygon points="100,120 220,120 190,230 130,230" fill="#FFFFFF" stroke="#94A3B8" stroke-width="2"/>
-    <line x1="130" y1="230" x2="110" y2="280" stroke="#D4FF78" stroke-width="3"/>
-    <line x1="190" y1="230" x2="210" y2="280" stroke="#D4FF78" stroke-width="3"/>
+    <line x1="130" y1="230" x2="110" y2="280" stroke="#FACC15" stroke-width="3"/>
+    <line x1="190" y1="230" x2="210" y2="280" stroke="#FACC15" stroke-width="3"/>
     <text x="25" y="365" fill="#FFFFFF" font-family="'Outfit', system-ui" font-weight="800" font-size="20">The Arc Armchair</text>
     <text x="25" y="395" fill="#94A3B8" font-family="'Outfit', system-ui" font-size="14">Black Anodized Aluminum</text>
-    <rect x="25" y="425" width="130" height="36" rx="6" fill="#D4FF78"/>
+    <rect x="25" y="425" width="130" height="36" rx="6" fill="#FACC15"/>
     <text x="90" y="448" fill="#0C0D10" font-family="'Outfit', system-ui" font-weight="800" font-size="15" text-anchor="middle">$1,280 USD</text>
 
     <!-- Item 2 -->
@@ -33,17 +33,17 @@
     <ellipse cx="520" cy="110" rx="26" ry="10" fill="#0C0D10"/>
     <text x="385" y="365" fill="#FFFFFF" font-family="'Outfit', system-ui" font-weight="800" font-size="20">Kiso Ceramic Vessel</text>
     <text x="385" y="395" fill="#94A3B8" font-family="'Outfit', system-ui" font-size="14">Hand-thrown Stoneware</text>
-    <rect x="385" y="425" width="115" height="36" rx="6" fill="#D4FF78"/>
+    <rect x="385" y="425" width="115" height="36" rx="6" fill="#FACC15"/>
     <text x="442" y="448" fill="#0C0D10" font-family="'Outfit', system-ui" font-weight="800" font-size="15" text-anchor="middle">$340 USD</text>
 
     <!-- Item 3 -->
     <rect x="720" y="0" width="320" height="500" rx="14" fill="#161920" stroke="#333A44" stroke-width="2"/>
     <rect x="745" y="25" width="270" height="300" rx="10" fill="#202530"/>
     <circle cx="880" cy="180" r="60" fill="#FFFFFF" stroke="#94A3B8" stroke-width="2"/>
-    <line x1="880" y1="40" x2="880" y2="120" stroke="#D4FF78" stroke-width="3"/>
+    <line x1="880" y1="40" x2="880" y2="120" stroke="#FACC15" stroke-width="3"/>
     <text x="745" y="365" fill="#FFFFFF" font-family="'Outfit', system-ui" font-weight="800" font-size="20">Halo Pendant Lamp</text>
     <text x="745" y="395" fill="#94A3B8" font-family="'Outfit', system-ui" font-size="14">Smoked Borosilicate Glass</text>
-    <rect x="745" y="425" width="115" height="36" rx="6" fill="#D4FF78"/>
+    <rect x="745" y="425" width="115" height="36" rx="6" fill="#FACC15"/>
     <text x="802" y="448" fill="#0C0D10" font-family="'Outfit', system-ui" font-weight="800" font-size="15" text-anchor="middle">$490 USD</text>
   </g>
 </svg>

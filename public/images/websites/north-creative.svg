@@ -9,14 +9,14 @@
 
   <!-- Agency Nav -->
   <text x="80" y="110" fill="#FFFFFF" font-family="'Outfit', system-ui" font-weight="900" font-size="28" letter-spacing="4">NORTH /</text>
-  <text x="1120" y="110" fill="#D4FF78" font-family="'Outfit', system-ui" font-weight="700" font-size="15" text-anchor="end">EXPERIENCES · BRANDS · TECH</text>
+  <text x="1120" y="110" fill="#FACC15" font-family="'Outfit', system-ui" font-weight="700" font-size="15" text-anchor="end">EXPERIENCES · BRANDS · TECH</text>
   <line x1="80" y1="135" x2="1120" y2="135" stroke="#2A2E35" stroke-width="2"/>
 
   <!-- Big Bold High-contrast Typography Hero -->
   <g transform="translate(80, 180)">
     <text x="0" y="65" fill="#FFFFFF" font-family="'Outfit', system-ui" font-weight="900" font-size="78" letter-spacing="-3">WE CRAFT</text>
     <text x="0" y="150" fill="#FFFFFF" font-family="'Outfit', system-ui" font-weight="900" font-size="78" letter-spacing="-3">ICONIC DIGITAL</text>
-    <text x="0" y="235" fill="#D4FF78" font-family="'Outfit', system-ui" font-weight="900" font-size="78" letter-spacing="-3">PRESENCES.</text>
+    <text x="0" y="235" fill="#FACC15" font-family="'Outfit', system-ui" font-weight="900" font-size="78" letter-spacing="-3">PRESENCES.</text>
     <text x="0" y="300" fill="#CBD5E1" font-family="'Outfit', system-ui" font-size="18" font-weight="400">Award-winning creative engineering for world-changing visionary brands.</text>
   </g>
 
@@ -24,7 +24,7 @@
   <g transform="translate(680, 160)">
     <rect width="440" height="420" rx="16" fill="#14181F" stroke="#333E4F" stroke-width="2"/>
     <circle cx="220" cy="210" r="140" fill="#1E2530" stroke="#475569" stroke-width="1.5"/>
-    <circle cx="220" cy="210" r="54" fill="#D4FF78"/>
+    <circle cx="220" cy="210" r="54" fill="#FACC15"/>
     <!-- Play Triangle -->
     <polygon points="214,196 236,210 214,224" fill="#0A0B0D"/>
     <rect x="80" y="310" width="280" height="34" rx="6" fill="#0A0B0D" stroke="#333E4F" stroke-width="1"/>
@@ -36,6 +36,6 @@
   <text x="80" y="670" fill="#FFFFFF" font-family="system-ui" font-size="14" font-weight="700">★ AWWWARDS (×12)</text>
   <text x="440" y="670" fill="#FFFFFF" font-family="system-ui" font-size="14" font-weight="700">★ FWA OF THE DAY (×8)</text>
   <text x="760" y="670" fill="#FFFFFF" font-family="system-ui" font-size="14" font-weight="700">★ CANNES LIONS BRONZE</text>
-  <rect x="990" y="645" width="130" height="36" rx="6" fill="#D4FF78"/>
+  <rect x="990" y="645" width="130" height="36" rx="6" fill="#FACC15"/>
   <text x="1055" y="668" fill="#0A0B0D" font-family="system-ui" font-size="13" font-weight="800" text-anchor="middle">EXPLORE ↗</text>
 </svg>

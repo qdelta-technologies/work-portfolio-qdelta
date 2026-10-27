@@ -12,7 +12,7 @@
     <rect x="0" y="0" width="170" height="30" rx="15" fill="#1E293B" stroke="#38BDF8" stroke-width="1.5"/>
     <text x="85" y="20" fill="#38BDF8" font-family="monospace" font-size="12" font-weight="700" text-anchor="middle">v2.8 STABLE RELEASE</text>
     <text x="0" y="80" fill="#FFFFFF" font-family="'Outfit', system-ui" font-weight="900" font-size="60" letter-spacing="-2">The Zero-Overhead</text>
-    <text x="0" y="145" fill="#FFFFFF" font-family="'Outfit', system-ui" font-weight="900" font-size="60" letter-spacing="-2">State Engine<tspan fill="#D4FF78">.</tspan></text>
+    <text x="0" y="145" fill="#FFFFFF" font-family="'Outfit', system-ui" font-weight="900" font-size="60" letter-spacing="-2">State Engine<tspan fill="#FACC15">.</tspan></text>
     <text x="0" y="195" fill="#CBD5E1" font-family="system-ui" font-size="18" font-weight="500">Lightning-fast distributed caches with automated edge replication across 280+ POPs.</text>
   </g>
 
@@ -27,9 +27,9 @@
 
     <!-- High-contrast syntax code lines -->
     <text x="36" y="85" fill="#94A3B8" font-family="monospace" font-size="15">$ npx mono-init --template=distributed-cache</text>
-    <text x="36" y="125" fill="#D4FF78" font-family="monospace" font-size="15" font-weight="700">✓ Successfully compiled and verified edge clusters in 12ms</text>
+    <text x="36" y="125" fill="#FACC15" font-family="monospace" font-size="15" font-weight="700">✓ Successfully compiled and verified edge clusters in 12ms</text>
     <text x="36" y="165" fill="#38BDF8" font-family="monospace" font-size="15">import <tspan fill="#FFFFFF">{ createStore, edgeSync }</tspan> from <tspan fill="#A7F3D0">"@mono/engine"</tspan>;</text>
-    <text x="36" y="205" fill="#FFFFFF" font-family="monospace" font-size="15">export const cache = createStore({ strategy: <tspan fill="#D4FF78">"instant-replicate"</tspan>, ttl: 86400 });</text>
+    <text x="36" y="205" fill="#FFFFFF" font-family="monospace" font-size="15">export const cache = createStore({ strategy: <tspan fill="#FACC15">"instant-replicate"</tspan>, ttl: 86400 });</text>
     <text x="36" y="245" fill="#10B981" font-family="monospace" font-size="15">// Ready: 14.8M ops/sec with zero latency overhead</text>
   </g>
 </svg>

@@ -16,7 +16,7 @@
 
   <!-- Left Sidebar UI (High contrast) -->
   <rect x="0" y="46" width="230" height="704" fill="#111823" stroke="#253142" stroke-width="1.5"/>
-  <circle cx="40" cy="85" r="14" fill="#D4FF78"/>
+  <circle cx="40" cy="85" r="14" fill="#FACC15"/>
   <text x="66" y="91" fill="#FFFFFF" font-family="'Outfit', system-ui, sans-serif" font-weight="800" font-size="18" letter-spacing="1">ORBIT</text>
   
   <!-- Active Sidebar items -->
@@ -30,7 +30,7 @@
   <!-- Top bar -->
   <rect x="230" y="46" width="970" height="64" fill="#131B26" stroke="#253142" stroke-width="1.5"/>
   <text x="270" y="86" fill="#FFFFFF" font-family="'Outfit', system-ui, sans-serif" font-weight="700" font-size="20">Sprint 48: Global Rollout</text>
-  <rect x="1000" y="63" width="165" height="34" rx="6" fill="#D4FF78"/>
+  <rect x="1000" y="63" width="165" height="34" rx="6" fill="#FACC15"/>
   <text x="1082" y="85" fill="#0F172A" font-family="'Outfit', system-ui, sans-serif" font-weight="700" font-size="13" text-anchor="middle">+ Deploy Service</text>
 
   <!-- High-contrast Metric Cards Row -->
@@ -39,7 +39,7 @@
     <text x="20" y="32" fill="#94A3B8" font-family="system-ui" font-size="11" font-weight="700" letter-spacing="1">VELOCITY SCORE</text>
     <text x="20" y="70" fill="#FFFFFF" font-family="'Outfit', system-ui" font-weight="800" font-size="30">98.4%</text>
     <rect x="140" y="50" width="60" height="24" rx="12" fill="#065F46"/>
-    <text x="170" y="66" fill="#D4FF78" font-family="system-ui" font-size="11" font-weight="700" text-anchor="middle">+18%</text>
+    <text x="170" y="66" fill="#FACC15" font-family="system-ui" font-size="11" font-weight="700" text-anchor="middle">+18%</text>
 
     <rect x="235" y="0" width="215" height="95" rx="10" fill="#1A2230" stroke="#334155" stroke-width="1.5"/>
     <text x="255" y="32" fill="#94A3B8" font-family="system-ui" font-size="11" font-weight="700" letter-spacing="1">TASKS COMPLETED</text>
@@ -50,8 +50,8 @@
     <rect x="470" y="0" width="415" height="95" rx="10" fill="#1A2230" stroke="#334155" stroke-width="1.5"/>
     <text x="490" y="32" fill="#94A3B8" font-family="system-ui" font-size="11" font-weight="700" letter-spacing="1">RESPONSE LATENCY (P99)</text>
     <!-- Vibrant Glowing Sparkline -->
-    <polyline points="490,75 550,68 610,76 670,52 730,42 790,56 850,38" fill="none" stroke="#D4FF78" stroke-width="3"/>
-    <circle cx="850" cy="38" r="5" fill="#D4FF78"/>
+    <polyline points="490,75 550,68 610,76 670,52 730,42 790,56 850,38" fill="none" stroke="#FACC15" stroke-width="3"/>
+    <circle cx="850" cy="38" r="5" fill="#FACC15"/>
   </g>
 
   <!-- High-contrast Kanban Columns -->
@@ -64,7 +64,7 @@
     <text x="32" y="80" fill="#FFFFFF" font-family="system-ui" font-weight="700" font-size="15">Zero-Trust Authentication</text>
     <rect x="32" y="92" width="110" height="20" rx="4" fill="#450A0A"/>
     <text x="87" y="106" fill="#FCA5A5" font-family="system-ui" font-size="10" font-weight="700" text-anchor="middle">CRITICAL · P0</text>
-    <circle cx="235" cy="135" r="10" fill="#D4FF78"/>
+    <circle cx="235" cy="135" r="10" fill="#FACC15"/>
 
     <rect x="16" y="180" width="248" height="115" rx="8" fill="#1E2837" stroke="#3B495C" stroke-width="1.5"/>
     <text x="32" y="210" fill="#FFFFFF" font-family="system-ui" font-weight="700" font-size="15">Edge Mesh Rebalancing</text>
@@ -84,6 +84,6 @@
     <text x="632" y="32" fill="#10B981" font-family="system-ui" font-size="13" font-weight="700">RELEASED (8)</text>
     <rect x="628" y="50" width="243" height="95" rx="8" fill="#1E2837" stroke="#10B981" stroke-width="1.5"/>
     <text x="644" y="80" fill="#FFFFFF" font-family="system-ui" font-weight="700" font-size="15">Node SDK v3.2.0</text>
-    <text x="644" y="104" fill="#D4FF78" font-family="system-ui" font-size="12" font-weight="600">✓ Production Verified</text>
+    <text x="644" y="104" fill="#FACC15" font-family="system-ui" font-size="12" font-weight="600">✓ Production Verified</text>
   </g>
 </svg>

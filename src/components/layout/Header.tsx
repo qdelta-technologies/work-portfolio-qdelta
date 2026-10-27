@@ -38,7 +38,7 @@ export function Header() {
           aria-label="QDelta — Back to top of page"
         >
           <span
-            className="text-[19px] sm:text-[21px] font-bold text-[#D4FF78] tracking-[0.02em] transition-all group-hover:brightness-110"
+            className="text-[19px] sm:text-[21px] font-bold text-[#FACC15] tracking-[0.02em] transition-all group-hover:brightness-110"
             style={{ fontFamily: "var(--font-logo), 'Sifonn', sans-serif" }}
           >
             {siteConfig.name}
@@ -64,10 +64,10 @@ export function Header() {
           </a>
           <a
             href="#contact"
-            className="text-[#F5F6F2] hover:text-[#D4FF78] transition-colors flex items-center gap-1 py-1.5 focus-visible:outline-none rounded group"
+            className="text-[#F5F6F2] hover:text-[#FACC15] transition-colors flex items-center gap-1 py-1.5 focus-visible:outline-none rounded group"
           >
             <span>Contact</span>
-            <span className="text-[#D4FF78] transition-transform duration-200 group-hover:translate-x-0.5 group-hover:-translate-y-0.5">
+            <span className="text-[#FACC15] transition-transform duration-200 group-hover:translate-x-0.5 group-hover:-translate-y-0.5">
               ↗
             </span>
           </a>

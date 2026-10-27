@@ -69,19 +69,19 @@ export function CategoryDropdown({
           ref={triggerRef}
           type="button"
           onClick={() => setIsOpen(!isOpen)}
-          className="inline-flex items-center justify-between gap-2.5 min-w-[160px] px-3.5 py-2 sm:py-1.5 rounded-[10px] bg-[#181B1C] border border-[#38403F] text-[#FFFFFF] hover:border-[#D4FF78]/60 focus-visible:outline-none focus-visible:border-[#D4FF78] transition-all duration-200 text-[13px] font-medium shadow-sm active:scale-[0.99] touch-manipulation"
+          className="inline-flex items-center justify-between gap-2.5 min-w-[160px] px-3.5 py-2 sm:py-1.5 rounded-[10px] bg-[#181B1C] border border-[#38403F] text-[#FFFFFF] hover:border-[#FACC15]/60 focus-visible:outline-none focus-visible:border-[#FACC15] transition-all duration-200 text-[13px] font-medium shadow-sm active:scale-[0.99] touch-manipulation"
           aria-haspopup="listbox"
           aria-expanded={isOpen}
           aria-controls={dropdownId}
           aria-label="Filter projects by category"
         >
           <span className="flex items-center gap-2 truncate">
-            <span className="w-1.5 h-1.5 rounded-full bg-[#D4FF78]"></span>
+            <span className="w-1.5 h-1.5 rounded-full bg-[#FACC15]"></span>
             <span className="truncate">{selectedOption.label}</span>
           </span>
           <ChevronDown
             className={`w-3.5 h-3.5 text-[#CBD2CF] transition-transform duration-200 shrink-0 ${
-              isOpen ? "rotate-180 text-[#D4FF78]" : ""
+              isOpen ? "rotate-180 text-[#FACC15]" : ""
             }`}
           />
         </button>
@@ -112,13 +112,13 @@ export function CategoryDropdown({
                 }}
                 className={`w-full text-left px-3 py-1.5 text-[13px] flex items-center justify-between transition-colors rounded-[6px] mx-auto my-0.5 max-w-[calc(100%-8px)] ${
                   isSelected
-                    ? "bg-[#202425] text-[#D4FF78] font-medium"
+                    ? "bg-[#202425] text-[#FACC15] font-medium"
                     : "text-[#A5AAA7] hover:text-[#F5F6F2] hover:bg-[#202425]/60"
                 }`}
               >
                 <span>{category.label}</span>
                 {isSelected && (
-                  <Check className="w-3.5 h-3.5 text-[#D4FF78] shrink-0" />
+                  <Check className="w-3.5 h-3.5 text-[#FACC15] shrink-0" />
                 )}
               </button>
             );

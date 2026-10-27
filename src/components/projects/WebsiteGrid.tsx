@@ -22,7 +22,7 @@ export function WebsiteGrid({ projects, onResetFilter }: WebsiteGridProps) {
           <button
             type="button"
             onClick={onResetFilter}
-            className="inline-flex items-center gap-2 px-4 py-2 rounded-[10px] bg-[#202425] hover:bg-[#111315] text-[#D4FF78] border border-[#343938] text-[14px] font-medium transition-colors cursor-pointer"
+            className="inline-flex items-center gap-2 px-4 py-2 rounded-[10px] bg-[#202425] hover:bg-[#111315] text-[#FACC15] border border-[#343938] text-[14px] font-medium transition-colors cursor-pointer"
           >
             View All Projects
           </button>

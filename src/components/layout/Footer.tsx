@@ -23,7 +23,7 @@ export function Footer() {
           <span className="text-[#4E5654]">·</span>
           <a
             href="#top"
-            className="hover:text-[#D4FF78] transition-colors focus-visible:outline-none"
+            className="hover:text-[#FACC15] transition-colors focus-visible:outline-none"
           >
             Back to Top ↑
           </a>

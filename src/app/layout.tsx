@@ -66,7 +66,7 @@ export default function RootLayout({
       lang="en"
       className={`${outfit.variable} ${sifonn.variable} dark scroll-smooth`}
     >
-      <body className="min-h-screen bg-[#111315] text-[#F5F6F2] font-sans antialiased selection:bg-[#D4FF78] selection:text-[#111315]">
+      <body className="min-h-screen bg-[#111315] text-[#F5F6F2] font-sans antialiased selection:bg-[#FACC15] selection:text-[#111315]">
         {children}
       </body>
     </html>

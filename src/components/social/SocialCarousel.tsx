@@ -67,7 +67,7 @@ export function SocialCarousel({ posts, onOpenLightbox }: SocialCarouselProps) {
             disabled={!canScrollLeft}
             className={`w-8 h-8 rounded-full border flex items-center justify-center transition-all duration-200 touch-manipulation ${
               canScrollLeft
-                ? "bg-[#181B1C] border-[#38403F] text-[#FFFFFF] hover:text-[#D4FF78] hover:border-[#D4FF78]/60 cursor-pointer active:scale-95"
+                ? "bg-[#181B1C] border-[#38403F] text-[#FFFFFF] hover:text-[#FACC15] hover:border-[#FACC15]/60 cursor-pointer active:scale-95"
                 : "bg-[#181B1C]/50 border-[#38403F]/40 text-[#A5AAA7]/40 cursor-not-allowed"
             }`}
             aria-label="Scroll carousel left"
@@ -81,7 +81,7 @@ export function SocialCarousel({ posts, onOpenLightbox }: SocialCarouselProps) {
             disabled={!canScrollRight}
             className={`w-8 h-8 rounded-full border flex items-center justify-center transition-all duration-200 touch-manipulation ${
               canScrollRight
-                ? "bg-[#181B1C] border-[#38403F] text-[#FFFFFF] hover:text-[#D4FF78] hover:border-[#D4FF78]/60 cursor-pointer active:scale-95"
+                ? "bg-[#181B1C] border-[#38403F] text-[#FFFFFF] hover:text-[#FACC15] hover:border-[#FACC15]/60 cursor-pointer active:scale-95"
                 : "bg-[#181B1C]/50 border-[#38403F]/40 text-[#A5AAA7]/40 cursor-not-allowed"
             }`}
             aria-label="Scroll carousel right"

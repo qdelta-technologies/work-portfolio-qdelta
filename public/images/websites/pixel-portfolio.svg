@@ -1,7 +1,7 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 750" width="1200" height="750">
   <defs>
     <radialGradient id="sphereGrad" cx="35%" cy="35%" r="65%">
-      <stop offset="0%" stop-color="#D4FF78"/>
+      <stop offset="0%" stop-color="#FACC15"/>
       <stop offset="45%" stop-color="#06B6D4"/>
       <stop offset="85%" stop-color="#8B5CF6"/>
       <stop offset="100%" stop-color="#1E1B4B"/>
@@ -17,19 +17,19 @@
 
   <!-- Header -->
   <text x="80" y="110" fill="#FFFFFF" font-family="'Outfit', system-ui" font-weight="900" font-size="26">ELENA VANCE</text>
-  <text x="1120" y="110" fill="#D4FF78" font-family="'Outfit', system-ui" font-weight="700" font-size="15" text-anchor="end">3D ART DIRECTION · WEBGL</text>
+  <text x="1120" y="110" fill="#FACC15" font-family="'Outfit', system-ui" font-weight="700" font-size="15" text-anchor="end">3D ART DIRECTION · WEBGL</text>
   <line x1="80" y1="135" x2="1120" y2="135" stroke="#25293A" stroke-width="1.5"/>
 
   <!-- High-contrast Holographic Visual -->
   <g transform="translate(680, 360)">
     <circle cx="0" cy="0" r="160" fill="url(#sphereGrad)" stroke="#FFFFFF" stroke-width="2"/>
-    <ellipse cx="0" cy="0" rx="220" ry="70" fill="none" stroke="#D4FF78" stroke-width="2.5" stroke-dasharray="8 6"/>
+    <ellipse cx="0" cy="0" rx="220" ry="70" fill="none" stroke="#FACC15" stroke-width="2.5" stroke-dasharray="8 6"/>
   </g>
 
   <!-- Editorial Text Overlay -->
-  <text x="80" y="230" fill="#D4FF78" font-family="'Outfit', system-ui" font-size="13" font-weight="700" letter-spacing="3">SELECTED ARCHIVE 2024–2026</text>
+  <text x="80" y="230" fill="#FACC15" font-family="'Outfit', system-ui" font-size="13" font-weight="700" letter-spacing="3">SELECTED ARCHIVE 2024–2026</text>
   <text x="80" y="300" fill="#FFFFFF" font-family="'Outfit', system-ui" font-weight="900" font-size="64" letter-spacing="-2">Interactive Spatial</text>
-  <text x="80" y="375" fill="#FFFFFF" font-family="'Outfit', system-ui" font-weight="900" font-size="64" letter-spacing="-2">Experiences<tspan fill="#D4FF78">.</tspan></text>
+  <text x="80" y="375" fill="#FFFFFF" font-family="'Outfit', system-ui" font-weight="900" font-size="64" letter-spacing="-2">Experiences<tspan fill="#FACC15">.</tspan></text>
   <text x="80" y="440" fill="#CBD5E1" font-family="'Outfit', system-ui" font-size="18">Real-time WebGL installations, audiovisual sculptures, and virtual worlds.</text>
 
   <!-- High-contrast Projects Ribbon -->
@@ -37,13 +37,13 @@
     <rect x="0" y="0" width="500" height="120" rx="12" fill="#141724" stroke="#374151" stroke-width="2"/>
     <text x="28" y="48" fill="#FFFFFF" font-family="'Outfit', system-ui" font-weight="800" font-size="20">01 / AURA IMMERSIVE</text>
     <text x="28" y="80" fill="#CBD5E1" font-family="'Outfit', system-ui" font-size="14">Spatial WebGL Installation · Milan Design Week</text>
-    <rect x="440" y="40" width="40" height="40" rx="8" fill="#D4FF78"/>
+    <rect x="440" y="40" width="40" height="40" rx="8" fill="#FACC15"/>
     <text x="460" y="65" fill="#0A0B12" font-size="18" font-weight="800" text-anchor="middle">↗</text>
 
     <rect x="540" y="0" width="500" height="120" rx="12" fill="#141724" stroke="#374151" stroke-width="2"/>
     <text x="568" y="48" fill="#FFFFFF" font-family="'Outfit', system-ui" font-weight="800" font-size="20">02 / HYPER SPHERE</text>
     <text x="568" y="80" fill="#CBD5E1" font-family="'Outfit', system-ui" font-size="14">Generative Audio-Reactive World · Tokyo</text>
-    <rect x="980" y="40" width="40" height="40" rx="8" fill="#D4FF78"/>
+    <rect x="980" y="40" width="40" height="40" rx="8" fill="#FACC15"/>
     <text x="1000" y="65" fill="#0A0B12" font-size="18" font-weight="800" text-anchor="middle">↗</text>
   </g>
 </svg>

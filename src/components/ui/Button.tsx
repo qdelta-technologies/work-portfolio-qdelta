@@ -1,7 +1,7 @@
 import React from "react";
 
 interface ButtonProps extends React.ButtonHTMLAttributes<HTMLButtonElement> {
-  variant?: "lime" | "outline" | "ghost";
+  variant?: "yellow" | "lime" | "outline" | "ghost";
   size?: "sm" | "md" | "lg";
   href?: string;
   isExternal?: boolean;
@@ -28,7 +28,9 @@ export function Button({
   };
 
   const variantStyles = {
-    lime: "bg-[#D4FF78] text-[#111315] hover:bg-[#e2ff9e] shadow-[0_2px_12px_rgba(212,255,120,0.15)]",
+    yellow:
+      "bg-[#FACC15] text-[#111315] hover:bg-[#FDE047] shadow-[0_2px_12px_rgba(250,204,21,0.2)] font-semibold",
+    lime: "bg-[#FACC15] text-[#111315] hover:bg-[#FDE047] shadow-[0_2px_12px_rgba(250,204,21,0.2)] font-semibold",
     outline:
       "bg-[#1B1E1F] text-[#F5F6F2] border border-[#343938] hover:border-[#A5AAA7] hover:bg-[#202425]",
     ghost: "text-[#A5AAA7] hover:text-[#F5F6F2] hover:bg-[#1B1E1F]",

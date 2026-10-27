@@ -99,7 +99,7 @@ export function ImageLightbox({
         {/* Top Controls bar */}
         <div className="w-full flex items-center justify-between pb-2 sm:pb-3.5 text-[#CBD2CF]">
           <div className="flex items-center gap-2.5">
-            <span className="text-[12.5px] font-mono text-[#D4FF78]">
+            <span className="text-[12.5px] font-mono text-[#FACC15]">
               {String(currentIndex + 1).padStart(2, "0")} / {String(posts.length).padStart(2, "0")}
             </span>
             {currentPost.campaign && (
@@ -115,7 +115,7 @@ export function ImageLightbox({
           <button
             type="button"
             onClick={onClose}
-            className="w-9 h-9 sm:w-10 sm:h-10 rounded-full bg-[#181B1C] border border-[#38403F] text-[#FFFFFF] hover:text-[#D4FF78] hover:border-[#D4FF78]/60 flex items-center justify-center transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[#D4FF78] touch-manipulation"
+            className="w-9 h-9 sm:w-10 sm:h-10 rounded-full bg-[#181B1C] border border-[#38403F] text-[#FFFFFF] hover:text-[#FACC15] hover:border-[#FACC15]/60 flex items-center justify-center transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[#FACC15] touch-manipulation"
             aria-label="Close image lightbox (Escape)"
           >
             <X className="w-4 h-4 sm:w-5 sm:h-5" />
@@ -153,7 +153,7 @@ export function ImageLightbox({
             <button
               type="button"
               onClick={handlePrev}
-              className="w-9 h-9 sm:w-10 sm:h-10 rounded-full bg-[#181B1C] border border-[#38403F] text-[#FFFFFF] hover:text-[#D4FF78] hover:border-[#D4FF78]/60 flex items-center justify-center transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[#D4FF78] touch-manipulation active:scale-95"
+              className="w-9 h-9 sm:w-10 sm:h-10 rounded-full bg-[#181B1C] border border-[#38403F] text-[#FFFFFF] hover:text-[#FACC15] hover:border-[#FACC15]/60 flex items-center justify-center transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[#FACC15] touch-manipulation active:scale-95"
               aria-label="Previous image (Left Arrow)"
             >
               <ChevronLeft className="w-4 h-4 sm:w-5 sm:h-5" />
@@ -161,7 +161,7 @@ export function ImageLightbox({
             <button
               type="button"
               onClick={handleNext}
-              className="w-9 h-9 sm:w-10 sm:h-10 rounded-full bg-[#181B1C] border border-[#38403F] text-[#FFFFFF] hover:text-[#D4FF78] hover:border-[#D4FF78]/60 flex items-center justify-center transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[#D4FF78] touch-manipulation active:scale-95"
+              className="w-9 h-9 sm:w-10 sm:h-10 rounded-full bg-[#181B1C] border border-[#38403F] text-[#FFFFFF] hover:text-[#FACC15] hover:border-[#FACC15]/60 flex items-center justify-center transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[#FACC15] touch-manipulation active:scale-95"
               aria-label="Next image (Right Arrow)"
             >
               <ChevronRight className="w-4 h-4 sm:w-5 sm:h-5" />
