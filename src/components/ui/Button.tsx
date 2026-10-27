@@ -19,12 +19,12 @@ export function Button({
   ...props
 }: ButtonProps) {
   const baseStyles =
-    "inline-flex items-center justify-center font-medium transition-all duration-200 active:scale-[0.98] select-none rounded-[8px] whitespace-nowrap";
+    "inline-flex items-center justify-center font-medium transition-all duration-200 active:scale-[0.98] select-none rounded-[8px] whitespace-nowrap touch-manipulation cursor-pointer";
 
   const sizeStyles = {
-    sm: "px-3 py-1.5 text-[12.5px] gap-1.5",
-    md: "px-4 py-2 text-[13.5px] gap-2",
-    lg: "px-5 py-2.5 text-[14.5px] gap-2.5 font-semibold",
+    sm: "px-3 py-1.5 text-[12.5px] min-h-[36px] gap-1.5",
+    md: "px-4 py-2 sm:py-2 text-[13.5px] min-h-[42px] sm:min-h-[38px] gap-2",
+    lg: "px-5 py-2.5 text-[14.5px] min-h-[44px] sm:min-h-[42px] gap-2.5 font-semibold",
   };
 
   const variantStyles = {

@@ -5,9 +5,10 @@ import { WebsiteProject } from "@/types/project";
 
 interface WebsiteCardProps {
   project: WebsiteProject;
+  index?: number;
 }
 
-export function WebsiteCard({ project }: WebsiteCardProps) {
+export function WebsiteCard({ project, index }: WebsiteCardProps) {
   const hasLiveUrl = Boolean(project.liveUrl);
 
   const CardWrapper = hasLiveUrl ? "a" : "div";
@@ -25,7 +26,7 @@ export function WebsiteCard({ project }: WebsiteCardProps) {
   return (
     <CardWrapper
       {...wrapperProps}
-      className={`group block rounded-[10px] bg-[#181B1C] border border-[#38403F] overflow-hidden transition-all duration-300 ${
+      className={`group block rounded-[10px] bg-[#181B1C] border border-[#38403F] overflow-hidden transition-all duration-300 active:scale-[0.985] touch-manipulation ${
         hasLiveUrl
           ? "hover:border-[#FACC15]/60 hover:shadow-[0_12px_36px_rgba(0,0,0,0.65)] cursor-pointer"
           : "cursor-default opacity-95"
@@ -39,7 +40,7 @@ export function WebsiteCard({ project }: WebsiteCardProps) {
           fill
           sizes="(max-width: 640px) 100vw, (max-width: 1024px) 50vw, 33vw"
           className="object-cover object-center transition-transform duration-300 ease-out group-hover:scale-[1.03]"
-          priority={project.featured}
+          priority={index !== undefined ? index < 2 : Boolean(project.featured)}
         />
         {/* Subtle hover gradient sheen */}
         <div className="absolute inset-0 bg-gradient-to-t from-[#111315]/30 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300" />
@@ -47,13 +48,20 @@ export function WebsiteCard({ project }: WebsiteCardProps) {
 
       {/* Card Content & Metadata */}
       <div className="p-3.5 sm:p-4 flex items-start justify-between gap-3">
-        <div className="space-y-0.5 min-w-0">
-          <h3 className="text-[15px] sm:text-[16px] font-bold text-[#FFFFFF] tracking-[-0.01em] transition-colors group-hover:text-[#FACC15] truncate">
-            {project.title}
-          </h3>
-          <p className="text-[12.5px] text-[#CBD2CF] font-medium truncate">
-            {project.categoryLabel}
-          </p>
+        <div className="space-y-1 min-w-0 flex-1">
+          <div className="flex items-center gap-2">
+            <h3 className="text-[15px] sm:text-[16px] font-bold text-[#FFFFFF] tracking-[-0.01em] transition-colors group-hover:text-[#FACC15] truncate">
+              {project.title}
+            </h3>
+            <span className="text-[10px] font-mono uppercase tracking-wider text-[#FACC15] bg-[#FACC15]/10 border border-[#FACC15]/20 px-1.5 py-0.5 rounded-[4px] shrink-0 font-medium">
+              {project.categoryLabel}
+            </span>
+          </div>
+          {project.description && (
+            <p className="text-[12px] sm:text-[12.5px] text-[#A5AAA7] font-normal line-clamp-1 leading-snug">
+              {project.description}
+            </p>
+          )}
         </div>
 
         {/* External Link Arrow Indicator */}
