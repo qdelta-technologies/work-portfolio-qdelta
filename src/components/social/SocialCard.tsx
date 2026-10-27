@@ -20,7 +20,7 @@ export function SocialCard({ post, index, onOpenLightbox }: SocialCardProps) {
         src={post.image}
         alt={post.alt}
         fill
-        sizes="(max-width: 640px) 72vw, (max-width: 1024px) 30vw, 290px"
+        sizes="(max-width: 640px) 56vw, (max-width: 1024px) 30vw, 290px"
         className="object-cover transition-transform duration-300 ease-out group-hover:scale-[1.03]"
       />
 

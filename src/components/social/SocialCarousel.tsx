@@ -102,7 +102,7 @@ export function SocialCarousel({ posts, onOpenLightbox }: SocialCarouselProps) {
         {posts.map((post, idx) => (
           <div
             key={post.id}
-            className="w-[76vw] sm:w-[38vw] md:w-[28vw] lg:w-[21vw] max-w-[285px] shrink-0 snap-start"
+            className="w-[56vw] sm:w-[38vw] md:w-[28vw] lg:w-[21vw] max-w-[285px] shrink-0 snap-start"
           >
             <SocialCard
               post={post}
