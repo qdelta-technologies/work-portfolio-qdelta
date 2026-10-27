@@ -19,7 +19,7 @@ export function SocialMediaSection() {
     >
       <div className="max-w-[1320px] mx-auto px-4 sm:px-6 md:px-12 space-y-3.5 sm:space-y-4">
         <SectionHeader
-          title="Social Media"
+          title="Social Media Posts"
           description="Creative content that makes an impression."
         />
 
