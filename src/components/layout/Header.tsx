@@ -2,6 +2,7 @@
 
 import React, { useState, useEffect } from "react";
 import Link from "next/link";
+import Image from "next/image";
 import { siteConfig } from "@/config/site";
 
 export function Header() {
@@ -37,12 +38,14 @@ export function Header() {
           className="group flex items-center tracking-tight focus-visible:outline-none cursor-pointer py-1"
           aria-label="QDelta — Back to top of page"
         >
-          <span
-            className="text-[19px] sm:text-[21px] font-bold text-[#FACC15] tracking-[0.02em] transition-all group-hover:brightness-110"
-            style={{ fontFamily: "var(--font-logo), 'Sifonn', sans-serif" }}
-          >
-            {siteConfig.name}
-          </span>
+          <Image
+            src="/images/qdelta-logo.png"
+            alt="QDelta"
+            width={110}
+            height={40}
+            priority
+            className="h-7 sm:h-8 w-auto object-contain transition-transform duration-200 group-hover:scale-[1.03]"
+          />
         </Link>
 
         {/* Navigation items */}
