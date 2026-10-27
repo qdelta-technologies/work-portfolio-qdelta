@@ -2,6 +2,46 @@ import { SocialPost } from "@/types/project";
 
 export const SOCIAL_POSTS: SocialPost[] = [
   {
+    id: "wts-nova-balance",
+    image: "/images/social/wts-nova-business-balance.jpg",
+    alt: "WTS Nova - When your business loses balance, we give the support it needs",
+    title: "When Business Loses Balance",
+    campaign: "WTS Nova · Social Strategy",
+    aspectRatio: "portrait",
+  },
+  {
+    id: "dsa-why-learn",
+    image: "/images/social/dsa-why-learn.jpg",
+    alt: "DSA Day 1 of 45 - Why Should You Learn This? Data structures educational carousel",
+    title: "Why Learn Data Structures?",
+    campaign: "Tech & Coding Education",
+    aspectRatio: "portrait",
+  },
+  {
+    id: "wts-nova-services",
+    image: "/images/social/wts-nova-services.jpg",
+    alt: "What is WTS Nova? We help businesses grow on social media - We Transform Stories",
+    title: "What is WTS Nova?",
+    campaign: "WTS Nova · Brand & Growth",
+    aspectRatio: "portrait",
+  },
+  {
+    id: "how-internet-works",
+    image: "/images/social/how-internet-works.jpg",
+    alt: "How the Internet Actually Works - DNS, Servers, and Request Journey Infographic",
+    title: "How the Internet Works",
+    campaign: "Educational Infographic",
+    aspectRatio: "portrait",
+  },
+  {
+    id: "better-website-growth",
+    image: "/images/social/better-website-growth.jpg",
+    alt: "The Same Business. A Better Website Brings More Customers. Architectural & conversion comparison",
+    title: "A Better Website Brings Customers",
+    campaign: "Visual Comparison & Strategy",
+    aspectRatio: "portrait",
+  },
+  {
     id: "social-01",
     image: "/images/social/social-01.svg",
     alt: "Aura Sound Campaign - Minimal hardware launch visual with sonic waveform",
