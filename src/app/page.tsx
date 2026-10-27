@@ -7,10 +7,10 @@ import { ContactSection } from "@/components/sections/ContactSection";
 
 export default function Home() {
   return (
-    <div className="relative flex flex-col min-h-screen bg-[#111315] text-[#F5F6F2] overflow-x-hidden">
-      {/* Background Layer: Ambient Gradients */}
+    <div className="relative flex flex-col min-h-screen bg-[#111315] text-[#F5F6F2]">
+      {/* Background Layer: Ambient Gradients (hardware-accelerated GPU layer) */}
       <div
-        className="fixed inset-0 pointer-events-none z-0 overflow-hidden"
+        className="fixed inset-0 pointer-events-none z-0 overflow-hidden transform-gpu will-change-transform"
         aria-hidden="true"
       >
         {/* Subtle Ambient Gradients */}

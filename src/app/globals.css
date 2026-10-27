@@ -46,6 +46,7 @@ body {
   color: var(--text-primary);
   font-family: var(--font-outfit), system-ui, -apple-system, sans-serif;
   overflow-x: hidden;
+  overscroll-behavior-y: none;
   text-rendering: optimizeLegibility;
   -webkit-font-smoothing: antialiased;
   -webkit-tap-highlight-color: transparent;
@@ -61,6 +62,8 @@ body {
 
 /* Subtle ambient gradients with yellow spotlights and dark tonal flow */
 .bg-radial-glow {
+  transform: translateZ(0);
+  will-change: transform;
   background: 
     radial-gradient(circle 650px at 90% 30%, rgba(250, 204, 21, 0.075), transparent 65%),
     radial-gradient(circle 700px at 10% 75%, rgba(250, 204, 21, 0.065), transparent 65%),
