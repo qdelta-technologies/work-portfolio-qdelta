@@ -2,7 +2,7 @@
 
 import React, { useState } from "react";
 import { SectionHeader } from "@/components/ui/SectionHeader";
-import { SocialCarousel } from "@/components/social/SocialCarousel";
+import { SocialGrid } from "@/components/social/SocialGrid";
 import { ImageLightbox } from "@/components/social/ImageLightbox";
 import { SOCIAL_POSTS } from "@/data/social-posts";
 
@@ -23,7 +23,7 @@ export function SocialMediaSection() {
           description="Creative content that makes an impression."
         />
 
-        <SocialCarousel
+        <SocialGrid
           posts={SOCIAL_POSTS}
           onOpenLightbox={(idx) => setActiveLightboxIndex(idx)}
         />
