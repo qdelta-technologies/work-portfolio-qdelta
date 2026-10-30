@@ -1,7 +1,7 @@
 "use client";
 
 import React from "react";
-import { Globe, Sparkles, Clapperboard, ArrowDown, ArrowUpRight, CheckCircle2 } from "lucide-react";
+import { Globe, Sparkles, Clapperboard, ArrowDown, ArrowUpRight } from "lucide-react";
 import { WorkDomainId } from "@/types/project";
 
 interface HeroProps {
@@ -33,13 +33,13 @@ export function Hero({ activeDomain, onSelectDomain }: HeroProps) {
     },
     {
       id: "commercials" as WorkDomainId,
-      title: "Ad Creatives & Promo Reels",
-      eyebrow: "CINEMA & MOTION",
-      subtitle: "Cinematic brand films, high-conversion commercial spots, and vertical viral reels.",
-      badge: "Placeholders • Coming Soon",
-      badgeColor: "text-[#A5AAA7] bg-[#1E2223] border-[#38403F]",
+      title: "Motion Graphics & Ad Creatives",
+      eyebrow: "MOTION & CREATIVES",
+      subtitle: "High-retention motion graphics, animated promo reels, and high-conversion ad creatives.",
+      badge: "6 Reels • 5 Creatives",
+      badgeColor: "text-[#FACC15] bg-[#FACC15]/10 border-[#FACC15]/25",
       icon: Clapperboard,
-      features: "Cinema widescreen • 9:16 vertical reels • Pipeline",
+      features: "Motion graphics • Short-form reels • Ad creatives",
     },
   ];
 

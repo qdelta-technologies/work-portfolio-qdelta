@@ -23,8 +23,8 @@ export default function Home() {
     },
     {
       id: "commercials",
-      title: "Ad Creatives & Promo Reels",
-      hint: "Placeholders",
+      title: "Motion Graphics & Ad Creatives",
+      hint: "Videos & Creatives",
       href: "/commercial-ads",
       icon: Clapperboard,
     },

@@ -6,12 +6,12 @@ export function BackgroundLayer() {
       className="fixed inset-0 pointer-events-none z-0 overflow-hidden"
       aria-hidden="true"
     >
-      {/* 1. Pure dark amber base gradient (completely smooth, zero dots) */}
+      {/* 1. Pure dark amber base gradient (completely smooth, seamless falloff) */}
       <div 
         className="absolute inset-0 bg-[#111214]"
         style={{
           backgroundImage:
-            "radial-gradient(ellipse 90% 60% at 50% 0%, rgba(180, 83, 9, 0.12) 0%, transparent 70%), linear-gradient(180deg, #131416 0%, #111214 50%, #0d0e0f 100%)",
+            "radial-gradient(ellipse 120% 70% at 50% -10%, rgba(180, 83, 9, 0.05) 0%, rgba(180, 83, 9, 0.02) 50%, transparent 85%), linear-gradient(180deg, #131416 0%, #111214 50%, #0d0e0f 100%)",
         }}
       />
 

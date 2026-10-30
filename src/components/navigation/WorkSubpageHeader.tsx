@@ -28,8 +28,8 @@ export function WorkSubpageHeader({
     },
     {
       id: "commercials",
-      label: "Ad Creatives & Promo Reels",
-      shortLabel: "Ad Creatives",
+      label: "Motion Graphics & Ad Creatives",
+      shortLabel: "Motion & Ads",
       href: "/commercial-ads",
     },
   ];

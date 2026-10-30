@@ -53,3 +53,12 @@ export interface SocialPost {
   campaign?: string;
   aspectRatio?: "square" | "portrait";
 }
+
+export interface ReelItem {
+  id: string;
+  title: string;
+  category?: string;
+  duration?: string;
+  videoSrc: string;
+  thumbnailTimestamp?: number; // In seconds (e.g. 0.5, 1.2) to capture the viewer's "first expression" hook frame
+}

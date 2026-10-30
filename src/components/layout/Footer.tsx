@@ -33,7 +33,7 @@ export function Footer() {
             href="/commercial-ads"
             className="py-1.5 px-2 rounded-[6px] hover:text-[#FACC15] transition-colors focus-visible:outline-none touch-manipulation active:scale-95"
           >
-            Ad Creatives & Promo Reels
+            Motion Graphics & Ad Creatives
           </Link>
         </div>
       </div>
