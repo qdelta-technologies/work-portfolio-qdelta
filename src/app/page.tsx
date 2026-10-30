@@ -125,11 +125,8 @@ export default function Home() {
 
       {/* Minimal Footer */}
       <footer className="relative z-10 w-full py-5 border-t border-[#343938]/60 text-center text-[12px] text-[#A5AAA7]">
-        <div className="max-w-[1320px] mx-auto px-4 flex flex-col sm:flex-row items-center justify-between gap-2">
+        <div className="max-w-[1320px] mx-auto px-4 flex items-center justify-center">
           <span>{siteConfig.footer.copyright}</span>
-          <span className="text-[#CBD2CF]/70 font-mono text-[11px]">
-            QDelta Creative & Technology Studio
-          </span>
         </div>
       </footer>
     </div>
