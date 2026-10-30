@@ -79,16 +79,11 @@ export function WebsiteListView({
 
                 {/* Info Text */}
                 <div className="space-y-1 sm:space-y-1.5 min-w-0 flex-1">
-                  {/* Category & Year badges */}
+                  {/* Category badge & Featured pill */}
                   <div className="flex flex-wrap items-center gap-1.5 sm:gap-2">
                     <span className="text-[10px] sm:text-[10.5px] font-mono uppercase tracking-wider text-[#FACC15] bg-[#FACC15]/10 border border-[#FACC15]/25 px-1.5 sm:px-2 py-0.5 rounded-[4px] font-semibold">
                       {project.categoryLabel}
                     </span>
-                    {project.year && (
-                      <span className="text-[10.5px] sm:text-[11px] font-mono text-[#A5AAA7]">
-                        {project.year}
-                      </span>
-                    )}
                     {project.featured && (
                       <span className="text-[9.5px] sm:text-[10px] font-mono uppercase tracking-wider text-[#CBD2CF] bg-[#24292B] border border-[#38403F] px-1.5 py-0.5 rounded-[4px]">
                         Featured
