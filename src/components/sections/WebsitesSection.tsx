@@ -34,7 +34,7 @@ export function WebsitesSection() {
           title="Websites & Web Applications"
           description="Engineered for speed, brand distinctiveness, and conversion."
         >
-          <div className="flex flex-wrap items-center gap-2.5 sm:gap-3">
+          <div className="flex flex-wrap items-center justify-between sm:justify-end gap-2.5 sm:gap-3 w-full sm:w-auto">
             {/* View Mode Toggle (Line View vs Grid View) */}
             <div className="inline-flex items-center rounded-[8px] bg-[#181B1C] border border-[#38403F] p-0.5">
               <button

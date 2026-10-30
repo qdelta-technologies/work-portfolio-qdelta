@@ -94,7 +94,7 @@ export function CommercialAdsSection() {
             size="sm"
             href={whatsappUrl}
             isExternal
-            className="shrink-0 text-[12px]"
+            className="w-full sm:w-auto justify-center text-center shrink-0 text-[12px] active:scale-95 touch-manipulation"
           >
             <span>Inquire About Video Production</span>
             <ArrowUpRight className="w-3 h-3 ml-1" />
