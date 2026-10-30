@@ -9,6 +9,16 @@ export type WebsiteCategoryId =
   | "landing-pages"
   | "other";
 
+export type WorkDomainId = "websites" | "content" | "commercials";
+
+export interface WorkDomainInfo {
+  id: WorkDomainId;
+  title: string;
+  eyebrow: string;
+  subtitle: string;
+  badge: string;
+}
+
 export interface CategoryOption {
   id: WebsiteCategoryId;
   label: string;

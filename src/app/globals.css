@@ -52,22 +52,24 @@ body {
   -webkit-tap-highlight-color: transparent;
 }
 
-/* Subtle, refined grid pattern (38px x 38px) */
-.bg-grid-pattern {
+/* Subtle, refined Dark Yellow Architectural Grid (38px x 38px) */
+.bg-dark-yellow-grid {
   background-size: 38px 38px;
   background-image: 
-    linear-gradient(to right, rgba(255, 255, 255, 0.055) 1px, transparent 1px),
-    linear-gradient(to bottom, rgba(255, 255, 255, 0.055) 1px, transparent 1px);
+    linear-gradient(to right, rgba(202, 138, 4, 0.085) 1px, transparent 1px),
+    linear-gradient(to bottom, rgba(202, 138, 4, 0.085) 1px, transparent 1px);
 }
 
-/* Subtle ambient gradients with yellow spotlights and dark tonal flow */
-.bg-radial-glow {
-  transform: translateZ(0);
-  will-change: transform;
-  background: 
-    radial-gradient(circle 650px at 90% 30%, rgba(250, 204, 21, 0.075), transparent 65%),
-    radial-gradient(circle 700px at 10% 75%, rgba(250, 204, 21, 0.065), transparent 65%),
-    linear-gradient(180deg, #14181a 0%, #111315 25%, #15181a 55%, #111315 80%, #0d0f10 100%);
+/* Rich Dark Amber Texture & Tonal Flow (No bright yellow gradients) */
+.bg-amber-texture {
+  background-color: #111214;
+  background-image: 
+    /* Subtle fine dark amber dot texture for tactile depth */
+    radial-gradient(circle at 1px 1px, rgba(180, 83, 9, 0.08) 1px, transparent 0),
+    /* Deep ambient dark amber gradient flow */
+    radial-gradient(circle at 50% 0%, rgba(146, 64, 14, 0.12) 0%, transparent 70%),
+    linear-gradient(180deg, #131416 0%, #111213 50%, #0d0e0f 100%);
+  background-size: 19px 19px, 100% 100%, 100% 100%;
 }
 
 /* Custom scrollbar */

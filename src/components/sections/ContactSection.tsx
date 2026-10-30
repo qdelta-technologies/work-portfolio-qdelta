@@ -19,9 +19,9 @@ export function ContactSection() {
     >
       <div className="max-w-[1320px] mx-auto px-4 sm:px-6 md:px-12">
         <div className="rounded-[10px] bg-[#181B1C] border border-[#38403F] p-5 sm:p-7 md:p-8 relative overflow-hidden">
-          {/* Subtle yellow glow background in corner */}
+          {/* Subtle amber glow in corner */}
           <div
-            className="absolute -top-32 -right-32 w-80 h-80 rounded-full bg-[radial-gradient(circle,rgba(250,204,21,0.12)_0%,transparent_70%)] pointer-events-none transform-gpu"
+            className="absolute -top-32 -right-32 w-80 h-80 rounded-full bg-[radial-gradient(circle,rgba(217,119,6,0.10)_0%,transparent_70%)] pointer-events-none transform-gpu"
             aria-hidden="true"
           />
 
