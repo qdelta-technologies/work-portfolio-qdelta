@@ -34,7 +34,7 @@ export const siteConfig: SiteConfig = {
     { label: "Contact ↗", href: "#contact" },
   ],
   footer: {
-    copyright: "© 2026 QDelta.",
+    copyright: "© 2026 QDelta Technologies.",
   },
 };
 
