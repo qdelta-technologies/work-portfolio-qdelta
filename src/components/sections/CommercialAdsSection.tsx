@@ -7,7 +7,7 @@ import { siteConfig, getWhatsAppUrl } from "@/config/site";
 export function CommercialAdsSection() {
   const whatsappUrl = getWhatsAppUrl(
     siteConfig.contact.whatsappNumber,
-    "Hello QDelta, I would like to inquire about Commercial Ads & Reel production."
+    "Hello QDelta, I would like to inquire about Ad Creatives & Promo Reel production."
   );
 
   const placeholders = [
@@ -61,12 +61,12 @@ export function CommercialAdsSection() {
     <section
       id="commercials"
       className="w-full py-6 sm:py-8 md:py-10"
-      aria-label="Commercial Ads & Reels Showcase"
+      aria-label="Ad Creatives & Promo Reels Showcase"
     >
       <div className="max-w-[1320px] mx-auto px-4 sm:px-6 md:px-12 space-y-6 sm:space-y-8">
         <SectionHeader
-          title="Commercial Ads & Cinematic Reels"
-          description="High-conversion commercials, brand films, and short-form video reels."
+          title="Ad Creatives & Promo Reels"
+          description="High-conversion ad creatives, promotional videos, and short-form promo reels."
         >
           <div className="inline-flex items-center gap-2 px-3 py-1.5 rounded-full bg-[#181B1C] border border-[#38403F] text-[11.5px] font-mono text-[#FACC15]">
             <span className="w-2 h-2 rounded-full bg-[#FACC15] animate-pulse" />

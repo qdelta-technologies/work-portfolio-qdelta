@@ -7,9 +7,9 @@ import { ContactSection } from "@/components/sections/ContactSection";
 import { Footer } from "@/components/layout/Footer";
 
 export const metadata: Metadata = {
-  title: "Commercial Ads & Reels — QDelta Work",
+  title: "Ad Creatives & Promo Reels — QDelta Work",
   description:
-    "Preview upcoming cinematic commercial films, brand spots, and vertical reels.",
+    "Preview upcoming high-conversion ad creatives, promotional videos, and vertical promo reels.",
 };
 
 export default function CommercialAdsPage() {
@@ -21,7 +21,7 @@ export default function CommercialAdsPage() {
       {/* Subpage Header with Back to Home & Other Pages Links */}
       <WorkSubpageHeader
         currentPage="commercials"
-        title="Commercial Ads & Reels"
+        title="Ad Creatives & Promo Reels"
       />
 
       <main className="relative z-10 flex-1">

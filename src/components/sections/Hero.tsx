@@ -33,7 +33,7 @@ export function Hero({ activeDomain, onSelectDomain }: HeroProps) {
     },
     {
       id: "commercials" as WorkDomainId,
-      title: "Commercial Ads & Reels",
+      title: "Ad Creatives & Promo Reels",
       eyebrow: "CINEMA & MOTION",
       subtitle: "Cinematic brand films, high-conversion commercial spots, and vertical viral reels.",
       badge: "Placeholders • Coming Soon",
