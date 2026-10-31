@@ -22,8 +22,8 @@ export function WorkSubpageHeader({
     },
     {
       id: "content",
-      label: "Content Creation",
-      shortLabel: "Content",
+      label: "Social Media Posts & Carousels",
+      shortLabel: "Social Posts",
       href: "/content-creation",
     },
     {

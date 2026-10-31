@@ -23,7 +23,7 @@ export function Hero({ activeDomain, onSelectDomain }: HeroProps) {
     },
     {
       id: "content" as WorkDomainId,
-      title: "Content Creation",
+      title: "Social Media Posts & Carousels",
       eyebrow: "VISUAL STORYTELLING",
       subtitle: "High-impact social media creatives, visual campaigns, and viral digital graphics.",
       badge: "Curated Showcase",

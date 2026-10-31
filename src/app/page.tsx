@@ -16,8 +16,8 @@ export default function Home() {
     },
     {
       id: "content",
-      title: "Content Creation",
-      hint: "Curated Media",
+      title: "Social Media Posts & Carousels",
+      hint: "Posts & Carousels",
       href: "/content-creation",
       icon: Sparkles,
     },

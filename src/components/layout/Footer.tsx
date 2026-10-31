@@ -26,7 +26,7 @@ export function Footer() {
             href="/content-creation"
             className="py-1.5 px-2 rounded-[6px] hover:text-[#FACC15] transition-colors focus-visible:outline-none touch-manipulation active:scale-95"
           >
-            Content Creation
+            Social Media Posts & Carousels
           </Link>
           <span className="text-[#4E5654] hidden xs:inline">·</span>
           <Link

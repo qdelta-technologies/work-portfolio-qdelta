@@ -7,7 +7,7 @@ import { ContactSection } from "@/components/sections/ContactSection";
 import { Footer } from "@/components/layout/Footer";
 
 export const metadata: Metadata = {
-  title: "Content Creation — QDelta Work",
+  title: "Social Media Posts & Carousels — QDelta Work",
   description:
     "Explore our creative social media graphics, branding visuals, and digital campaigns.",
 };
@@ -21,7 +21,7 @@ export default function ContentCreationPage() {
       {/* Subpage Header with Back to Home & Other Pages Links */}
       <WorkSubpageHeader
         currentPage="content"
-        title="Content Creation"
+        title="Social Media Posts & Carousels"
       />
 
       <main className="relative z-10 flex-1">
