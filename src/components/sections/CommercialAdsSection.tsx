@@ -45,6 +45,7 @@ export function CommercialAdsSection() {
               <AdCreativeCard
                 key={ad.id}
                 ad={ad}
+                priority={index < 3}
                 onClick={() => setActiveAdIndex(index)}
               />
             ))}

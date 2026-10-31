@@ -1,14 +1,19 @@
-import React from "react";
+"use client";
+
+import React, { useState } from "react";
 import Image from "next/image";
 import { Image as ImageIcon, ZoomIn } from "lucide-react";
 import { AdCreativeItem } from "@/data/ad-creatives";
 
 interface AdCreativeCardProps {
   ad: AdCreativeItem;
+  priority?: boolean;
   onClick?: () => void;
 }
 
-export function AdCreativeCard({ ad, onClick }: AdCreativeCardProps) {
+export function AdCreativeCard({ ad, priority = false, onClick }: AdCreativeCardProps) {
+  const [isLoaded, setIsLoaded] = useState(false);
+
   if (ad.image) {
     return (
       <div
@@ -29,8 +34,14 @@ export function AdCreativeCard({ ad, onClick }: AdCreativeCardProps) {
           alt={ad.title}
           fill
           unoptimized
-          sizes="(max-width: 768px) 50vw, 33vw"
-          className="object-cover transition-transform duration-500 group-hover:scale-[1.04]"
+          priority={priority}
+          placeholder={ad.blurDataURL ? "blur" : "empty"}
+          blurDataURL={ad.blurDataURL}
+          sizes="(max-width: 640px) 100vw, (max-width: 1024px) 50vw, 420px"
+          onLoad={() => setIsLoaded(true)}
+          className={`object-cover transition-all duration-500 group-hover:scale-[1.04] ${
+            isLoaded ? "opacity-100" : "opacity-90"
+          }`}
         />
 
         {/* Hover overlay with title & zoom icon */}

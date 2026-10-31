@@ -78,6 +78,19 @@ export function AdCreativeLightbox({
     };
   }, [isOpen, onClose, handlePrev, handleNext]);
 
+  // Preload adjacent images into browser cache for instant switching
+  useEffect(() => {
+    if (!isOpen || currentIndex === null) return;
+    const nextIdx = (currentIndex + 1) % ads.length;
+    const prevIdx = (currentIndex - 1 + ads.length) % ads.length;
+    [ads[nextIdx], ads[prevIdx]].forEach((ad) => {
+      if (ad?.image && typeof window !== "undefined") {
+        const img = new window.Image();
+        img.src = ad.image;
+      }
+    });
+  }, [isOpen, currentIndex, ads]);
+
   if (!isOpen || !currentAd || !currentAd.image) return null;
 
   return (
@@ -133,6 +146,8 @@ export function AdCreativeLightbox({
             alt={currentAd.title}
             fill
             unoptimized
+            placeholder={currentAd.blurDataURL ? "blur" : "empty"}
+            blurDataURL={currentAd.blurDataURL}
             className="object-contain select-none pointer-events-none"
             priority
           />
