@@ -1,23 +1,56 @@
 import React from "react";
 import Image from "next/image";
-import { Image as ImageIcon } from "lucide-react";
+import { Image as ImageIcon, ZoomIn } from "lucide-react";
 import { AdCreativeItem } from "@/data/ad-creatives";
 
 interface AdCreativeCardProps {
   ad: AdCreativeItem;
+  onClick?: () => void;
 }
 
-export function AdCreativeCard({ ad }: AdCreativeCardProps) {
+export function AdCreativeCard({ ad, onClick }: AdCreativeCardProps) {
   if (ad.image) {
     return (
-      <div className="group relative aspect-[4/5] w-full rounded-[12px] overflow-hidden bg-[#181B1C] border border-[#38403F] hover:border-[#FACC15] transition-all duration-300 shadow-[0_4px_20px_rgba(0,0,0,0.35)] cursor-pointer">
+      <div
+        role="button"
+        tabIndex={0}
+        onClick={onClick}
+        onKeyDown={(e) => {
+          if ((e.key === "Enter" || e.key === " ") && onClick) {
+            e.preventDefault();
+            onClick();
+          }
+        }}
+        className="group relative aspect-[4/5] w-full rounded-[12px] overflow-hidden bg-[#181B1C] border border-[#38403F] hover:border-[#FACC15] transition-all duration-300 shadow-[0_4px_20px_rgba(0,0,0,0.35)] cursor-pointer focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[#FACC15]"
+        aria-label={`View ${ad.title}`}
+      >
         <Image
           src={ad.image}
           alt={ad.title}
           fill
-          sizes="(max-width: 640px) 50vw, (max-width: 1024px) 33vw, 20vw"
-          className="object-cover transition-transform duration-500 group-hover:scale-[1.03]"
+          unoptimized
+          sizes="(max-width: 768px) 50vw, 33vw"
+          className="object-cover transition-transform duration-500 group-hover:scale-[1.04]"
         />
+
+        {/* Hover overlay with title & zoom icon */}
+        <div className="absolute inset-0 bg-gradient-to-t from-black/85 via-black/25 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex flex-col justify-end p-3 pointer-events-none">
+          <div className="flex items-end justify-between gap-2">
+            <div className="min-w-0">
+              {ad.category && (
+                <span className="text-[10px] font-mono text-[#FACC15] uppercase tracking-wider block mb-0.5 truncate">
+                  {ad.category}
+                </span>
+              )}
+              <h4 className="text-[12.5px] font-semibold text-[#FFFFFF] leading-tight line-clamp-1">
+                {ad.title}
+              </h4>
+            </div>
+            <div className="w-7 h-7 rounded-full bg-[#181B1C]/90 border border-[#38403F] text-[#FACC15] flex items-center justify-center shrink-0 shadow-md">
+              <ZoomIn className="w-3.5 h-3.5" />
+            </div>
+          </div>
+        </div>
       </div>
     );
   }
